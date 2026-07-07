@@ -1,0 +1,4273 @@
+[
+  {
+    "source": "english",
+    "type": "single",
+    "text": "读图题，下图是？（）",
+    "options": [
+      "A、mouse",
+      "B、monitor",
+      "C、CD-ROM diver",
+      "D、TV set"
+    ],
+    "answer": "B",
+    "image": "img_p1_0.png",
+    "id": 1
+  },
+  {
+    "source": "english",
+    "type": "single",
+    "text": "读图题，下图的英文名称是（）。",
+    "options": [
+      "A、MP4",
+      "B、MP5",
+      "C、Tablet PC",
+      "D、Note book"
+    ],
+    "answer": "C",
+    "image": "img_p1_1.png",
+    "id": 2
+  },
+  {
+    "source": "english",
+    "type": "single",
+    "text": "该图片显示的设备是（）",
+    "options": [
+      "A、scanner",
+      "B、printer",
+      "C、projector",
+      "D、pc"
+    ],
+    "answer": "C",
+    "image": "img_p1_3.png",
+    "id": 3
+  },
+  {
+    "source": "english",
+    "type": "single",
+    "text": "假如想要进行文本编辑，我们需要选择的程序是（）。",
+    "options": [
+      "A、PPT",
+      "B、Excel",
+      "C、PS",
+      "D、Word"
+    ],
+    "answer": "D",
+    "image": null,
+    "id": 4
+  },
+  {
+    "source": "english",
+    "type": "single",
+    "text": "log on 的中文含义是（）。",
+    "options": [
+      "A、登录",
+      "B、打开",
+      "C、分开",
+      "D、下载"
+    ],
+    "answer": "A",
+    "image": null,
+    "id": 5
+  },
+  {
+    "source": "english",
+    "type": "single",
+    "text": "terminator 的中文翻译是（）。",
+    "options": [
+      "A、中继器",
+      "B、路由器",
+      "C、终结器",
+      "D、控制器"
+    ],
+    "answer": "C",
+    "image": null,
+    "id": 6
+  },
+  {
+    "source": "english",
+    "type": "single",
+    "text": "label 的中文解释（）。",
+    "options": [
+      "A、便签",
+      "B、属性",
+      "C、标签",
+      "D、网页"
+    ],
+    "answer": "C",
+    "image": null,
+    "id": 7
+  },
+  {
+    "source": "english",
+    "type": "single",
+    "text": "wire 的意思是（）。",
+    "options": [
+      "A、电线",
+      "B、电缆",
+      "C、缠绕",
+      "D、硬件"
+    ],
+    "answer": "A",
+    "image": null,
+    "id": 8
+  },
+  {
+    "source": "english",
+    "type": "single",
+    "text": "Artificial Intelligence 的中文含义是？（）",
+    "options": [
+      "A、人造机器人",
+      "B、神经网络",
+      "C、智能控制",
+      "D、人工智能"
+    ],
+    "answer": "D",
+    "image": null,
+    "id": 9
+  },
+  {
+    "source": "english",
+    "type": "single",
+    "text": "The display screen is the most common （） device used to show you what the computer is doing.",
+    "options": [
+      "A、input",
+      "B、electronic",
+      "C、output",
+      "D、printing"
+    ],
+    "answer": "C",
+    "image": null,
+    "id": 10
+  },
+  {
+    "source": "english",
+    "type": "single",
+    "text": "encryption 的含义（）。",
+    "options": [
+      "A、解调",
+      "B、解码",
+      "C、调制",
+      "D、编密码"
+    ],
+    "answer": "D",
+    "image": null,
+    "id": 11
+  },
+  {
+    "source": "english",
+    "type": "single",
+    "text": "Relational database 是（）。",
+    "options": [
+      "A、关系数据库",
+      "B、模拟数字",
+      "C、数据库",
+      "D、仓储"
+    ],
+    "answer": "A",
+    "image": null,
+    "id": 12
+  },
+  {
+    "source": "english",
+    "type": "single",
+    "text": "down load 的中文翻译是（）。",
+    "options": [
+      "A、上传",
+      "B、上载",
+      "C、下载",
+      "D、下降"
+    ],
+    "answer": "C",
+    "image": null,
+    "id": 13
+  },
+  {
+    "source": "english",
+    "type": "single",
+    "text": "液晶显示器的英文翻译（）。",
+    "options": [
+      "A、LCD monitor",
+      "B、mouse",
+      "C、RAM",
+      "D、ROM"
+    ],
+    "answer": "A",
+    "image": null,
+    "id": 14
+  },
+  {
+    "source": "english",
+    "type": "single",
+    "text": "CD-based software 的中文解释是（）。",
+    "options": [
+      "A、光盘软件",
+      "B、软件",
+      "C、基于软件的",
+      "D、移动硬盘"
+    ],
+    "answer": "A",
+    "image": null,
+    "id": 15
+  },
+  {
+    "source": "english",
+    "type": "single",
+    "text": "port 的中文解释是（）。",
+    "options": [
+      "A、端口",
+      "B、入口",
+      "C、出口",
+      "D、输出"
+    ],
+    "answer": "A",
+    "image": null,
+    "id": 16
+  },
+  {
+    "source": "english",
+    "type": "single",
+    "text": "属性 的英文翻译（）。",
+    "options": [
+      "A、attribute",
+      "B、tag",
+      "C、web",
+      "D、page"
+    ],
+    "answer": "A",
+    "image": null,
+    "id": 17
+  },
+  {
+    "source": "english",
+    "type": "single",
+    "text": "To access a page on the WWW, one needs a （） that usually consists of three parts: a controller, a method, and an interpreter.",
+    "options": [
+      "A、password",
+      "B、browser",
+      "C、router",
+      "D、code"
+    ],
+    "answer": "C",
+    "image": null,
+    "id": 18
+  },
+  {
+    "source": "english",
+    "type": "single",
+    "text": "objective 的中文含义是（）。",
+    "options": [
+      "A、技术",
+      "B、计划",
+      "C、项目",
+      "D、目标"
+    ],
+    "answer": "D",
+    "image": null,
+    "id": 19
+  },
+  {
+    "source": "english",
+    "type": "single",
+    "text": "静态的英文翻译（）。",
+    "options": [
+      "A、custom",
+      "B、curly",
+      "C、static",
+      "D、dynamic"
+    ],
+    "answer": "C",
+    "image": null,
+    "id": 20
+  },
+  {
+    "source": "english",
+    "type": "single",
+    "text": "Which one is not a computer languages? （）",
+    "options": [
+      "A、word 2000",
+      "B、PASCAL",
+      "C、C",
+      "D、C++"
+    ],
+    "answer": "A",
+    "image": null,
+    "id": 21
+  },
+  {
+    "source": "english",
+    "type": "single",
+    "text": "计算编程的英文表达是（）？",
+    "options": [
+      "A、computer programming",
+      "B、operating system",
+      "C、computer system",
+      "D、computer technology"
+    ],
+    "answer": "A",
+    "image": null,
+    "id": 22
+  },
+  {
+    "source": "english",
+    "type": "single",
+    "text": "Most（） measures involve data encryption and password.",
+    "options": [
+      "A、hardware",
+      "B、display",
+      "C、program",
+      "D、security"
+    ],
+    "answer": "D",
+    "image": null,
+    "id": 23
+  },
+  {
+    "source": "english",
+    "type": "single",
+    "text": "The maximum number of data that can be expressed by 8 bits is （）。",
+    "options": [
+      "A、64",
+      "B、126",
+      "C、255",
+      "D、256"
+    ],
+    "answer": "C",
+    "image": null,
+    "id": 24
+  },
+  {
+    "source": "english",
+    "type": "single",
+    "text": "读图题，下图的英文名称是（）。",
+    "options": [
+      "A、MP4",
+      "B、MP5",
+      "C、Tablet PC",
+      "D、Note book"
+    ],
+    "answer": "D",
+    "image": "img_p4_q25.png",
+    "id": 25
+  },
+  {
+    "source": "english",
+    "type": "single",
+    "text": "HTML 的中文全称是（）。",
+    "options": [
+      "A、超文本标记语言",
+      "B、可扩展的标记语言",
+      "C、超文本预处理",
+      "D、可视化脚本语言"
+    ],
+    "answer": "A",
+    "image": null,
+    "id": 26
+  },
+  {
+    "source": "english",
+    "type": "single",
+    "text": "intranet 的含义（）。",
+    "options": [
+      "A、企业内部互联网",
+      "B、互联网",
+      "C、因特网",
+      "D、物联网"
+    ],
+    "answer": "A",
+    "image": null,
+    "id": 27
+  },
+  {
+    "source": "english",
+    "type": "single",
+    "text": "Most （） measures involve data encryption and password.",
+    "options": [
+      "A、hardware",
+      "B、display",
+      "C、program",
+      "D、security"
+    ],
+    "answer": "D",
+    "image": null,
+    "id": 28
+  },
+  {
+    "source": "english",
+    "type": "single",
+    "text": "A virus is a（）。",
+    "options": [
+      "A、bad man",
+      "B、beast",
+      "C、computer",
+      "D、program"
+    ],
+    "answer": "D",
+    "image": null,
+    "id": 29
+  },
+  {
+    "source": "english",
+    "type": "single",
+    "text": "coordinate 的中文解释是（）。",
+    "options": [
+      "A、合作",
+      "B、管理",
+      "C、协调",
+      "D、整合"
+    ],
+    "answer": "C",
+    "image": null,
+    "id": 30
+  },
+  {
+    "source": "english",
+    "type": "single",
+    "text": "A （）is a functional unit that interprets and carries out instructions.",
+    "options": [
+      "A、memory",
+      "B、processor",
+      "C、storage",
+      "D、network"
+    ],
+    "answer": "B",
+    "image": null,
+    "id": 31
+  },
+  {
+    "source": "english",
+    "type": "single",
+    "text": "动态的英文翻译（）",
+    "options": [
+      "A、custom",
+      "B、curly",
+      "C、static",
+      "D、dynamic"
+    ],
+    "answer": "D",
+    "image": null,
+    "id": 32
+  },
+  {
+    "type": "judge",
+    "text": "Java 是编译型+解释型语言",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 33
+  },
+  {
+    "type": "judge",
+    "text": "变量命名可以使用数字开头",
+    "options": [],
+    "answer": "错误",
+    "source": "oop",
+    "id": 34
+  },
+  {
+    "type": "judge",
+    "text": "switch 语句可以匹配字符串类型数据",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 35
+  },
+  {
+    "type": "judge",
+    "text": "构造方法可以被 static 关键字修饰",
+    "options": [],
+    "answer": "错误",
+    "source": "oop",
+    "id": 36
+  },
+  {
+    "type": "judge",
+    "text": "子类可以继承父类的 private 修饰的成员",
+    "options": [],
+    "answer": "错误",
+    "source": "oop",
+    "id": 37
+  },
+  {
+    "type": "judge",
+    "text": "抽象类可以实例化对象",
+    "options": [],
+    "answer": "错误",
+    "source": "oop",
+    "id": 38
+  },
+  {
+    "type": "judge",
+    "text": "接口中可以定义普通成员方法",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 39
+  },
+  {
+    "type": "judge",
+    "text": "二维数组的每行元素个数可以不相同",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 40
+  },
+  {
+    "type": "judge",
+    "text": "Set 集合中可以存储重复元素",
+    "options": [],
+    "answer": "错误",
+    "source": "oop",
+    "id": 41
+  },
+  {
+    "type": "judge",
+    "text": "编译时异常必须主动处理，否则程序报错",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 42
+  },
+  {
+    "type": "judge",
+    "text": "IO 流中，输入流是从程序读取数据到文件",
+    "options": [],
+    "answer": "错误",
+    "source": "oop",
+    "id": 43
+  },
+  {
+    "type": "judge",
+    "text": "线程同步可以解决多线程数据安全问题",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 44
+  },
+  {
+    "type": "judge",
+    "text": "UDP 协议是面向连接的可靠传输协议",
+    "options": [],
+    "answer": "错误",
+    "source": "oop",
+    "id": 45
+  },
+  {
+    "type": "judge",
+    "text": "JDBC 使用前必须加载数据库驱动",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 46
+  },
+  {
+    "type": "judge",
+    "text": "this 关键字可以调用本类的构造方法",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 47
+  },
+  {
+    "type": "judge",
+    "text": "方法重载要求方法名相同、参数列表不同",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 48
+  },
+  {
+    "type": "judge",
+    "text": "final 修饰的类可以被继承",
+    "options": [],
+    "answer": "错误",
+    "source": "oop",
+    "id": 49
+  },
+  {
+    "type": "judge",
+    "text": "泛型可以避免类型转换异常",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 50
+  },
+  {
+    "type": "judge",
+    "text": "静态代码块在类加载时执行，仅执行一次",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 51
+  },
+  {
+    "type": "judge",
+    "text": "多态是运行时行为，方法重载是编译时行为",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 52
+  },
+  {
+    "type": "judge",
+    "text": ".class 文件是 Java 编译后的字节码文件",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 53
+  },
+  {
+    "type": "judge",
+    "text": "char 类型可以存储中文汉字",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 54
+  },
+  {
+    "type": "judge",
+    "text": "逻辑运算符 && 具有短路效果",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 55
+  },
+  {
+    "type": "judge",
+    "text": "普通代码块在对象创建时执行",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 56
+  },
+  {
+    "type": "judge",
+    "text": "子类重写的方法权限可以比父类更严格",
+    "options": [],
+    "answer": "错误",
+    "source": "oop",
+    "id": 57
+  },
+  {
+    "type": "judge",
+    "text": "抽象方法没有方法体",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 58
+  },
+  {
+    "type": "judge",
+    "text": "一个类可以实现多个接口",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 59
+  },
+  {
+    "type": "judge",
+    "text": "数组长度可以在程序运行中修改",
+    "options": [],
+    "answer": "错误",
+    "source": "oop",
+    "id": 60
+  },
+  {
+    "type": "judge",
+    "text": "String 字符串赋值后内容不可修改",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 61
+  },
+  {
+    "type": "judge",
+    "text": "抛出异常使用 throws 关键字",
+    "options": [],
+    "answer": "错误",
+    "source": "oop",
+    "id": 62
+  },
+  {
+    "type": "judge",
+    "text": "字符流只能处理文本格式文件",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 63
+  },
+  {
+    "type": "judge",
+    "text": "多线程可以提高程序执行效率",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 64
+  },
+  {
+    "type": "judge",
+    "text": "TCP 协议是面向连接、可靠的传输协议",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 65
+  },
+  {
+    "type": "judge",
+    "text": "JDBC 可以操作所有关系型数据库",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 66
+  },
+  {
+    "type": "judge",
+    "text": "static 修饰的成员属于类，不属于对象",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 67
+  },
+  {
+    "type": "judge",
+    "text": "方法重载是多态的编译时体现",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 68
+  },
+  {
+    "type": "judge",
+    "text": "final 修饰的方法不能被重写",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 69
+  },
+  {
+    "type": "judge",
+    "text": "泛型不支持基本数据类型",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 70
+  },
+  {
+    "type": "judge",
+    "text": "接口中可以有静态方法",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 71
+  },
+  {
+    "type": "judge",
+    "text": "HashMap 线程安全，HashTable 线程不安全",
+    "options": [],
+    "answer": "错误",
+    "source": "oop",
+    "id": 72
+  },
+  {
+    "type": "judge",
+    "text": "Java 区分大小写",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 73
+  },
+  {
+    "type": "judge",
+    "text": "浮点型数据存在精度丢失问题",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 74
+  },
+  {
+    "type": "judge",
+    "text": "三元运算符可以嵌套使用",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 75
+  },
+  {
+    "type": "judge",
+    "text": "线程的 run() 方法可直接调用启动线程",
+    "options": [],
+    "answer": "错误",
+    "source": "oop",
+    "id": 76
+  },
+  {
+    "type": "judge",
+    "text": "JDBC 可以实现数据库事务管理",
+    "options": [],
+    "answer": "正确",
+    "source": "oop",
+    "id": 77
+  },
+  {
+    "type": "single",
+    "text": "以下不属于 Java 语言核心特点的是（）",
+    "options": [
+      "跨平台性",
+      "面向对象",
+      "指针操作",
+      "多线程"
+    ],
+    "answer": "C",
+    "source": "oop",
+    "id": 78
+  },
+  {
+    "type": "single",
+    "text": "Java 程序的编译命令是（）",
+    "options": [
+      "java",
+      "javac",
+      "javadoc",
+      "jar"
+    ],
+    "answer": "B",
+    "source": "oop",
+    "id": 79
+  },
+  {
+    "type": "single",
+    "text": "以下合法的 Java 标识符是（）",
+    "options": [
+      "1name",
+      "name_1",
+      "name#",
+      "class"
+    ],
+    "answer": "B",
+    "source": "oop",
+    "id": 80
+  },
+  {
+    "type": "single",
+    "text": "Java 中基本数据类型不包括（）",
+    "options": [
+      "int",
+      "String",
+      "double",
+      "boolean"
+    ],
+    "answer": "B",
+    "source": "oop",
+    "id": 81
+  },
+  {
+    "type": "single",
+    "text": "三元运算符的语法格式正确的是（）",
+    "options": [
+      "条件 ? 表达式 1 : 表达式 2",
+      "条件 : 表达式 1 ? 表达式 2",
+      "条件 ? 表达式 1 ; 表达式 2",
+      "条件 ! 表达式 1 : 表达式 2"
+    ],
+    "answer": "A",
+    "source": "oop",
+    "id": 82
+  },
+  {
+    "type": "single",
+    "text": "以下循环语句中，至少执行一次循环体的是（）",
+    "options": [
+      "for",
+      "while",
+      "do-while",
+      "以上都不是"
+    ],
+    "answer": "C",
+    "source": "oop",
+    "id": 83
+  },
+  {
+    "type": "single",
+    "text": "Java 中类的封装特性的核心目的是（）",
+    "options": [
+      "简化代码",
+      "隐藏内部实现、保障数据安全",
+      "实现代码复用",
+      "实现多态"
+    ],
+    "answer": "B",
+    "source": "oop",
+    "id": 84
+  },
+  {
+    "type": "single",
+    "text": "以下关键字中用于实现继承的是（）",
+    "options": [
+      "implements",
+      "extends",
+      "static",
+      "final"
+    ],
+    "answer": "B",
+    "source": "oop",
+    "id": 85
+  },
+  {
+    "type": "single",
+    "text": "抽象类的定义关键字是（）",
+    "options": [
+      "interface",
+      "abstract",
+      "private",
+      "protected"
+    ],
+    "answer": "B",
+    "source": "oop",
+    "id": 86
+  },
+  {
+    "type": "single",
+    "text": "接口中默认的成员变量修饰符是（）",
+    "options": [
+      "public static final",
+      "private static",
+      "protected final",
+      "default"
+    ],
+    "answer": "A",
+    "source": "oop",
+    "id": 87
+  },
+  {
+    "type": "single",
+    "text": "一维数组 `int[] arr = new int[5]` 的默认元素值是（）",
+    "options": [
+      "null",
+      "0",
+      "1",
+      "随机数"
+    ],
+    "answer": "B",
+    "source": "oop",
+    "id": 88
+  },
+  {
+    "type": "single",
+    "text": "String 类的特点描述正确的是（）",
+    "options": [
+      "字符串可变",
+      "字符串不可变",
+      "可直接修改字符",
+      "线程不安全"
+    ],
+    "answer": "B",
+    "source": "oop",
+    "id": 89
+  },
+  {
+    "type": "single",
+    "text": "以下属于 List 集合特点的是（）",
+    "options": [
+      "无序、不可重复",
+      "有序、可重复",
+      "无序、可重复",
+      "有序、不可重复"
+    ],
+    "answer": "B",
+    "source": "oop",
+    "id": 90
+  },
+  {
+    "type": "single",
+    "text": "Java 中用于捕获异常的关键字是（）",
+    "options": [
+      "throw",
+      "throws",
+      "catch",
+      "finally"
+    ],
+    "answer": "C",
+    "source": "oop",
+    "id": 91
+  },
+  {
+    "type": "single",
+    "text": "以下属于字符流的类是（）",
+    "options": [
+      "FileInputStream",
+      "FileReader",
+      "FileOutputStream",
+      "BufferedInputStream"
+    ],
+    "answer": "B",
+    "source": "oop",
+    "id": 92
+  },
+  {
+    "type": "single",
+    "text": "线程生命周期中，不包含的状态是（）",
+    "options": [
+      "新建",
+      "阻塞",
+      "销毁",
+      "运行"
+    ],
+    "answer": "C",
+    "source": "oop",
+    "id": 93
+  },
+  {
+    "type": "single",
+    "text": "TCP 协议对应的网络编程核心类是（）",
+    "options": [
+      "Socket",
+      "DatagramPacket",
+      "DatagramSocket",
+      "InetAddress"
+    ],
+    "answer": "A",
+    "source": "oop",
+    "id": 94
+  },
+  {
+    "type": "single",
+    "text": "JDBC 中用于执行 SQL 查询语句的接口是（）",
+    "options": [
+      "Connection",
+      "Statement",
+      "ResultSet",
+      "Driver"
+    ],
+    "answer": "B",
+    "source": "oop",
+    "id": 95
+  },
+  {
+    "type": "single",
+    "text": "static 关键字修饰的方法特点是（）",
+    "options": [
+      "必须通过对象调用",
+      "可直接通过类名调用",
+      "不能重载",
+      "不能被继承"
+    ],
+    "answer": "B",
+    "source": "oop",
+    "id": 96
+  },
+  {
+    "type": "single",
+    "text": "多态的实现基础不包括（）",
+    "options": [
+      "继承",
+      "方法重写",
+      "父类引用指向子类对象",
+      "方法重载"
+    ],
+    "answer": "D",
+    "source": "oop",
+    "id": 97
+  },
+  {
+    "type": "single",
+    "text": "Java 源代码文件的后缀名是（）",
+    "options": [
+      ".class",
+      ".java",
+      ".jar",
+      ".exe"
+    ],
+    "answer": "B",
+    "source": "oop",
+    "id": 98
+  },
+  {
+    "type": "single",
+    "text": "以下属于 Java 引用数据类型的是（）",
+    "options": [
+      "byte",
+      "char",
+      "Array",
+      "short"
+    ],
+    "answer": "C",
+    "source": "oop",
+    "id": 99
+  },
+  {
+    "type": "single",
+    "text": "赋值运算符的优先级关系正确的是（）",
+    "options": [
+      "优先级最高",
+      "优先级最低",
+      "高于算术运算符",
+      "高于比较运算符"
+    ],
+    "answer": "B",
+    "source": "oop",
+    "id": 100
+  },
+  {
+    "type": "single",
+    "text": "以下语句中可以终止本次循环，进入下一次循环的是（）",
+    "options": [
+      "break",
+      "continue",
+      "return",
+      "exit"
+    ],
+    "answer": "B",
+    "source": "oop",
+    "id": 101
+  },
+  {
+    "type": "single",
+    "text": "类中成员变量的默认修饰符是（）",
+    "options": [
+      "public",
+      "private",
+      "default",
+      "protected"
+    ],
+    "answer": "C",
+    "source": "oop",
+    "id": 102
+  },
+  {
+    "type": "single",
+    "text": "super 关键字不能实现的功能是（）",
+    "options": [
+      "调用父类构造方法",
+      "访问父类成员变量",
+      "重写父类方法",
+      "访问父类成员方法"
+    ],
+    "answer": "C",
+    "source": "oop",
+    "id": 103
+  },
+  {
+    "type": "single",
+    "text": "含有抽象方法的类必须是（）",
+    "options": [
+      "普通类",
+      "抽象类",
+      "接口",
+      "内部类"
+    ],
+    "answer": "B",
+    "source": "oop",
+    "id": 104
+  },
+  {
+    "type": "single",
+    "text": "接口的实现关键字是（）",
+    "options": [
+      "extends",
+      "implements",
+      "static",
+      "final"
+    ],
+    "answer": "B",
+    "source": "oop",
+    "id": 105
+  },
+  {
+    "type": "single",
+    "text": "数组下标的起始值是（）",
+    "options": [
+      "1",
+      "0",
+      "-1",
+      "随机"
+    ],
+    "answer": "B",
+    "source": "oop",
+    "id": 106
+  },
+  {
+    "type": "single",
+    "text": "适合频繁修改字符串的类是（）",
+    "options": [
+      "String",
+      "StringUtils",
+      "StringBuilder",
+      "Integer"
+    ],
+    "answer": "C",
+    "source": "oop",
+    "id": 107
+  },
+  {
+    "type": "single",
+    "text": "HashMap 的特点是（）",
+    "options": [
+      "有序可重复",
+      "无序、键唯一值可重复",
+      "有序不可重复",
+      "无序键值均唯一"
+    ],
+    "answer": "B",
+    "source": "oop",
+    "id": 108
+  },
+  {
+    "type": "single",
+    "text": "自定义异常需要继承的类是（）",
+    "options": [
+      "Exception",
+      "Error",
+      "Throwable",
+      "RuntimeException"
+    ],
+    "answer": "A",
+    "source": "oop",
+    "id": 109
+  },
+  {
+    "type": "single",
+    "text": "用于读取文本文件的字符流类是（）",
+    "options": [
+      "FileWriter",
+      "FileReader",
+      "FileInputStream",
+      "FileOutputStream"
+    ],
+    "answer": "B",
+    "source": "oop",
+    "id": 110
+  },
+  {
+    "type": "single",
+    "text": "线程的就绪状态含义是（）",
+    "options": [
+      "新建未启动",
+      "等待 CPU 资源",
+      "正在运行",
+      "阻塞等待资源"
+    ],
+    "answer": "B",
+    "source": "oop",
+    "id": 111
+  },
+  {
+    "type": "single",
+    "text": "UDP 编程的核心类是（）",
+    "options": [
+      "Socket",
+      "ServerSocket",
+      "DatagramSocket",
+      "InetAddress"
+    ],
+    "answer": "C",
+    "source": "oop",
+    "id": 112
+  },
+  {
+    "type": "single",
+    "text": "JDBC 中用于封装查询结果的接口是（）",
+    "options": [
+      "Connection",
+      "ResultSet",
+      "Statement",
+      "Driver"
+    ],
+    "answer": "B",
+    "source": "oop",
+    "id": 113
+  },
+  {
+    "type": "single",
+    "text": "静态变量的存储位置是（）",
+    "options": [
+      "栈内存",
+      "堆内存",
+      "方法区",
+      "本地方法栈"
+    ],
+    "answer": "C",
+    "source": "oop",
+    "id": 114
+  },
+  {
+    "type": "single",
+    "text": "方法重写的要求不包括（）",
+    "options": [
+      "方法名相同",
+      "参数列表相同",
+      "返回值严格一致",
+      "访问权限更宽松"
+    ],
+    "answer": "C",
+    "source": "oop",
+    "id": 115
+  },
+  {
+    "type": "single",
+    "text": "final 修饰的变量特点是（）",
+    "options": [
+      "可多次赋值",
+      "仅赋值一次，不可修改",
+      "无默认值",
+      "可以为空"
+    ],
+    "answer": "B",
+    "source": "oop",
+    "id": 116
+  },
+  {
+    "type": "single",
+    "text": "泛型的主要作用是（）",
+    "options": [
+      "提高运行速度",
+      "实现类型安全、避免强制转换",
+      "简化循环代码",
+      "实现继承"
+    ],
+    "answer": "B",
+    "source": "oop",
+    "id": 117
+  },
+  {
+    "type": "single",
+    "text": "以下不属于 Java 开发工具的是（）",
+    "options": [
+      "IDEA",
+      "Eclipse",
+      "MySQL",
+      "JDK"
+    ],
+    "answer": "C",
+    "source": "oop",
+    "id": 118
+  },
+  {
+    "type": "single",
+    "text": "double 类型数据的字节数是（）",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "16"
+    ],
+    "answer": "C",
+    "source": "oop",
+    "id": 119
+  },
+  {
+    "type": "single",
+    "text": "比较两个数值是否相等的运算符是（）",
+    "options": [
+      "=",
+      "==",
+      "===",
+      "!="
+    ],
+    "answer": "B",
+    "source": "oop",
+    "id": 120
+  },
+  {
+    "type": "single",
+    "text": "switch 语句的判断条件不能使用的类型是（）",
+    "options": [
+      "int",
+      "char",
+      "double",
+      "String"
+    ],
+    "answer": "C",
+    "source": "oop",
+    "id": 121
+  },
+  {
+    "type": "single",
+    "text": "以下关于对象的说法正确的是（）",
+    "options": [
+      "对象是类的模板",
+      "类是对象的实例",
+      "对象是类的实例",
+      "类和对象无关联"
+    ],
+    "answer": "C",
+    "source": "oop",
+    "id": 122
+  },
+  {
+    "type": "single",
+    "text": "接口中不能定义的内容是（）",
+    "options": [
+      "常量",
+      "抽象方法",
+      "成员变量",
+      "静态方法"
+    ],
+    "answer": "C",
+    "source": "oop",
+    "id": 123
+  },
+  {
+    "type": "single",
+    "text": "启动线程的方法是（）",
+    "options": [
+      "run()",
+      "start()",
+      "init()",
+      "execute()"
+    ],
+    "answer": "B",
+    "source": "oop",
+    "id": 124
+  },
+  {
+    "type": "single",
+    "text": "泛型的语法符号是（）",
+    "options": [
+      "()",
+      "[]",
+      "<>",
+      "{}"
+    ],
+    "answer": "C",
+    "source": "oop",
+    "id": 125
+  },
+  {
+    "type": "multi",
+    "text": "Java 环境搭建需要配置的环境变量有（）",
+    "options": [
+      "JAVA_HOME",
+      "PATH",
+      "CLASSPATH",
+      "TOMCAT_HOME"
+    ],
+    "answer": "ABC",
+    "source": "oop",
+    "id": 126
+  },
+  {
+    "type": "multi",
+    "text": "Java 中有效的循环跳转语句有（）",
+    "options": [
+      "break",
+      "continue",
+      "return",
+      "goto"
+    ],
+    "answer": "ABC",
+    "source": "oop",
+    "id": 127
+  },
+  {
+    "type": "multi",
+    "text": "Java 中访问修饰符包含（）",
+    "options": [
+      "private",
+      "default",
+      "protected",
+      "public"
+    ],
+    "answer": "ABCD",
+    "source": "oop",
+    "id": 128
+  },
+  {
+    "type": "multi",
+    "text": "面向对象的三大核心特性是（）",
+    "options": [
+      "封装",
+      "继承",
+      "多态",
+      "抽象"
+    ],
+    "answer": "ABC",
+    "source": "oop",
+    "id": 129
+  },
+  {
+    "type": "multi",
+    "text": "以下属于 Java 常用集合类的有（）",
+    "options": [
+      "ArrayList",
+      "HashSet",
+      "HashMap",
+      "String"
+    ],
+    "answer": "ABC",
+    "source": "oop",
+    "id": 130
+  },
+  {
+    "type": "multi",
+    "text": "Java 中异常处理的核心关键字有（）",
+    "options": [
+      "try",
+      "catch",
+      "finally",
+      "throw、throws"
+    ],
+    "answer": "ABCD",
+    "source": "oop",
+    "id": 131
+  },
+  {
+    "type": "multi",
+    "text": "以下属于字节流的特点的有（）",
+    "options": [
+      "处理所有类型文件",
+      "仅处理文本文件",
+      "以字节为单位传输",
+      "以字符为单位传输"
+    ],
+    "answer": "AC",
+    "source": "oop",
+    "id": 132
+  },
+  {
+    "type": "multi",
+    "text": "Java 中线程的实现方式有（）",
+    "options": [
+      "继承 Thread 类",
+      "实现 Runnable 接口",
+      "实现 Callable 接口",
+      "直接创建线程对象"
+    ],
+    "answer": "ABC",
+    "source": "oop",
+    "id": 133
+  },
+  {
+    "type": "multi",
+    "text": "JDBC 可以实现的数据库操作有（）",
+    "options": [
+      "增",
+      "删",
+      "改",
+      "查"
+    ],
+    "answer": "ABCD",
+    "source": "oop",
+    "id": 134
+  },
+  {
+    "type": "multi",
+    "text": "以下关于 StringBuilder 和 StringBuffer 说法正确的有（）",
+    "options": [
+      "均为可变字符串",
+      "StringBuilder 线程不安全",
+      "StringBuffer 线程安全",
+      "效率：StringBuilder > StringBuffer"
+    ],
+    "answer": "ABCD",
+    "source": "oop",
+    "id": 135
+  },
+  {
+    "type": "multi",
+    "text": "Java 中算术运算符包含（）",
+    "options": [
+      "+",
+      "%",
+      "++",
+      "=="
+    ],
+    "answer": "ABC",
+    "source": "oop",
+    "id": 136
+  },
+  {
+    "type": "multi",
+    "text": "以下属于选择结构语句的有（）",
+    "options": [
+      "if",
+      "switch",
+      "for",
+      "while"
+    ],
+    "answer": "AB",
+    "source": "oop",
+    "id": 137
+  },
+  {
+    "type": "multi",
+    "text": "构造方法的特点包括（）",
+    "options": [
+      "方法名与类名相同",
+      "无返回值类型",
+      "对象创建时自动调用",
+      "可以重载"
+    ],
+    "answer": "ABCD",
+    "source": "oop",
+    "id": 138
+  },
+  {
+    "type": "multi",
+    "text": "多态的实现形式有（）",
+    "options": [
+      "方法重载",
+      "方法重写",
+      "向上转型",
+      "向下转型"
+    ],
+    "answer": "BC",
+    "source": "oop",
+    "id": 139
+  },
+  {
+    "type": "multi",
+    "text": "以下属于 Set 集合实现类的有（）",
+    "options": [
+      "ArrayList",
+      "HashSet",
+      "TreeSet",
+      "LinkedList"
+    ],
+    "answer": "BC",
+    "source": "oop",
+    "id": 140
+  },
+  {
+    "type": "multi",
+    "text": "运行时异常的特点有（）",
+    "options": [
+      "编译不报错",
+      "运行时报错",
+      "可选择性处理",
+      "必须强制处理"
+    ],
+    "answer": "ABC",
+    "source": "oop",
+    "id": 141
+  },
+  {
+    "type": "multi",
+    "text": "以下属于 IO 流分类方式的有（）",
+    "options": [
+      "字节流/字符流",
+      "输入流/输出流",
+      "节点流/处理流",
+      "同步流/异步流"
+    ],
+    "answer": "ABC",
+    "source": "oop",
+    "id": 142
+  },
+  {
+    "type": "multi",
+    "text": "导致线程阻塞的场景有（）",
+    "options": [
+      "sleep()",
+      "wait()",
+      "同步锁等待",
+      "线程结束"
+    ],
+    "answer": "ABC",
+    "source": "oop",
+    "id": 143
+  },
+  {
+    "type": "multi",
+    "text": "以下属于 JDBC 核心接口的有（）",
+    "options": [
+      "Driver",
+      "Connection",
+      "Statement",
+      "ResultSet"
+    ],
+    "answer": "ABCD",
+    "source": "oop",
+    "id": 144
+  },
+  {
+    "type": "multi",
+    "text": "内部类的类型包含（）",
+    "options": [
+      "成员内部类",
+      "局部内部类",
+      "匿名内部类",
+      "静态内部类"
+    ],
+    "answer": "ABCD",
+    "source": "oop",
+    "id": 145
+  },
+  {
+    "type": "multi",
+    "text": "Java 中基本数据类型包含（）",
+    "options": [
+      "整型",
+      "浮点型",
+      "字符型",
+      "布尔型"
+    ],
+    "answer": "ABCD",
+    "source": "oop",
+    "id": 146
+  },
+  {
+    "type": "multi",
+    "text": "以下属于循环结构的语句有（）",
+    "options": [
+      "for",
+      "while",
+      "do-while",
+      "switch"
+    ],
+    "answer": "ABC",
+    "source": "oop",
+    "id": 147
+  },
+  {
+    "type": "multi",
+    "text": "类的组成部分有（）",
+    "options": [
+      "成员变量",
+      "成员方法",
+      "构造方法",
+      "代码块"
+    ],
+    "answer": "ABCD",
+    "source": "oop",
+    "id": 148
+  },
+  {
+    "type": "multi",
+    "text": "实现多态的必要条件有（）",
+    "options": [
+      "继承",
+      "重写",
+      "向上转型",
+      "重载"
+    ],
+    "answer": "ABC",
+    "source": "oop",
+    "id": 149
+  },
+  {
+    "type": "multi",
+    "text": "以下属于 List 集合特点的有（）",
+    "options": [
+      "有序",
+      "可重复",
+      "有索引",
+      "无索引"
+    ],
+    "answer": "ABC",
+    "source": "oop",
+    "id": 150
+  },
+  {
+    "type": "multi",
+    "text": "异常处理的作用包括（）",
+    "options": [
+      "避免程序崩溃",
+      "捕获错误信息",
+      "优化代码逻辑",
+      "提高程序稳定性"
+    ],
+    "answer": "ABD",
+    "source": "oop",
+    "id": 151
+  },
+  {
+    "type": "multi",
+    "text": "处理流的优势有（）",
+    "options": [
+      "提高读写效率",
+      "简化代码",
+      "支持批量操作",
+      "仅支持字节流"
+    ],
+    "answer": "ABC",
+    "source": "oop",
+    "id": 152
+  },
+  {
+    "type": "multi",
+    "text": "面向对象编程的优势有（）",
+    "options": [
+      "代码复用",
+      "易于维护",
+      "扩展性强",
+      "执行速度最快"
+    ],
+    "answer": "ABC",
+    "source": "oop",
+    "id": 153
+  },
+  {
+    "type": "judge",
+    "text": "布尔类型的取值只有 true 和______。",
+    "options": [],
+    "answer": "错误",
+    "source": "oop",
+    "id": 154
+  },
+  {
+    "type": "fill",
+    "text": "Java 程序的运行机制是先______后______。",
+    "options": [],
+    "answer": "编译、解释",
+    "source": "oop",
+    "id": 155
+  },
+  {
+    "type": "fill",
+    "text": "面向对象三大特性是封装、继承、______。",
+    "options": [],
+    "answer": "多态",
+    "source": "oop",
+    "id": 156
+  },
+  {
+    "type": "fill",
+    "text": "调用父类构造方法的关键字是______。",
+    "options": [],
+    "answer": "super",
+    "source": "oop",
+    "id": 157
+  },
+  {
+    "type": "fill",
+    "text": "字符串拼接效率最高的类是______。",
+    "options": [],
+    "answer": "StringBuilder",
+    "source": "oop",
+    "id": 158
+  },
+  {
+    "type": "fill",
+    "text": "Map 集合的存储结构是______键值对。",
+    "options": [],
+    "answer": "key-value",
+    "source": "oop",
+    "id": 159
+  },
+  {
+    "type": "fill",
+    "text": "异常处理中，______语句无论是否发生异常都会执行。",
+    "options": [],
+    "answer": "finally",
+    "source": "oop",
+    "id": 160
+  },
+  {
+    "type": "fill",
+    "text": "字节流的顶级父类是 InputStream 和______。",
+    "options": [],
+    "answer": "OutputStream",
+    "source": "oop",
+    "id": 161
+  },
+  {
+    "type": "fill",
+    "text": "线程同步可以使用______关键字实现。",
+    "options": [],
+    "answer": "synchronized",
+    "source": "oop",
+    "id": 162
+  },
+  {
+    "type": "fill",
+    "text": "JDBC 中______接口用于建立数据库连接。",
+    "options": [],
+    "answer": "Connection",
+    "source": "oop",
+    "id": 163
+  },
+  {
+    "type": "fill",
+    "text": "Java 中注释分为单行注释、多行注释和______注释。",
+    "options": [],
+    "answer": "文档",
+    "source": "oop",
+    "id": 164
+  },
+  {
+    "type": "fill",
+    "text": "逻辑与运算符是______，逻辑或运算符是 ||。",
+    "options": [],
+    "answer": "&&",
+    "source": "oop",
+    "id": 165
+  },
+  {
+    "type": "fill",
+    "text": "创建对象的关键字是______。",
+    "options": [],
+    "answer": "new",
+    "source": "oop",
+    "id": 166
+  },
+  {
+    "type": "fill",
+    "text": "实现方法重写的前提是存在______关系。",
+    "options": [],
+    "answer": "继承",
+    "source": "oop",
+    "id": 167
+  },
+  {
+    "type": "fill",
+    "text": "接口中的方法默认是______抽象方法。",
+    "options": [],
+    "answer": "public",
+    "source": "oop",
+    "id": 168
+  },
+  {
+    "type": "fill",
+    "text": "获取数组长度的属性是______。",
+    "options": [],
+    "answer": "length",
+    "source": "oop",
+    "id": 169
+  },
+  {
+    "type": "fill",
+    "text": "List 集合的典型实现类有 ArrayList 和______。",
+    "options": [],
+    "answer": "LinkedList",
+    "source": "oop",
+    "id": 170
+  },
+  {
+    "type": "fill",
+    "text": "异常的两大分类是编译时异常和______异常。",
+    "options": [],
+    "answer": "运行时",
+    "source": "oop",
+    "id": 171
+  },
+  {
+    "type": "fill",
+    "text": "终止线程阻塞、唤醒线程的方法是______。",
+    "options": [],
+    "answer": "notify()",
+    "source": "oop",
+    "id": 172
+  },
+  {
+    "type": "fill",
+    "text": "JDBC 中执行增删改语句返回的是______。",
+    "options": [],
+    "answer": "受影响的行数",
+    "source": "oop",
+    "id": 173
+  },
+  {
+    "type": "fill",
+    "text": "Java 程序的入口方法是______。",
+    "options": [],
+    "answer": "main()",
+    "source": "oop",
+    "id": 174
+  },
+  {
+    "type": "fill",
+    "text": "强制类型转换的格式是______。",
+    "options": [],
+    "answer": "(数据类型)变量",
+    "source": "oop",
+    "id": 175
+  },
+  {
+    "type": "fill",
+    "text": "类的核心作用是______对象。",
+    "options": [],
+    "answer": "实例化/创建",
+    "source": "oop",
+    "id": 176
+  },
+  {
+    "type": "fill",
+    "text": "方法重写也叫方法______。",
+    "options": [],
+    "answer": "覆盖",
+    "source": "oop",
+    "id": 177
+  },
+  {
+    "type": "fill",
+    "text": "抽象方法使用______关键字修饰。",
+    "options": [],
+    "answer": "abstract",
+    "source": "oop",
+    "id": 178
+  },
+  {
+    "type": "fill",
+    "text": "二维数组的遍历需要______层循环。",
+    "options": [],
+    "answer": "两",
+    "source": "oop",
+    "id": 179
+  },
+  {
+    "type": "fill",
+    "text": "HashMap 的键是______的，值可重复。",
+    "options": [],
+    "answer": "唯一",
+    "source": "oop",
+    "id": 180
+  },
+  {
+    "type": "fill",
+    "text": "异常处理结构中，______块用于捕获异常并处理。",
+    "options": [],
+    "answer": "catch",
+    "source": "oop",
+    "id": 181
+  },
+  {
+    "type": "fill",
+    "text": "多线程并发安全问题通过______机制解决。",
+    "options": [],
+    "answer": "线程同步",
+    "source": "oop",
+    "id": 182
+  },
+  {
+    "type": "fill",
+    "text": "JDBC 查询结果集遍历使用______方法移动指针。",
+    "options": [],
+    "answer": "next()",
+    "source": "oop",
+    "id": 183
+  },
+  {
+    "type": "single",
+    "text": "Spring Cloud Stream 用来绑定消息中间件的核心接口是(        )",
+    "options": [
+      "Binder",
+      "CircuitBreaker",
+      "LoadBalancer",
+      "Registry"
+    ],
+    "answer": "A",
+    "source": "microservice",
+    "id": 184
+  },
+  {
+    "type": "single",
+    "text": "启动 Zipkin 的核心命令是(        )",
+    "options": [
+      "zipkin start",
+      "java -jar zipkin.jar",
+      "./zipkin.sh",
+      "docker run openzipkin/zipkin"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 185
+  },
+  {
+    "type": "single",
+    "text": "关于 Spring Cloud Config 架构，以下说法  错误  的是（     ）?",
+    "options": [
+      "Config Server 负责管理配置文件",
+      "Config Client 从 Config Server 获取配置",
+      "Config Server 必须先于 Config Client 启动",
+      "Config Client 不需要配置任何信息就能连接 Config Server"
+    ],
+    "answer": "D",
+    "source": "microservice",
+    "id": 186
+  },
+  {
+    "type": "single",
+    "text": "Eureka Server 中，配置 eureka.client.register-with-eureka=false 的含义是（     ）?",
+    "options": [
+      "不向 Eureka Server 注册自己",
+      "不从 Eureka Server 拉取服务列表",
+      "不使用 IP 地址进行注册",
+      "关闭自我保护机制"
+    ],
+    "answer": "A",
+    "source": "microservice",
+    "id": 187
+  },
+  {
+    "type": "single",
+    "text": "下列组件不属于 Netflix 开源套件的是(        )",
+    "options": [
+      "Eureka",
+      "Ribbon",
+      "Resilience4j",
+      "Hystrix"
+    ],
+    "answer": "C",
+    "source": "microservice",
+    "id": 188
+  },
+  {
+    "type": "single",
+    "text": "Zipkin 存储链路数据默认存储位置是(        )",
+    "options": [
+      "MySQL",
+      "内存，重启丢失数据",
+      "Redis",
+      "Elasticsearch"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 189
+  },
+  {
+    "type": "single",
+    "text": "Ribbon 默认的负载均衡算法是(        )",
+    "options": [
+      "随机算法",
+      "轮询算法",
+      "加权随机算法",
+      "一致性哈希算法"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 190
+  },
+  {
+    "type": "single",
+    "text": "Eureka 服务续约(心跳)默认发送间隔是(        )",
+    "options": [
+      "10 秒",
+      "30 秒",
+      "60 秒",
+      "90 秒"
+    ],
+    "answer": "A",
+    "source": "microservice",
+    "id": 191
+  },
+  {
+    "type": "single",
+    "text": "Gateway 路由中 predicates: - Header=token 代表(        )",
+    "options": [
+      "请求必须携带 token 请求头才能匹配路由",
+      "删除请求头 token",
+      "添加 token 响应头",
+      "校验 token 值固定"
+    ],
+    "answer": "A",
+    "source": "microservice",
+    "id": 192
+  },
+  {
+    "type": "single",
+    "text": "Gateway 的filters.StripPrefix=1的作用是(        )",
+    "options": [
+      "转发时去掉路径的第 1 层",
+      "转发时添加 1 层路径",
+      "过滤掉第 1 个请求参数",
+      "添加 1 个请求参数"
+    ],
+    "answer": "A",
+    "source": "microservice",
+    "id": 193
+  },
+  {
+    "type": "single",
+    "text": "Spring Boot 4.x + Spring Cloud 2025 中，以下关于 spring-boot-starter-webmvc 的说法正确的是（     ）?",
+    "options": [
+      "需要额外手动添加 Tomcat 依赖",
+      "webmvc 已包含 Tomcat + JSON 工具等 Web 基础组件",
+      "webmvc 不能用于 RESTful 接口",
+      "需要与 spring-boot-starter-web 同时引入"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 194
+  },
+  {
+    "type": "single",
+    "text": "@Bean 注解的作用是（     ）?",
+    "options": [
+      "标记类为通用组件",
+      "将方法返回的对象交给 Spring 容器管理",
+      "从容器中获取对象",
+      "处理 HTTP GET 请求"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 195
+  },
+  {
+    "type": "single",
+    "text": "以下哪个  不  属于微服务架构的特点?",
+    "options": [
+      "独立部署",
+      "统一技术栈",
+      "独立数据库",
+      "轻量级通信"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 196
+  },
+  {
+    "type": "single",
+    "text": "Spring Cloud Gateway 的底层是基于什么技术实现的（     ）?",
+    "options": [
+      "Tomcat",
+      "Netty",
+      "Jetty",
+      "Undertow"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 197
+  },
+  {
+    "type": "single",
+    "text": "Eureka Client 续约功能的默认心跳发送周期是（     ）?",
+    "options": [
+      "15秒",
+      "30秒",
+      "60秒",
+      "90秒"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 198
+  },
+  {
+    "type": "single",
+    "text": "Resilience4j CircuitBreaker 熔断器半开状态的作用是(        )",
+    "options": [
+      "直接拒绝所有请求",
+      "少量试探性请求测试服务是否恢复健康",
+      "永久断开调用链路",
+      "缓存所有失败请求"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 199
+  },
+  {
+    "type": "single",
+    "text": "Sleuth 自动埋点不会自动采集的数据是(        )",
+    "options": [
+      "TraceId、SpanId",
+      "接口调用耗时",
+      "数据库完整 SQL 内容",
+      "服务名称"
+    ],
+    "answer": "C",
+    "source": "microservice",
+    "id": 200
+  },
+  {
+    "type": "single",
+    "text": "分布式链路追踪中 TraceId 的含义是(        )",
+    "options": [
+      "单次完整请求全局唯一标识，贯穿所有微服务",
+      "单个服务调用标识",
+      "数据库事务 ID",
+      "消息队列消息 ID"
+    ],
+    "answer": "A",
+    "source": "microservice",
+    "id": 201
+  },
+  {
+    "type": "single",
+    "text": "Eureka Client 内置的负载均衡算法默认是(        )",
+    "options": [
+      "随机算法",
+      "轮询算法",
+      "加权随机算法",
+      "加权轮询算法"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 202
+  },
+  {
+    "type": "single",
+    "text": "以下不属于 Ribbon 内置负载均衡算法的是(        )",
+    "options": [
+      "随机",
+      "轮询",
+      "权重轮询",
+      "最短响应时间"
+    ],
+    "answer": "C",
+    "source": "microservice",
+    "id": 203
+  },
+  {
+    "type": "single",
+    "text": "Eureka 服务失效剔除默认等待时长为(        )",
+    "options": [
+      "30s",
+      "60s",
+      "90s",
+      "120s"
+    ],
+    "answer": "C",
+    "source": "microservice",
+    "id": 204
+  },
+  {
+    "type": "single",
+    "text": "Feign 的核心作用是(        )",
+    "options": [
+      "服务注册发现",
+      "声明式简化 HTTP 远程调用，整合 Ribbon 负载均衡",
+      "分布式配置管理",
+      "链路追踪"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 205
+  },
+  {
+    "type": "single",
+    "text": "关于 Spring Cloud Stream 的说法，正确的是(        )",
+    "options": [
+      "仅支持 RabbitMQ",
+      "屏蔽底层消息中间件实现，简化消息开发",
+      "仅支持同步通信",
+      "核心作用是服务注册与发现"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 206
+  },
+  {
+    "type": "single",
+    "text": "限流机制主要解决的微服务问题是(        )",
+    "options": [
+      "大量突发请求压垮下游服务",
+      "服务调用失败",
+      "配置不同步",
+      "链路追踪丢失数据"
+    ],
+    "answer": "A",
+    "source": "microservice",
+    "id": 207
+  },
+  {
+    "type": "single",
+    "text": "客户端负载均衡和服务端负载均衡的区别是(        )",
+    "options": [
+      "客户端 LB 在消费者本地完成分发逻辑",
+      "客户端 LB 部署在独立服务器",
+      "服务端 LB 内置在消费者代码",
+      "服务端 LB 无需单独部署"
+    ],
+    "answer": "A",
+    "source": "microservice",
+    "id": 208
+  },
+  {
+    "type": "single",
+    "text": "微服务架构中，SOA 的全称是（     ）?",
+    "options": [
+      "Software-Oriented Architecture",
+      "Service-Oriented Architecture",
+      "System-Oriented Application",
+      "Service-Object Architecture"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 209
+  },
+  {
+    "type": "single",
+    "text": "Config 配置文件命名规则 user-prod.yml 中 prod 代表(        )",
+    "options": [
+      "服务名称",
+      "生产环境标识",
+      "版本号",
+      "分组名称"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 210
+  },
+  {
+    "type": "single",
+    "text": "Resilience4j 的熔断功能是指(        )",
+    "options": [
+      "服务调用失败时，执行备胎方法",
+      "检测到服务多次调用失败后，断开调用，直到服务恢复",
+      "设置调用超时时间，超时触发降级",
+      "将请求均匀分发到服务节点"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 211
+  },
+  {
+    "type": "single",
+    "text": "关于 Config 组件的说法，错误的是(        )",
+    "options": [
+      "支持本地存储、Git、Subversion 存储配置",
+      "可实现敏感配置的安全保密",
+      "配置修改后必须重启所有微服务才能生效",
+      "可统一管理所有微服务的配置"
+    ],
+    "answer": "C",
+    "source": "microservice",
+    "id": 212
+  },
+  {
+    "type": "single",
+    "text": "eureka.instance.prefer-ip-address=true 的含义是（     ）?",
+    "options": [
+      "注册时使用主机名而非 IP",
+      "注册时优先使用 IP 地址而非主机名",
+      "使用域名进行注册",
+      "禁止使用 IP 进行通信"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 213
+  },
+  {
+    "type": "single",
+    "text": "Hystrix 停止维护后，Spring Cloud 官方推荐容错组件是(        )",
+    "options": [
+      "Ribbon",
+      "Resilience4j",
+      "Feign",
+      "Sleuth"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 214
+  },
+  {
+    "type": "single",
+    "text": "关于服务网关的说法，正确的是(        )",
+    "options": [
+      "每个微服务需单独开发网关功能",
+      "网关是微服务集群的入口，统一处理请求",
+      "网关的主要作用是服务注册",
+      "网关不支持熔断降级功能"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 215
+  },
+  {
+    "type": "single",
+    "text": "Spring Cloud 新版本中，替代 Hystrix 的组件是(        )",
+    "options": [
+      "Ribbon",
+      "Feign",
+      "Resilience4j",
+      "Sleuth"
+    ],
+    "answer": "C",
+    "source": "microservice",
+    "id": 216
+  },
+  {
+    "type": "single",
+    "text": "Config Client 从 Config Server 获取配置时，配置文件命名规则中，环境标识  不  包括哪个（     ）?",
+    "options": [
+      "dev(开发环境)",
+      "test(测试环境)",
+      "prod(生产环境)",
+      "localhost(本地环境)"
+    ],
+    "answer": "D",
+    "source": "microservice",
+    "id": 217
+  },
+  {
+    "type": "single",
+    "text": "服务网关的 “路由管理” 功能是指(        )",
+    "options": [
+      "统一管理服务注册信息",
+      "动态调整路由规则，无需修改客户端",
+      "将请求均匀分发到服务节点",
+      "处理服务调用的熔断降级"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 218
+  },
+  {
+    "type": "single",
+    "text": "实现 Config 配置动态刷新无需重启服务需要依赖的组件是(        )",
+    "options": [
+      "spring-boot-starter-actuator + spring-cloud-bus",
+      "spring-cloud-sleuth",
+      "spring-cloud-stream",
+      "spring-cloud-gateway"
+    ],
+    "answer": "A",
+    "source": "microservice",
+    "id": 219
+  },
+  {
+    "type": "single",
+    "text": "Resilience4j 熔断器(CircuitBreaker)的状态  不  包括以下哪个（     ）?",
+    "options": [
+      "CLOSED(关闭)",
+      "OPEN(打开)",
+      "HALF_OPEN(半开)",
+      "BROKEN(损坏)"
+    ],
+    "answer": "D",
+    "source": "microservice",
+    "id": 220
+  },
+  {
+    "type": "single",
+    "text": "微服务异步通信优势不包含(        )",
+    "options": [
+      "解除调用同步等待，提升吞吐量",
+      "削峰填谷应对高并发",
+      "实时同步返回业务结果",
+      "服务解耦，互不依赖在线状态"
+    ],
+    "answer": "C",
+    "source": "microservice",
+    "id": 221
+  },
+  {
+    "type": "single",
+    "text": "关于微服务架构中 RESTful API 的说法，以下正确的是（     ）?",
+    "options": [
+      "每个服务可以使用任意通信协议",
+      "微服务接口通常统一使用 HTTP 协议",
+      "微服务之间只能使用 RPC 通信",
+      "RESTful API 不支持 JSON 格式"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 222
+  },
+  {
+    "type": "single",
+    "text": "负载均衡分为硬件和软件两类，以下属于软件负载均衡的是(        )",
+    "options": [
+      "专用负载均衡器设备",
+      "DNS Load Balance",
+      "F5 负载均衡器",
+      "华为负载均衡设备"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 223
+  },
+  {
+    "type": "single",
+    "text": "微服务架构区别于单体架构最核心的特点是(        )",
+    "options": [
+      "统一数据库共享",
+      "服务独立部署、独立迭代、轻量通信",
+      "代码写在同一个项目",
+      "本地方法调用通信"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 224
+  },
+  {
+    "type": "single",
+    "text": "Spring Cloud Gateway 路由配置中，Predicates 的作用是（     ）?",
+    "options": [
+      "修改请求内容",
+      "匹配路由条件",
+      "限流请求",
+      "修改响应内容"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 225
+  },
+  {
+    "type": "single",
+    "text": "Eureka 是由哪家公司开发的服务发现框架(        )",
+    "options": [
+      "Spring",
+      "Netflix",
+      "Apache",
+      "Google"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 226
+  },
+  {
+    "type": "single",
+    "text": "@FeignClient 注解的核心功能是（     ）?",
+    "options": [
+      "将服务注册到 Eureka",
+      "根据服务名寻找服务提供者，实现声明式调用",
+      "配置负载均衡策略",
+      "开启熔断保护"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 227
+  },
+  {
+    "type": "single",
+    "text": "服务追踪中，“链路” 指的是(        )",
+    "options": [
+      "服务注册的流程",
+      "一次请求从发起到响应经过的所有服务节点",
+      "配置修改的流程",
+      "消息发送的流程"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 228
+  },
+  {
+    "type": "single",
+    "text": "Spring Cloud POM文件中，<dependencyManagement>标签的核心作用是（     ）?",
+    "options": [
+      "下载依赖包到项目中",
+      "版本集中管理，不下载",
+      "配置编译参数",
+      "引入测试依赖"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 229
+  },
+  {
+    "type": "single",
+    "text": "熔断机制的核心设计目标是(        )",
+    "options": [
+      "提高服务调用速度",
+      "避免服务雪崩，保障微服务架构稳定性",
+      "减少服务注册数量",
+      "简化服务调用代码"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 230
+  },
+  {
+    "type": "single",
+    "text": "在 Eureka 集群中，多个服务实例使用相同的 spring.application.name，其含义是（     ）?",
+    "options": [
+      "它们是不同的服务",
+      "它们属于同一集群，自动负载均衡",
+      "需要手动配置负载均衡",
+      "它们的端口号必须相同"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 231
+  },
+  {
+    "type": "single",
+    "text": "Spring Cloud 中专门简化消息发送的框架是(        )",
+    "options": [
+      "Eureka",
+      "Config",
+      "Spring Cloud Stream",
+      "Sleuth"
+    ],
+    "answer": "C",
+    "source": "microservice",
+    "id": 232
+  },
+  {
+    "type": "single",
+    "text": "Spring Boot 配置文件中，spring.application.name 的作用是（     ）?",
+    "options": [
+      "设置服务器端口号",
+      "设置应用名称，会显示在 Eureka 控制台",
+      "设置数据库连接信息",
+      "设置日志级别"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 233
+  },
+  {
+    "type": "single",
+    "text": "Spring Cloud Stream 的核心作用是（     ）?",
+    "options": [
+      "服务注册与发现",
+      "负载均衡",
+      "简化消息中间件的使用",
+      "配置管理"
+    ],
+    "answer": "C",
+    "source": "microservice",
+    "id": 234
+  },
+  {
+    "type": "single",
+    "text": "Resilience4j 的核心作用是(        )",
+    "options": [
+      "服务注册与发现",
+      "解决微服务调用的熔断 / 降级问题，避免服务雪崩",
+      "实现负载均衡",
+      "作为配置中心"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 235
+  },
+  {
+    "type": "single",
+    "text": "微服务架构中，服务之间的通信机制通常是(        )",
+    "options": [
+      "本地代码调用",
+      "HTTP 资源的 API",
+      "数据库共享数据",
+      "私有协议通信"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 236
+  },
+  {
+    "type": "single",
+    "text": "Eureka 的自我保护机制的核心目的是(        )",
+    "options": [
+      "提高服务调用速度",
+      "防止误杀正常服务",
+      "减少心跳发送次数",
+      "提高注册效率"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 237
+  },
+  {
+    "type": "single",
+    "text": "微服务雪崩效应产生的根本原因是(        )",
+    "options": [
+      "注册中心宕机",
+      "故障服务持续占用调用方线程资源，耗尽线程池",
+      "网关路由配置错误",
+      "消息中间件阻塞"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 238
+  },
+  {
+    "type": "single",
+    "text": "lb:// 服务名 协议前缀代表(        )",
+    "options": [
+      "直接 http 直连服务 IP",
+      "开启 Ribbon 客户端负载均衡调用目标服务",
+      "消息队列协议",
+      "文件读取协议"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 239
+  },
+  {
+    "type": "single",
+    "text": "@EnableFeignClients 注解应该放在哪个位置（     ）?",
+    "options": [
+      "Controller 类上",
+      "Service 类上",
+      "主启动类上",
+      "application.yml 配置文件中"
+    ],
+    "answer": "C",
+    "source": "microservice",
+    "id": 240
+  },
+  {
+    "type": "single",
+    "text": "Stream 中 @Input 注解作用于(        )",
+    "options": [
+      "消息生产者通道",
+      "消息消费者通道",
+      "配置读取",
+      "路由规则"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 241
+  },
+  {
+    "type": "single",
+    "text": "Spring Cloud Sleuth 中，Trace ID 的作用是（     ）?",
+    "options": [
+      "标识单个服务实例",
+      "标识一条完整的调用链路",
+      "标识一个请求日志",
+      "标识调用时间戳"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 242
+  },
+  {
+    "type": "single",
+    "text": "Spring Cloud Config Server 默认不支持哪种配置仓库(        )",
+    "options": [
+      "Git",
+      "SVN",
+      "本地文件",
+      "Redis"
+    ],
+    "answer": "D",
+    "source": "microservice",
+    "id": 243
+  },
+  {
+    "type": "single",
+    "text": "@Autowired 注解  不  能用在以下哪种场景（     ）?",
+    "options": [
+      "变量上",
+      "成员方法上",
+      "静态类上",
+      "构造方法上"
+    ],
+    "answer": "C",
+    "source": "microservice",
+    "id": 244
+  },
+  {
+    "type": "single",
+    "text": "下列不属于微服务网关核心能力的是(        )",
+    "options": [
+      "路由转发",
+      "鉴权限流",
+      "服务注册存储",
+      "请求过滤、路径重写"
+    ],
+    "answer": "C",
+    "source": "microservice",
+    "id": 245
+  },
+  {
+    "type": "single",
+    "text": "Resilience4j 的降级功能(Fallback)是指(        )",
+    "options": [
+      "检测到服务失败后，断开调用",
+      "服务调用失败 / 超时，执行提前写好的备胎方法",
+      "加快服务调用速度",
+      "动态感知服务节点变化"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 246
+  },
+  {
+    "type": "single",
+    "text": "Config 配置文件的命名规则中，{服务名}-{环境标识}.yml的环境标识不包括(        )",
+    "options": [
+      "dev(开发环境)",
+      "test(测试环境)",
+      "prod(生产环境)",
+      "eureka(注册中心环境)"
+    ],
+    "answer": "D",
+    "source": "microservice",
+    "id": 247
+  },
+  {
+    "type": "single",
+    "text": "Config 的 “版本控制” 特点的优势是(        )",
+    "options": [
+      "提高配置修改速度",
+      "改坏了能回滚，修改记录有迹可查",
+      "减少配置文件数量",
+      "简化配置编写"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 248
+  },
+  {
+    "type": "single",
+    "text": "Zipkin 的主要功能  不  包括（     ）?",
+    "options": [
+      "追踪服务调用链路",
+      "分析服务调用延迟",
+      "可视化服务依赖关系",
+      "服务注册与发现"
+    ],
+    "answer": "D",
+    "source": "microservice",
+    "id": 249
+  },
+  {
+    "type": "single",
+    "text": "Spring Cloud Gateway 底层基于哪种技术实现(        )",
+    "options": [
+      "Tomcat 同步阻塞",
+      "Netty 异步非阻塞 Reactor 响应式编程",
+      "Jetty 同步 IO",
+      "Apache 同步线程模型"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 250
+  },
+  {
+    "type": "single",
+    "text": "微服务架构中，负载均衡的核心作用是(        )",
+    "options": [
+      "减少服务注册数量",
+      "将请求均匀分发到服务集群节点，提高性能和稳定性",
+      "加快服务注册速度",
+      "处理熔断降级"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 251
+  },
+  {
+    "type": "single",
+    "text": "Spring Cloud 属于什么类型的系统架构（     ）?",
+    "options": [
+      "单体系统",
+      "分布式系统",
+      "嵌入式系统",
+      "实时系统"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 252
+  },
+  {
+    "type": "single",
+    "text": "Resilience4j 与 Feign 的组合使用，是 Spring Cloud 新版本的最优组合，原因是(        )",
+    "options": [
+      "Feign 实现熔断，Resilience4j 简化调用",
+      "Feign 简化调用，Resilience4j 实现熔断降级",
+      "两者均实现负载均衡",
+      "两者均实现服务注册"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 253
+  },
+  {
+    "type": "single",
+    "text": "服务网关的 “安全防护” 功能不包括(        )",
+    "options": [
+      "接口鉴权",
+      "IP 白名单",
+      "防 SQL 注入",
+      "服务注册与发现"
+    ],
+    "answer": "D",
+    "source": "microservice",
+    "id": 254
+  },
+  {
+    "type": "single",
+    "text": "与 Properties 配置相比，YAML 配置的优势是（     ）?",
+    "options": [
+      "YAML 不支持嵌套结构",
+      "Properties 更适合复杂配置场景",
+      "YAML 适合有嵌套/列表的复杂配置，符合框架生态",
+      "YAML 不需要缩进规则"
+    ],
+    "answer": "C",
+    "source": "microservice",
+    "id": 255
+  },
+  {
+    "type": "single",
+    "text": "Resilience4j 中 TimeLimiter 模块的作用是(        )",
+    "options": [
+      "服务降级返回兜底数据",
+      "限制远程调用超时时间，超时直接触发降级",
+      "断开故障服务调用",
+      "限制请求并发量"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 256
+  },
+  {
+    "type": "single",
+    "text": "Config 组件的核心作用是(        )",
+    "options": [
+      "服务注册与发现",
+      "集中化、动态化、安全化管理所有微服务的配置文件",
+      "实现负载均衡",
+      "作为服务网关"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 257
+  },
+  {
+    "type": "single",
+    "text": "@RestController 注解是以下哪两个注解的组合（     ）?",
+    "options": [
+      "@Controller + @Service",
+      "@Controller + @ResponseBody",
+      "@Service + @ResponseBody",
+      "@Component + @Controller"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 258
+  },
+  {
+    "type": "single",
+    "text": "在 Spring Cloud Alibaba 技术栈中，Nacos 可以同时替代以下哪两个组件(        )",
+    "options": [
+      "Eureka + Config",
+      "Gateway + Sleuth",
+      "Feign + Ribbon",
+      "Zipkin + Stream"
+    ],
+    "answer": "A",
+    "source": "microservice",
+    "id": 259
+  },
+  {
+    "type": "single",
+    "text": "Docker 在微服务架构中的核心作用是(        )",
+    "options": [
+      "服务注册与发现",
+      "实现服务的容器化部署，保证环境一致性",
+      "分布式链路追踪",
+      "负载均衡"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 260
+  },
+  {
+    "type": "single",
+    "text": "Spring Cloud Gateway 中，自定义全局过滤器需要实现的接口是(        )",
+    "options": [
+      "GlobalFilter",
+      "RoutePredicate",
+      "Predicate",
+      "HandlerFilter"
+    ],
+    "answer": "A",
+    "source": "microservice",
+    "id": 261
+  },
+  {
+    "type": "single",
+    "text": "Eureka Server 集群部署时，节点之间实现注册信息同步的方式是(        )",
+    "options": [
+      "通过消息中间件异步同步",
+      "通过共享数据库同步",
+      "节点之间互相注册，自动复制注册信息",
+      "通过手动配置逐条同步"
+    ],
+    "answer": "C",
+    "source": "microservice",
+    "id": 262
+  },
+  {
+    "type": "single",
+    "text": "Spring Cloud 2020+ 版本中，替代 Ribbon 的官方推荐负载均衡组件是(        )",
+    "options": [
+      "Resilience4j",
+      "Spring Cloud LoadBalancer",
+      "Nginx",
+      "Zuul"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 263
+  },
+  {
+    "type": "single",
+    "text": "Resilience4j RateLimiter 模块默认采用的限流算法是(        )",
+    "options": [
+      "漏桶算法",
+      "令牌桶算法",
+      "滑动窗口计数",
+      "固定窗口计数"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 264
+  },
+  {
+    "type": "single",
+    "text": "Spring Cloud Bus 结合 Config 实现配置动态刷新，触发全部服务刷新的 Actuator 端点是(        )",
+    "options": [
+      "/actuator/refresh",
+      "/actuator/busrefresh",
+      "/actuator/health",
+      "/actuator/info"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 265
+  },
+  {
+    "type": "single",
+    "text": "Spring Boot Actuator 中，用于检查应用健康状态的默认端点路径是(        )",
+    "options": [
+      "/actuator/health",
+      "/actuator/status",
+      "/actuator/check",
+      "/actuator/alive"
+    ],
+    "answer": "A",
+    "source": "microservice",
+    "id": 266
+  },
+  {
+    "type": "single",
+    "text": "在 OpenFeign 客户端中，配置连接超时和读取超时的推荐方式是(        )",
+    "options": [
+      "通过 @FeignClient 注解属性直接配置",
+      "在 application.yml 中配置 spring.cloud.openfeign.client.config",
+      "通过 @Bean 注入 OkHttpClient",
+      "在启动类中调用 System.setProperty 设置"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 267
+  },
+  {
+    "type": "single",
+    "text": "微服务架构中，保证跨服务数据最终一致性的常用方案是(        )",
+    "options": [
+      "两阶段提交(2PC)",
+      "基于消息队列的可靠消息最终一致性方案",
+      "所有服务共享同一数据库",
+      "分布式锁加同步调用"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 268
+  },
+  {
+    "type": "single",
+    "text": "Nacos 作为配置中心时，DataId 的默认命名规则是(        )",
+    "options": [
+      "{服务名}-{环境}.{扩展名}",
+      "{服务名}.{扩展名}",
+      "{环境}-{服务名}.{扩展名}",
+      "{分组}-{服务名}.{扩展名}"
+    ],
+    "answer": "A",
+    "source": "microservice",
+    "id": 269
+  },
+  {
+    "type": "single",
+    "text": "以下哪项  不  属于微服务架构中合理的服务拆分原则(        )",
+    "options": [
+      "按业务领域拆分",
+      "单一职责，每个服务完成一个明确的业务功能",
+      "服务之间尽量共享数据库以减少数据冗余",
+      "服务边界清晰，避免循环依赖"
+    ],
+    "answer": "C",
+    "source": "microservice",
+    "id": 270
+  },
+  {
+    "type": "single",
+    "text": "Spring Cloud Sleuth 中，控制链路采样率的配置项是(        )",
+    "options": [
+      "spring.sleuth.sampler.probability",
+      "spring.sleuth.trace.rate",
+      "spring.sleuth.sampling.percent",
+      "spring.cloud.sleuth.rate"
+    ],
+    "answer": "A",
+    "source": "microservice",
+    "id": 271
+  },
+  {
+    "type": "single",
+    "text": "在微服务架构中，API 网关统一处理跨域(CORS)的优势是(        )",
+    "options": [
+      "每个微服务需要单独处理跨域",
+      "在网关层集中处理跨域，避免各服务重复配置",
+      "跨域只能在前端页面处理",
+      "微服务架构不存在跨域问题"
+    ],
+    "answer": "B",
+    "source": "microservice",
+    "id": 272
+  },
+  {
+    "type": "single",
+    "text": "Spring Cloud OpenFeign 中，@FeignClient 注解的 fallback 属性的作用是(        )",
+    "options": [
+      "指定服务注册中心地址",
+      "指定负载均衡策略",
+      "指定服务调用失败时的降级处理类",
+      "指定请求超时时间"
+    ],
+    "answer": "C",
+    "source": "microservice",
+    "id": 273
+  },
+  {
+    "type": "multi",
+    "text": "关于微服务异步通信，以下说法正确的有",
+    "options": [
+      "异步通信的核心是解决服务调用时等待对方响应的问题",
+      "RabbitMQ是基于Erlang语言开发的消息中间件",
+      "Spring Cloud Stream可屏蔽底层消息中间件差异",
+      "异步通信只能使用RabbitMQ一种消息中间件"
+    ],
+    "answer": "ABC",
+    "source": "microservice",
+    "id": 274
+  },
+  {
+    "type": "multi",
+    "text": "Eureka 自我保护机制触发后的表现包含(        )",
+    "options": [
+      "不会剔除已注册服务实例",
+      "容忍大量心跳丢失，避免网络波动误删服务",
+      "直接断开所有客户端连接",
+      "页面提示进入保护模式"
+    ],
+    "answer": "ABD",
+    "source": "microservice",
+    "id": 275
+  },
+  {
+    "type": "multi",
+    "text": "Spring Cloud Gateway 相比 Zuul1.x 的优势有(        )",
+    "options": [
+      "基于 Netty 异步非阻塞，性能更高",
+      "支持响应式编程，高并发承载更强",
+      "内置丰富路由过滤器，功能完善",
+      "同步阻塞 IO，部署简单"
+    ],
+    "answer": "ABC",
+    "source": "microservice",
+    "id": 276
+  },
+  {
+    "type": "multi",
+    "text": "常用的负载均衡算法包括（     ）?",
+    "options": [
+      "轮询(Round Robin)",
+      "随机(Random)",
+      "加权轮询(Weighted Round Robin)",
+      "最小活跃数(Least Active)"
+    ],
+    "answer": "ABCD",
+    "source": "microservice",
+    "id": 277
+  },
+  {
+    "type": "multi",
+    "text": "关于 Spring Cloud Gateway，以下说法正确的有（     ）?",
+    "options": [
+      "底层基于 Netty 实现，性能优异",
+      "支持动态路由和断言匹配",
+      "在新版本中可替代 Zuul 作为网关",
+      "支持过滤器(Filters)对请求/响应进行处理"
+    ],
+    "answer": "ABCD",
+    "source": "microservice",
+    "id": 278
+  },
+  {
+    "type": "multi",
+    "text": "Spring Cloud Gateway 内置过滤器可实现功能(        )",
+    "options": [
+      "StripPrefix 路径裁剪",
+      "RewritePath 路径重写",
+      "添加 / 删除请求头、参数",
+      "服务注册管理"
+    ],
+    "answer": "ABC",
+    "source": "microservice",
+    "id": 279
+  },
+  {
+    "type": "multi",
+    "text": "Ribbon + RestTemplate 实现负载均衡的必要步骤包括（     ）?",
+    "options": [
+      "添加 Eureka Client 依赖",
+      "RestTemplate 的 Bean 添加 @LoadBalanced 注解",
+      "通过服务名(spring.application.name)调用服务",
+      "必须使用 Feign 替代 RestTemplate"
+    ],
+    "answer": "ABC",
+    "source": "microservice",
+    "id": 280
+  },
+  {
+    "type": "multi",
+    "text": "关于Zipkin的说法，错误的是(        )",
+    "options": [
+      "仅支持Spring Cloud 旧版本",
+      "是开源的分布式服务追踪系统",
+      "核心作用是服务注册与发现",
+      "无需依赖Java环境运行"
+    ],
+    "answer": "ACD",
+    "source": "microservice",
+    "id": 281
+  },
+  {
+    "type": "multi",
+    "text": "关于Spring Cloud Config配置中心，以下说法正确的有",
+    "options": [
+      "改配置只改一处，所有服务生效，支持动态刷新",
+      "配置文件支持本地存储、Git、Subversion等多种存储方式",
+      "配置修改后必须重启所有微服务才能生效",
+      "可为每个服务的配置分环境标签，实现环境隔离"
+    ],
+    "answer": "ABD",
+    "source": "microservice",
+    "id": 282
+  },
+  {
+    "type": "multi",
+    "text": "微服务防止雪崩效应的解决方案包含(        )",
+    "options": [
+      "熔断机制",
+      "服务降级 Fallback",
+      "接口限流",
+      "线程池舱壁隔离"
+    ],
+    "answer": "ABCD",
+    "source": "microservice",
+    "id": 283
+  },
+  {
+    "type": "multi",
+    "text": "Zipkin的核心功能包括",
+    "options": [
+      "跟踪服务调用链路",
+      "展示调用耗时",
+      "定位服务调用故障点",
+      "实现服务注册与发现"
+    ],
+    "answer": "ABC",
+    "source": "microservice",
+    "id": 284
+  },
+  {
+    "type": "multi",
+    "text": "Spring Cloud Stream 支持的主流消息中间件有(        )",
+    "options": [
+      "RabbitMQ",
+      "Kafka",
+      "RocketMQ",
+      "MySQL"
+    ],
+    "answer": "ABC",
+    "source": "microservice",
+    "id": 285
+  },
+  {
+    "type": "multi",
+    "text": "关于Ribbon负载均衡器，以下说法正确的有",
+    "options": [
+      "Ribbon是由Netflix开源的客户端负载均衡组件",
+      "Ribbon默认采用轮询算法进行负载均衡",
+      "Ribbon工作在服务消费者一侧",
+      "Ribbon是由Spring官方开发的负载均衡器"
+    ],
+    "answer": "ABC",
+    "source": "microservice",
+    "id": 286
+  },
+  {
+    "type": "multi",
+    "text": "关于Eureka架构，以下说法正确的有",
+    "options": [
+      "Eureka分为注册中心、服务提供者、服务消费者三部分",
+      "Eureka Server集群模式下服务器之间会相互注册",
+      "Eureka Client包括服务提供者和服务消费者",
+      "Eureka Server由Spring官方开发维护"
+    ],
+    "answer": "ABC",
+    "source": "microservice",
+    "id": 287
+  },
+  {
+    "type": "multi",
+    "text": "分布式链路追踪系统解决的问题有(        )",
+    "options": [
+      "多服务调用链路故障定位",
+      "统计各接口、各服务调用耗时",
+      "可视化完整请求流转路径",
+      "动态修改服务配置"
+    ],
+    "answer": "ABC",
+    "source": "microservice",
+    "id": 288
+  },
+  {
+    "type": "multi",
+    "text": "Ribbon 提供的负载均衡策略包含(        )",
+    "options": [
+      "轮询 Rule",
+      "随机 Rule",
+      "重试 Rule",
+      "最小并发 Rule"
+    ],
+    "answer": "ABCD",
+    "source": "microservice",
+    "id": 289
+  },
+  {
+    "type": "multi",
+    "text": "Spring Cloud Config 支持的配置文件存储方式包括（     ）?",
+    "options": [
+      "Git 仓库",
+      "本地文件系统",
+      "Subversion(SVN)",
+      "Redis 缓存"
+    ],
+    "answer": "ABC",
+    "source": "microservice",
+    "id": 290
+  },
+  {
+    "type": "multi",
+    "text": "以下关于微服务\"雪崩效应\"的说法，正确的有",
+    "options": [
+      "一个服务故障，高并发下线程资源耗尽，导致整个调用链路不可用",
+      "可通过熔断、降级、限流等机制来防止雪崩效应",
+      "雪崩效应指的是服务注册中心故障导致所有服务无法注册",
+      "不及时处理会导致整个微服务系统大面积瘫痪"
+    ],
+    "answer": "ABD",
+    "source": "microservice",
+    "id": 291
+  },
+  {
+    "type": "multi",
+    "text": "关于Spring Cloud Config架构，以下说法正确的有",
+    "options": [
+      "Config架构分为Config Server和Config Client两部分",
+      "Config Server负责从远程或本地存储中拉取配置文件",
+      "Config Client启动时从Config Server拉取对应配置",
+      "Config Client之间可以直接共享配置文件"
+    ],
+    "answer": "ABC",
+    "source": "microservice",
+    "id": 292
+  },
+  {
+    "type": "multi",
+    "text": "Spring Cloud Config 优势包含(        )",
+    "options": [
+      "统一集中管理所有微服务配置",
+      "支持多环境配置隔离(dev/test/prod)",
+      "配置版本回滚，操作留痕",
+      "修改配置自动全服务生效，无需重启"
+    ],
+    "answer": "ABD",
+    "source": "microservice",
+    "id": 293
+  },
+  {
+    "type": "multi",
+    "text": "关于微服务链路追踪，以下说法正确的有",
+    "options": [
+      "服务追踪的核心是跟踪请求从发起到响应的完整调用链路",
+      "Zipkin可以展示调用耗时和定位服务调用故障点",
+      "Spring Cloud Sleuth可与Zipkin整合实现服务追踪",
+      "服务追踪的主要功能是实现负载均衡"
+    ],
+    "answer": "ABC",
+    "source": "microservice",
+    "id": 294
+  },
+  {
+    "type": "multi",
+    "text": "Spring Boot 中以下哪些属于@Component 的别名注解 （     ）?",
+    "options": [
+      "@Service(业务逻辑层)",
+      "@Controller(接口控制器)",
+      "@Configuration(配置类)",
+      "@Autowired(自动装配)"
+    ],
+    "answer": "ABC",
+    "source": "microservice",
+    "id": 295
+  },
+  {
+    "type": "multi",
+    "text": "关于Spring Cloud Gateway路由规则，以下说法正确的有",
+    "options": [
+      "predicates.Path中**表示匹配任意层级的任意路径(含/)",
+      "filters.StripPrefix=1表示转发时去掉路径的第一层",
+      "Gateway可以替代Zuul作为微服务网关",
+      "Gateway的主要功能是服务注册与发现"
+    ],
+    "answer": "ABC",
+    "source": "microservice",
+    "id": 296
+  },
+  {
+    "type": "multi",
+    "text": "以下属于 Spring Cloud 核心组件的包括（     ）?",
+    "options": [
+      "Eureka(服务注册与发现)",
+      "Spring Cloud Gateway(服务网关)",
+      "MyBatis(数据持久层)",
+      "Spring Cloud Config(配置中心)"
+    ],
+    "answer": "ABD",
+    "source": "microservice",
+    "id": 297
+  },
+  {
+    "type": "multi",
+    "text": "微服务架构具备的特点有(        )",
+    "options": [
+      "服务独立开发、打包、部署",
+      "每个服务拥有独立数据库，禁止共享库",
+      "轻量级跨服务通信(HTTP / 消息队列)",
+      "所有服务共用一个代码仓库"
+    ],
+    "answer": "ABC",
+    "source": "microservice",
+    "id": 298
+  },
+  {
+    "type": "multi",
+    "text": "Spring Cloud Sleuth 为每次服务调用添加的追踪信息包括（     ）?",
+    "options": [
+      "Trace ID(全局链路标识)",
+      "Span ID(基本工作单元标识)",
+      "数据库连接信息",
+      "服务端口信息"
+    ],
+    "answer": "AB",
+    "source": "microservice",
+    "id": 299
+  },
+  {
+    "type": "multi",
+    "text": "微服务架构相比单体架构的优势包括（     ）?",
+    "options": [
+      "独立部署",
+      "技术栈灵活",
+      "故障隔离",
+      "扩展性好"
+    ],
+    "answer": "ABCD",
+    "source": "microservice",
+    "id": 300
+  },
+  {
+    "type": "multi",
+    "text": "Resilience4j 提供的核心容错模块有(        )",
+    "options": [
+      "CircuitBreaker 熔断",
+      "RateLimiter 限流",
+      "Bulkhead 舱壁隔离",
+      "TimeLimiter 超时限制"
+    ],
+    "answer": "ABCD",
+    "source": "microservice",
+    "id": 301
+  },
+  {
+    "type": "multi",
+    "text": "Eureka Client 的核心功能包括（     ）?",
+    "options": [
+      "服务注册(启动时向 Eureka Server 注册)",
+      "心跳续约(定时向 Eureka Server 发送心跳)",
+      "服务注销(向 Eureka Server 取消注册)",
+      "配置管理(管理各服务配置文件)"
+    ],
+    "answer": "ABC",
+    "source": "microservice",
+    "id": 302
+  },
+  {
+    "type": "multi",
+    "text": "以下属于 Eureka 自我保护机制特点的有（     ）?",
+    "options": [
+      "核心目的是防止误杀正常服务",
+      "默认阈值是 0.85(85%)",
+      "通过心跳续约比例判断是否触发",
+      "由 Eureka Server 触发并执行"
+    ],
+    "answer": "ABCD",
+    "source": "microservice",
+    "id": 303
+  },
+  {
+    "type": "multi",
+    "text": "Spring Cloud Gateway 的核心组件包括(        )",
+    "options": [
+      "Route（路由）",
+      "Predicate（断言）",
+      "Filter（过滤器）",
+      "Ribbon（负载均衡器）"
+    ],
+    "answer": "ABC",
+    "source": "microservice",
+    "id": 304
+  },
+  {
+    "type": "multi",
+    "text": "Nacos 作为微服务基础设施提供的核心功能包括(        )",
+    "options": [
+      "服务注册与发现",
+      "动态配置管理",
+      "动态 DNS 服务",
+      "分布式事务管理"
+    ],
+    "answer": "ABC",
+    "source": "microservice",
+    "id": 305
+  },
+  {
+    "type": "multi",
+    "text": "Resilience4j 提供的容错模块包括(        )",
+    "options": [
+      "CircuitBreaker（熔断器）",
+      "RateLimiter（限流器）",
+      "Bulkhead（舱壁隔离）",
+      "TimeLimiter（超时控制）"
+    ],
+    "answer": "ABCD",
+    "source": "microservice",
+    "id": 306
+  },
+  {
+    "type": "multi",
+    "text": "以下属于微服务架构合理拆分原则的有(        )",
+    "options": [
+      "按业务领域拆分",
+      "单一职责，每个服务完成明确的业务功能",
+      "服务边界清晰，避免循环依赖",
+      "所有服务共享同一数据库以减少冗余"
+    ],
+    "answer": "ABC",
+    "source": "microservice",
+    "id": 307
+  },
+  {
+    "type": "multi",
+    "text": "Docker 在微服务架构中的优势包括(        )",
+    "options": [
+      "保证开发、测试、生产环境一致性",
+      "容器启动速度快，支持快速弹性伸缩",
+      "资源隔离，服务互不干扰",
+      "自动实现服务注册与发现"
+    ],
+    "answer": "ABC",
+    "source": "microservice",
+    "id": 308
+  },
+  {
+    "type": "multi",
+    "text": "以下属于 Kubernetes 核心概念的有(        )",
+    "options": [
+      "Pod",
+      "Service",
+      "Deployment",
+      "ConfigMap"
+    ],
+    "answer": "ABCD",
+    "source": "microservice",
+    "id": 309
+  },
+  {
+    "type": "multi",
+    "text": "微服务架构中常见的分布式事务解决方案包括(        )",
+    "options": [
+      "两阶段提交（2PC）",
+      "TCC（Try-Confirm-Cancel）",
+      "Saga 模式",
+      "基于消息队列的最终一致性方案"
+    ],
+    "answer": "ABCD",
+    "source": "microservice",
+    "id": 310
+  },
+  {
+    "type": "multi",
+    "text": "以下属于防止服务雪崩有效措施的有(        )",
+    "options": [
+      "熔断机制（CircuitBreaker）",
+      "服务降级（Fallback）",
+      "限流（RateLimiter）",
+      "舱壁隔离（Bulkhead）"
+    ],
+    "answer": "ABCD",
+    "source": "microservice",
+    "id": 311
+  },
+  {
+    "type": "multi",
+    "text": "关于 Eureka 的核心特性，以下说法正确的有(        )",
+    "options": [
+      "采用 AP 一致性模型，优先保证可用性",
+      "支持自我保护机制，防止网络波动误删服务",
+      "服务提供者通过心跳续约维持注册状态",
+      "支持集群部署，节点间互相注册实现高可用"
+    ],
+    "answer": "ABCD",
+    "source": "microservice",
+    "id": 312
+  },
+  {
+    "type": "multi",
+    "text": "OpenFeign 的特性包括(        )",
+    "options": [
+      "声明式 HTTP 客户端，通过接口注解完成远程调用",
+      "自动整合负载均衡",
+      "支持 fallback 降级处理",
+      "自动生成服务注册中心"
+    ],
+    "answer": "ABC",
+    "source": "microservice",
+    "id": 313
+  },
+  {
+    "type": "multi",
+    "text": "Spring Cloud Config 的优势包括(        )",
+    "options": [
+      "集中管理所有微服务配置",
+      "支持多环境隔离（dev/test/prod）",
+      "支持版本控制，配置可追溯可回滚",
+      "结合 Spring Cloud Bus 可实现配置动态刷新"
+    ],
+    "answer": "ABCD",
+    "source": "microservice",
+    "id": 314
+  },
+  {
+    "type": "multi",
+    "text": "分布式链路追踪的核心概念包括(        )",
+    "options": [
+      "Trace（一次完整请求的调用链路）",
+      "Span（链路中的单个工作单元）",
+      "TraceId（全局唯一链路标识）",
+      "ParentId（父级 Span 标识，形成树状调用关系）"
+    ],
+    "answer": "ABCD",
+    "source": "microservice",
+    "id": 315
+  },
+  {
+    "type": "multi",
+    "text": "消息队列在微服务架构中的作用包括(        )",
+    "options": [
+      "服务间异步解耦",
+      "削峰填谷，缓解突发流量压力",
+      "实现最终一致性方案",
+      "替代服务注册中心"
+    ],
+    "answer": "ABC",
+    "source": "microservice",
+    "id": 316
+  },
+  {
+    "type": "multi",
+    "text": "微服务架构的优点包括(        )",
+    "options": [
+      "服务独立部署，迭代效率高",
+      "技术栈灵活，各服务可选择最适技术",
+      "故障隔离，单服务故障不影响整体系统",
+      "可针对高负载服务单独扩容"
+    ],
+    "answer": "ABCD",
+    "source": "microservice",
+    "id": 317
+  },
+  {
+    "type": "multi",
+    "text": "API 网关在微服务架构中的常见功能包括(        )",
+    "options": [
+      "统一路由转发",
+      "统一鉴权认证",
+      "限流与熔断",
+      "统一跨域（CORS）处理"
+    ],
+    "answer": "ABCD",
+    "source": "microservice",
+    "id": 318
+  },
+  {
+    "type": "judge",
+    "text": "Config 的 “环境隔离” 功能是通过为每个服务的配置分 “环境标签”，启动时指定激活。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 319
+  },
+  {
+    "type": "judge",
+    "text": "Resilience4j 舱壁 Bulkhead 用来隔离不同接口调用线程池，避免互相抢占资源。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 320
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud Gateway 只能配置一组路由规则，不支持多路由。",
+    "options": [],
+    "answer": "错误",
+    "source": "microservice",
+    "id": 321
+  },
+  {
+    "type": "judge",
+    "text": "Config Client 本地配置文件的优先级一定高于 Config Server 的远程配置。",
+    "options": [],
+    "answer": "错误",
+    "source": "microservice",
+    "id": 322
+  },
+  {
+    "type": "judge",
+    "text": "Config Client 微服务启动时主动从 Config Server 拉取对应环境配置。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 323
+  },
+  {
+    "type": "judge",
+    "text": "Feign 底层默认整合 Ribbon，自带客户端负载均衡能力。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 324
+  },
+  {
+    "type": "judge",
+    "text": "Gateway 的 StripPrefix 过滤器用于在转发请求前剥去指定层数的路径前缀。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 325
+  },
+  {
+    "type": "judge",
+    "text": "Eureka Server 单机版需要将 register-with-eureka 和 fetch-registry 均设为 true。",
+    "options": [],
+    "answer": "错误",
+    "source": "microservice",
+    "id": 326
+  },
+  {
+    "type": "judge",
+    "text": "硬件负载均衡(F5)部署在服务前端，属于服务端负载均衡。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 327
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud 中替代 Zuul 的首选服务网关是Eureka。",
+    "options": [],
+    "answer": "错误",
+    "source": "microservice",
+    "id": 328
+  },
+  {
+    "type": "judge",
+    "text": "@EnableFeignClients 注解用于启用 Feign 声明式服务调用功能。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 329
+  },
+  {
+    "type": "judge",
+    "text": "Eureka Server 集群之间互相同步注册信息，实现高可用。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 330
+  },
+  {
+    "type": "judge",
+    "text": "服务降级 Fallback 只会在熔断打开时执行，超时不会触发。",
+    "options": [],
+    "answer": "错误",
+    "source": "microservice",
+    "id": 331
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud Stream 中，消息生产者的核心类型是Provider。",
+    "options": [],
+    "answer": "错误",
+    "source": "microservice",
+    "id": 332
+  },
+  {
+    "type": "judge",
+    "text": "Netflix 官方对 Hystrix 的维护状态是持续更新开发。",
+    "options": [],
+    "answer": "错误",
+    "source": "microservice",
+    "id": 333
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud Gateway 是基于 Spring WebFlux 构建的异步非阻塞响应式网关。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 334
+  },
+  {
+    "type": "judge",
+    "text": "Eureka Server 采用的是 CP 一致性模型，在网络分区时优先保证数据强一致性。",
+    "options": [],
+    "answer": "错误",
+    "source": "microservice",
+    "id": 335
+  },
+  {
+    "type": "judge",
+    "text": "Nacos 既支持 AP 模式也支持 CP 模式，可根据业务场景灵活切换。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 336
+  },
+  {
+    "type": "judge",
+    "text": "在微服务架构中，所有微服务必须使用相同的编程语言和开发框架。",
+    "options": [],
+    "answer": "错误",
+    "source": "microservice",
+    "id": 337
+  },
+  {
+    "type": "judge",
+    "text": "OpenFeign 是一种声明式的 HTTP 客户端工具，通过接口注解即可完成远程调用。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 338
+  },
+  {
+    "type": "judge",
+    "text": "网关 StripPrefix=2 代表转发时删除 URL 前两层路径。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 339
+  },
+  {
+    "type": "judge",
+    "text": "Zipkin是 Spring Cloud 中实现服务追踪的一种常用工具。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 340
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud Sleuth 的作用是与 Zipkin 整合，实现服务追踪。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 341
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud 强依赖 Spring Boot，版本不匹配会导致项目启动失败。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 342
+  },
+  {
+    "type": "judge",
+    "text": "Eureka Client 核心依赖中内置了负载均衡功能，通过 @LoadBalanced 注解启用。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 343
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud 中，分布式配置中心的核心组件是Sleuth。",
+    "options": [],
+    "answer": "错误",
+    "source": "microservice",
+    "id": 344
+  },
+  {
+    "type": "judge",
+    "text": "@Component 是 Spring 通用组件注解，@Service、@Controller、@Configuration 都是其别名。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 345
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud Stream Binder 屏蔽 RabbitMQ/Kafka 底层 API，业务代码无需修改即可切换中间件。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 346
+  },
+  {
+    "type": "judge",
+    "text": "SpanId 代表一次完整请求全链路唯一编号。",
+    "options": [],
+    "answer": "错误",
+    "source": "microservice",
+    "id": 347
+  },
+  {
+    "type": "judge",
+    "text": "微服务架构中，每个服务可以拥有自己独立的数据库，数据库之间没有直接联系。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 348
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud 中实现客户端负载均衡的核心组件是Ribbon。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 349
+  },
+  {
+    "type": "judge",
+    "text": "关于 Resilience4j 的说法，正确的是完美支持 Spring Cloud 4.0+，是官方推荐方案。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 350
+  },
+  {
+    "type": "judge",
+    "text": "Resilience4j 是 Netflix 公司开发的熔断组件。",
+    "options": [],
+    "answer": "错误",
+    "source": "microservice",
+    "id": 351
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud Stream 仅支持 RabbitMQ 一种消息中间件。",
+    "options": [],
+    "answer": "错误",
+    "source": "microservice",
+    "id": 352
+  },
+  {
+    "type": "judge",
+    "text": "搭建 Config 架构时，服务的启动顺序是Config Server→Eureka Server→Provider→Consumer。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 353
+  },
+  {
+    "type": "judge",
+    "text": "Ribbon 属于服务端负载均衡器，由注册中心统一分配请求。",
+    "options": [],
+    "answer": "错误",
+    "source": "microservice",
+    "id": 354
+  },
+  {
+    "type": "judge",
+    "text": "Resilience4j 的熔断器在打开状态下会直接拒绝请求，不再调用下游服务。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 355
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud Config Server 只能使用 Git 作为配置存储后端，不支持其他方式。",
+    "options": [],
+    "answer": "错误",
+    "source": "microservice",
+    "id": 356
+  },
+  {
+    "type": "judge",
+    "text": "微服务架构中服务间通信只能通过 HTTP/REST 进行，不支持其他协议。",
+    "options": [],
+    "answer": "错误",
+    "source": "microservice",
+    "id": 357
+  },
+  {
+    "type": "judge",
+    "text": "Docker 容器的启动速度通常比传统虚拟机快得多，一般在秒级甚至毫秒级。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 358
+  },
+  {
+    "type": "judge",
+    "text": "Kubernetes 中的 Pod 是 Kubernetes 最小的可部署和调度单元。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 359
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud Bus 默认使用 RabbitMQ 或 Kafka 作为消息代理来广播配置变更。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 360
+  },
+  {
+    "type": "judge",
+    "text": "Nacos 中注册的临时实例在客户端断开连接后会被自动删除。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 361
+  },
+  {
+    "type": "judge",
+    "text": "在分布式链路追踪中，同一个请求在整个调用链路中保持相同的 TraceId。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 362
+  },
+  {
+    "type": "judge",
+    "text": "微服务架构中，所有服务共享同一个数据库是推荐的最佳实践。",
+    "options": [],
+    "answer": "错误",
+    "source": "microservice",
+    "id": 363
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud Gateway 的 Filter 既可以在请求转发前执行，也可以在响应返回后执行。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 364
+  },
+  {
+    "type": "judge",
+    "text": "Eureka 的自我保护机制会在短时间内大量服务实例丢失时停止剔除服务，防止误删。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 365
+  },
+  {
+    "type": "judge",
+    "text": "Saga 模式能够保证分布式事务的强一致性，不存在中间不一致状态。",
+    "options": [],
+    "answer": "错误",
+    "source": "microservice",
+    "id": 366
+  },
+  {
+    "type": "judge",
+    "text": "Resilience4j RateLimiter 模块默认采用漏桶算法进行限流。",
+    "options": [],
+    "answer": "错误",
+    "source": "microservice",
+    "id": 367
+  },
+  {
+    "type": "judge",
+    "text": "在 Spring Cloud Alibaba 体系中，Sentinel 可以同时实现熔断降级和流量控制功能。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 368
+  },
+  {
+    "type": "judge",
+    "text": "微服务拆分粒度越细越好，每个服务只负责一个接口是最佳实践。",
+    "options": [],
+    "answer": "错误",
+    "source": "microservice",
+    "id": 369
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud Sleuth 通过在 HTTP 请求头中传递 TraceId 和 SpanId 实现跨服务链路追踪。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 370
+  },
+  {
+    "type": "judge",
+    "text": "在微服务架构中，每个微服务应该拥有自己独立的数据库，避免数据耦合。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 371
+  },
+  {
+    "type": "judge",
+    "text": "API 网关可以统一处理跨域(CORS)问题，避免每个微服务单独配置跨域策略。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 372
+  },
+  {
+    "type": "judge",
+    "text": "Seata 的 AT 模式需要开发人员在业务代码中手动编写补偿逻辑。",
+    "options": [],
+    "answer": "错误",
+    "source": "microservice",
+    "id": 373
+  },
+  {
+    "type": "judge",
+    "text": "Kubernetes 的 HPA 可以根据 CPU 使用率等指标自动调整 Pod 副本数量。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 374
+  },
+  {
+    "type": "judge",
+    "text": "消息队列可以实现微服务之间的异步解耦，提高系统整体吞吐量。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 375
+  },
+  {
+    "type": "judge",
+    "text": "在微服务架构中，服务注册中心是可选组件，服务间可以通过硬编码 IP 直接调用。",
+    "options": [],
+    "answer": "错误",
+    "source": "microservice",
+    "id": 376
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud Stream 通过 Binder 抽象层屏蔽了底层消息中间件的差异。",
+    "options": [],
+    "answer": "正确",
+    "source": "microservice",
+    "id": 377
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud 2020+ 版本中，Ribbon 仍然是官方推荐的默认负载均衡组件。",
+    "options": [],
+    "answer": "错误",
+    "source": "microservice",
+    "id": 378
+  }
+]
