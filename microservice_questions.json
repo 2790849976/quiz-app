@@ -1,0 +1,1967 @@
+[
+  {
+    "type": "single",
+    "text": "Spring Cloud Stream 用来绑定消息中间件的核心接口是(        ) （）",
+    "options": [
+      "A、Binder",
+      "B、CircuitBreaker",
+      "C、LoadBalancer",
+      "D、Registry"
+    ],
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "text": "启动 Zipkin 的核心命令是(        ) （）",
+    "options": [
+      "A、zipkin start",
+      "B、java -jar zipkin.jar",
+      "C、./zipkin.sh",
+      "D、docker run openzipkin/zipkin"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "关于 Spring Cloud Config 架构，以下说法  错误  的是（     ）? （）",
+    "options": [
+      "A、Config Server 负责管理配置文件",
+      "B、Config Client 从 Config Server 获取配置",
+      "C、Config Server 必须先于 Config Client 启动",
+      "D、Config Client 不需要配置任何信息就能连接 Config Server"
+    ],
+    "answer": "D"
+  },
+  {
+    "type": "single",
+    "text": "Eureka Server 中，配置 eureka.client.register-with-eureka=false 的含义是 （）",
+    "options": [
+      "A、不向 Eureka Server 注册自己",
+      "B、不从 Eureka Server 拉取服务列表",
+      "C、不使用 IP 地址进行注册",
+      "D、关闭自我保护机制"
+    ],
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "text": "下列组件不属于 Netflix 开源套件的是(        ) （）",
+    "options": [
+      "A、Eureka",
+      "B、Ribbon",
+      "C、Resilience4j",
+      "D、Hystrix"
+    ],
+    "answer": "C"
+  },
+  {
+    "type": "single",
+    "text": "Zipkin 存储链路数据默认存储位置是(        ) （）",
+    "options": [
+      "A、MySQL",
+      "B、内存，重启丢失数据",
+      "C、Redis",
+      "D、Elasticsearch"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "Ribbon 默认的负载均衡算法是(        ) （）",
+    "options": [
+      "A、随机算法",
+      "B、轮询算法",
+      "C、加权随机算法",
+      "D、一致性哈希算法"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "Eureka 服务续约(心跳)默认发送间隔是(        ) （）",
+    "options": [
+      "A、10 秒",
+      "B、30 秒",
+      "C、60 秒",
+      "D、90 秒"
+    ],
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "text": "Gateway 路由中 predicates: - Header=token 代表(        ) （）",
+    "options": [
+      "A、请求必须携带 token 请求头才能匹配路由",
+      "B、删除请求头 token",
+      "C、添加 token 响应头",
+      "D、校验 token 值固定"
+    ],
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "text": "Gateway 的filters.StripPrefix=1 的作用是(        ) （）",
+    "options": [
+      "A、转发时去掉路径的第 1 层",
+      "B、转发时添加 1 层路径",
+      "C、过滤掉第 1 个请求参数",
+      "D、添加 1 个请求参数"
+    ],
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "text": "Spring Boot 4.x + Spring Cloud 2025 中，以下关于 spring-boot-starter-webmvc 的 （）",
+    "options": [
+      "A、需要额外手动添加 Tomcat 依赖",
+      "B、webmvc 已包含 Tomcat + JSON 工具等 Web 基础组件",
+      "C、webmvc 不能用于 RESTful 接口",
+      "D、需要与 spring-boot-starter-web 同时引入"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "@Bean 注解的作用是（     ）? （）",
+    "options": [
+      "A、标记类为通用组件",
+      "B、将方法返回的对象交给 Spring 容器管理",
+      "C、从容器中获取对象",
+      "D、处理 HTTP GET 请求"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "以下哪个不属于微服务架构的特点? （）",
+    "options": [
+      "A、独立部署",
+      "B、统一技术栈",
+      "C、独立数据库",
+      "D、轻量级通信"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "Spring Cloud Gateway 的底层是基于什么技术实现的（     ）? （）",
+    "options": [
+      "A、Tomcat",
+      "B、Netty",
+      "C、Jetty",
+      "D、Undertow"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "Eureka Client 续约功能的默认心跳发送周期是（     ）? （）",
+    "options": [
+      "A、15 秒",
+      "B、30 秒",
+      "C、60 秒",
+      "D、90 秒"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "Resilience4j CircuitBreaker 熔断器半开状态的作用是(        ) （）",
+    "options": [
+      "A、直接拒绝所有请求",
+      "B、少量试探性请求测试服务是否恢复健康",
+      "C、永久断开调用链路",
+      "D、缓存所有失败请求"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "Sleuth 自动埋点不会自动采集的数据是(        ) （）",
+    "options": [
+      "A、TraceId、SpanId",
+      "B、接口调用耗时",
+      "C、数据库完整 SQL 内容",
+      "D、服务名称"
+    ],
+    "answer": "C"
+  },
+  {
+    "type": "single",
+    "text": "分布式链路追踪中 TraceId 的含义是(        ) （）",
+    "options": [
+      "A、单次完整请求全局唯一标识，贯穿所有微服务",
+      "B、单个服务调用标识",
+      "C、数据库事务 ID",
+      "D、消息队列消息 ID"
+    ],
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "text": "Eureka Client 内置的负载均衡算法默认是(        ) （）",
+    "options": [
+      "A、随机算法",
+      "B、轮询算法",
+      "C、加权随机算法",
+      "D、加权轮询算法"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "以下不属于 Ribbon 内置负载均衡算法的是(        ) （）",
+    "options": [
+      "A、随机",
+      "B、轮询",
+      "C、权重轮询",
+      "D、最短响应时间"
+    ],
+    "answer": "C"
+  },
+  {
+    "type": "single",
+    "text": "Eureka 服务失效剔除默认等待时长为(        ) （）",
+    "options": [
+      "A、30s",
+      "B、60s",
+      "C、90s",
+      "D、120s"
+    ],
+    "answer": "C"
+  },
+  {
+    "type": "single",
+    "text": "Feign 的核心作用是(        ) （）",
+    "options": [
+      "A、服务注册发现",
+      "B、声明式简化 HTTP 远程调用，整合 Ribbon 负载均衡",
+      "C、分布式配置管理",
+      "D、链路追踪"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "关于 Spring Cloud Stream 的说法，正确的是（）",
+    "options": [
+      "A、仅支持 RabbitMQ",
+      "B、屏蔽底层消息中间件实现，简化消息开发",
+      "C、仅支持同步通信",
+      "D、核心作用是服务注册与发现"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "限流机制主要解决的微服务问题是（）",
+    "options": [
+      "A、大量突发请求压垮下游服务",
+      "B、服务调用失败",
+      "C、配置不同步",
+      "D、链路追踪丢失数据"
+    ],
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "text": "客户端负载均衡和服务端负载均衡的区别是（）",
+    "options": [
+      "A、客户端 LB 在消费者本地完成分发逻辑",
+      "B、客户端 LB 部署在独立服务器",
+      "C、服务端 LB 内置在消费者代码",
+      "D、服务端 LB 无需单独部署"
+    ],
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "text": "微服务架构中，SOA 的全称是（）",
+    "options": [
+      "A、Software-Oriented Architecture",
+      "B、Service-Oriented Architecture",
+      "C、System-Oriented Application",
+      "D、Service-Object Architecture"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "Config 配置文件命名规则 user-prod.yml 中 prod 代表（）",
+    "options": [
+      "A、服务名称",
+      "B、生产环境标识",
+      "C、版本号",
+      "D、分组名称"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "Resilience4j 的熔断功能是指（）",
+    "options": [
+      "A、服务调用失败时，执行备胎方法",
+      "B、检测到服务多次调用失败后，断开调用，直到服务恢复",
+      "C、设置调用超时时间，超时触发降级",
+      "D、将请求均匀分发到服务节点"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "关于 Config 组件的说法，错误的是（）",
+    "options": [
+      "A、支持本地存储、Git、Subversion 存储配置",
+      "B、可实现敏感配置的安全保密",
+      "C、配置修改后必须重启所有微服务才能生效",
+      "D、可统一管理所有微服务的配置"
+    ],
+    "answer": "C"
+  },
+  {
+    "type": "single",
+    "text": "eureka.instance.prefer-ip-address=true 的含义是（）",
+    "options": [
+      "A、注册时使用主机名而非 IP",
+      "B、注册时优先使用 IP 地址而非主机名",
+      "C、使用域名进行注册",
+      "D、禁止使用 IP 进行通信"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "Hystrix 停止维护后，Spring Cloud 官方推荐容错组件是（）",
+    "options": [
+      "A、Ribbon",
+      "B、Resilience4j",
+      "C、Feign",
+      "D、Sleuth"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "关于服务网关的说法正确的是（）",
+    "options": [
+      "A、每个微服务需单独开发网关功能",
+      "B、网关是微服务集群的入口，统一处理请求",
+      "C、网关的主要作用是服务注册",
+      "D、网关不支持熔断降级功能"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "Spring Cloud 新版本中，替代 Hystrix 的组件是（）",
+    "options": [
+      "A、Ribbon",
+      "B、Feign",
+      "C、Resilience4j",
+      "D、Sleuth"
+    ],
+    "answer": "C"
+  },
+  {
+    "type": "single",
+    "text": "Config Client 从 Config Server 获取配置时，配置文件命名规则中，环境标识不包括哪一个（）",
+    "options": [
+      "A、dev(开发环境)",
+      "B、test(测试环境)",
+      "C、prod(生产环境)",
+      "D、localhost(本地环境)"
+    ],
+    "answer": "D"
+  },
+  {
+    "type": "single",
+    "text": "服务网关的 “路由管理” 功能是指(        ) （）",
+    "options": [
+      "A、统一管理服务注册信息",
+      "B、动态调整路由规则，无需修改客户端",
+      "C、将请求均匀分发到服务节点",
+      "D、处理服务调用的熔断降级"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "实现 Config 配置动态刷新无需重启服务需要依赖的组件是(        ) （）",
+    "options": [
+      "A、spring-boot-starter-actuator + spring-cloud-bus",
+      "B、spring-cloud-sleuth",
+      "C、spring-cloud-stream",
+      "D、spring-cloud-gateway"
+    ],
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "text": "Resilience4j 熔断器(CircuitBreaker)的状态  不  包括以下哪个（     ）? （）",
+    "options": [
+      "A、CLOSED(关闭)",
+      "B、OPEN(打开)",
+      "C、HALF_OPEN(半开)",
+      "D、BROKEN(损坏)"
+    ],
+    "answer": "D"
+  },
+  {
+    "type": "single",
+    "text": "微服务异步通信优势不包含(        ) （）",
+    "options": [
+      "A、解除调用同步等待，提升吞吐量",
+      "B、削峰填谷应对高并发",
+      "C、实时同步返回业务结果",
+      "D、服务解耦，互不依赖在线状态"
+    ],
+    "answer": "C"
+  },
+  {
+    "type": "single",
+    "text": "关于微服务架构中 RESTful API 的说法，以下的是（     ）? （）",
+    "options": [
+      "A、每个服务可以使用任意通信协议",
+      "B、微服务接口通常统一使用 HTTP 协议",
+      "C、微服务之间只能使用 RPC 通信",
+      "D、RESTful API 不支持 JSON 格式"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "负载均衡分为硬件和软件两类，以下属于软件负载均衡的是(        ) （）",
+    "options": [
+      "A、专用负载均衡器设备",
+      "B、DNS Load Balance",
+      "C、F5 负载均衡器",
+      "D、华为负载均衡设备"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "微服务架构区别于单体架构最核心的特点是(        ) （）",
+    "options": [
+      "A、统一数据库共享",
+      "B、服务独立部署、独立迭代、轻量通信",
+      "C、代码写在同一个项目",
+      "D、本地方法调用通信"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "Spring Cloud Gateway 路由配置中，Predicates 的作用是（     ）? （）",
+    "options": [
+      "A、修改请求内容",
+      "B、匹配路由条件",
+      "C、限流请求",
+      "D、修改响应内容"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "Eureka 是由哪家公司开发的服务发现框架(        ) （）",
+    "options": [
+      "A、Spring",
+      "B、Netflix",
+      "C、Apache",
+      "D、Google"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "@FeignClient 注解的核心功能是（     ）? （）",
+    "options": [
+      "A、将服务注册到 Eureka",
+      "B、根据服务名寻找服务提供者，实现声明式调用",
+      "C、配置负载均衡策略",
+      "D、开启熔断保护"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "服务追踪中，“链路” 指的是(        ) （）",
+    "options": [
+      "A、服务注册的流程",
+      "B、一次请求从发起到响应经过的所有服务节点",
+      "C、配置修改的流程",
+      "D、消息发送的流程"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "Spring Cloud POM 文件中，<dependencyManagement>标签的核心作用是（     ）? （）",
+    "options": [
+      "A、下载依赖包到项目中",
+      "B、版本集中管理，不下载",
+      "C、配置编译参数",
+      "D、引入测试依赖"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "熔断机制的核心设计目标是(        ) （）",
+    "options": [
+      "A、提高服务调用速度",
+      "B、避免服务雪崩，保障微服务架构稳定性",
+      "C、减少服务注册数量",
+      "D、简化服务调用代码"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "在 Eureka 集群中，多个服务实例使用相同的 spring.application.name，其含义是 （）",
+    "options": [
+      "A、它们是不同的服务",
+      "B、它们属于同一集群，自动负载均衡",
+      "C、需要手动配置负载均衡",
+      "D、它们的端口号必须相同"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "Spring Cloud 中专门简化消息发送的框架是(        ) （）",
+    "options": [
+      "A、Eureka",
+      "B、Config",
+      "C、Spring Cloud Stream",
+      "D、Sleuth"
+    ],
+    "answer": "C"
+  },
+  {
+    "type": "single",
+    "text": "Spring Boot 配置文件中，spring.application.name 的作用是（     ）? （）",
+    "options": [
+      "A、设置服务器端口号",
+      "B、设置应用名称，会显示在 Eureka 控制台",
+      "C、设置数据库连接信息",
+      "D、设置日志级别"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "Spring Cloud Stream 的核心作用是（     ）? （）",
+    "options": [
+      "A、服务注册与发现",
+      "B、负载均衡",
+      "C、简化消息中间件的使用",
+      "D、配置管理"
+    ],
+    "answer": "C"
+  },
+  {
+    "type": "single",
+    "text": "Resilience4j 的核心作用是(        ) （）",
+    "options": [
+      "A、服务注册与发现",
+      "B、解决微服务调用的熔断 / 降级问题，避免服务雪崩",
+      "C、实现负载均衡",
+      "D、作为配置中心"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "微服务架构中，服务之间的通信机制通常是(        ) （）",
+    "options": [
+      "A、本地代码调用",
+      "B、HTTP 资源的 API",
+      "C、数据库共享数据",
+      "D、私有协议通信"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "Eureka 的自我保护机制的核心目的是(        ) （）",
+    "options": [
+      "A、提高服务调用速度",
+      "B、防止误杀正常服务",
+      "C、减少心跳发送次数",
+      "D、提高注册效率"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "微服务雪崩效应产生的根本原因是(        ) （）",
+    "options": [
+      "A、注册中心宕机",
+      "B、故障服务持续占用调用方线程资源，耗尽线程池",
+      "C、网关路由配置错误",
+      "D、消息中间件阻塞"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "lb:// 服务名 协议前缀代表(        ) （）",
+    "options": [
+      "A、直接 http 直连服务 IP",
+      "B、开启 Ribbon 客户端负载均衡调用目标服务",
+      "C、消息队列协议",
+      "D、文件读取协议"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "@EnableFeignClients 注解应该放在哪个位置（     ）? （）",
+    "options": [
+      "A、Controller 类上",
+      "B、Service 类上",
+      "C、主启动类上",
+      "D、application.yml 配置文件中"
+    ],
+    "answer": "C"
+  },
+  {
+    "type": "single",
+    "text": "Stream 中 @Input 注解作用于(        ) （）",
+    "options": [
+      "A、消息生产者通道",
+      "B、消息消费者通道",
+      "C、配置读取",
+      "D、路由规则"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "Spring Cloud Sleuth 中，Trace ID 的作用是（     ）? （）",
+    "options": [
+      "A、标识单个服务实例",
+      "B、标识一条完整的调用链路",
+      "C、标识一个请求日志",
+      "D、标识调用时间戳"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "Spring Cloud Config Server 默认不支持哪种配置仓库(        ) （）",
+    "options": [
+      "A、Git",
+      "B、SVN",
+      "C、本地文件",
+      "D、Redis"
+    ],
+    "answer": "D"
+  },
+  {
+    "type": "single",
+    "text": "@Autowired 注解不能用在以下哪种场景（     ）? （）",
+    "options": [
+      "A、变量上",
+      "B、成员方法上",
+      "C、静态类上",
+      "D、构造方法上"
+    ],
+    "answer": "C"
+  },
+  {
+    "type": "single",
+    "text": "下列不属于微服务网关核心能力的是(        ) （）",
+    "options": [
+      "A、路由转发",
+      "B、鉴权限流",
+      "C、服务注册存储",
+      "D、请求过滤、路径重写"
+    ],
+    "answer": "C"
+  },
+  {
+    "type": "single",
+    "text": "Resilience4j 的降级功能(Fallback)是指(        ) （）",
+    "options": [
+      "A、检测到服务失败后，断开调用",
+      "B、服务调用失败 / 超时，执行提前写好的备胎方法",
+      "C、加快服务调用速度",
+      "D、动态感知服务节点变化"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "Config 配置文件的命名规则中，{服务名}-{环境标识}.yml 的环境标识不包括(        ) （）",
+    "options": [
+      "A、dev(开发环境)",
+      "B、test(测试环境)",
+      "C、prod(生产环境)",
+      "D、eureka(注册中心环境)"
+    ],
+    "answer": "D"
+  },
+  {
+    "type": "single",
+    "text": "Config 的 “版本控制” 特点的优势是(        ) （）",
+    "options": [
+      "A、提高配置修改速度",
+      "B、改坏了能回滚，修改记录有迹可查",
+      "C、减少配置文件数量",
+      "D、简化配置编写"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "Zipkin 的主要功能不包括（     ）? （）",
+    "options": [
+      "A、追踪服务调用链路",
+      "B、分析服务调用延迟",
+      "C、可视化服务依赖关系",
+      "D、服务注册与发现"
+    ],
+    "answer": "D"
+  },
+  {
+    "type": "single",
+    "text": "Spring Cloud Gateway 底层基于哪种技术实现(        ) （）",
+    "options": [
+      "A、Tomcat 同步阻塞",
+      "B、Netty 异步非阻塞 Reactor 响应式编程",
+      "C、Jetty 同步 IO",
+      "D、Apache 同步线程模型"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "微服务架构中，负载均衡的核心作用是(        ) （）",
+    "options": [
+      "A、减少服务注册数量",
+      "B、将请求均匀分发到服务集群节点，提高性能和稳定性",
+      "C、加快服务注册速度",
+      "D、处理熔断降级"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "Spring Cloud 属于什么类型的系统架构（     ）? （）",
+    "options": [
+      "A、单体系统",
+      "B、分布式系统",
+      "C、嵌入式系统",
+      "D、实时系统"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "Resilience4j 与 Feign 的组合使用，是 Spring Cloud 新版本的最优组合，原因是 （）",
+    "options": [
+      "A、Feign 实现熔断，Resilience4j 简化调用",
+      "B、Feign 简化调用，Resilience4j 实现熔断降级",
+      "C、两者均实现负载均衡",
+      "D、两者均实现服务注册"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "服务网关的 “安全防护” 功能不包括(        ) （）",
+    "options": [
+      "A、接口鉴权",
+      "B、IP 白名单",
+      "C、防 SQL 注入",
+      "D、服务注册与发现"
+    ],
+    "answer": "D"
+  },
+  {
+    "type": "single",
+    "text": "与 Properties 配置相比，YAML 配置的优势是（     ）? （）",
+    "options": [
+      "A、YAML 不支持嵌套结构",
+      "B、Properties 更适合复杂配置场景",
+      "C、YAML 适合有嵌套/列表的复杂配置，符合框架生态",
+      "D、YAML 不需要缩进规则"
+    ],
+    "answer": "C"
+  },
+  {
+    "type": "single",
+    "text": "Resilience4j 中 TimeLimiter 模块的作用是(        ) （）",
+    "options": [
+      "A、服务降级返回兜底数据",
+      "B、限制远程调用超时时间，超时直接触发降级",
+      "C、断开故障服务调用",
+      "D、限制请求并发量"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "Config 组件的核心作用是(        ) （）",
+    "options": [
+      "A、服务注册与发现",
+      "B、集中化、动态化、安全化管理所有微服务的配置文件",
+      "C、实现负载均衡",
+      "D、作为服务网关"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "@RestController 注解是以下哪两个注解的组合（     ）? （）",
+    "options": [
+      "A、@Controller + @Service",
+      "B、@Controller + @ResponseBody",
+      "C、@Service + @ResponseBody",
+      "D、@Component + @Controller"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "在 Spring Cloud Alibaba 技术栈中，Nacos 可以同时替代以下哪两个组件(        ) （）",
+    "options": [
+      "A、Eureka + Config",
+      "B、Gateway + Sleuth",
+      "C、Feign + Ribbon",
+      "D、Zipkin + Stream"
+    ],
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "text": "Docker 在微服务架构中的核心作用是(        ) （）",
+    "options": [
+      "A、服务注册与发现",
+      "B、实现服务的容器化部署，保证环境一致性",
+      "C、分布式链路追踪",
+      "D、负载均衡"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "Spring Cloud Gateway 中，自定义全局过滤器需要实现的接口是(        ) （）",
+    "options": [
+      "A、GlobalFilter",
+      "B、RoutePredicate",
+      "C、Predicate",
+      "D、HandlerFilter"
+    ],
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "text": "Eureka Server 集群部署时，节点之间实现注册信息同步的方式是(        ) （）",
+    "options": [
+      "A、通过消息中间件异步同步",
+      "B、通过共享数据库同步",
+      "C、节点之间互相注册，自动复制注册信息",
+      "D、通过手动配置逐条同步"
+    ],
+    "answer": "C"
+  },
+  {
+    "type": "single",
+    "text": "Spring Cloud 2020+ 版本中，替代 Ribbon 的官方推荐负载均衡组件是(        ) （）",
+    "options": [
+      "A、Resilience4j",
+      "B、Spring Cloud LoadBalancer",
+      "C、Nginx",
+      "D、Zuul"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "Resilience4j RateLimiter 模块默认采用的限流算法是(        ) （）",
+    "options": [
+      "A、漏桶算法",
+      "B、令牌桶算法",
+      "C、滑动窗口计数",
+      "D、固定窗口计数"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "Spring Cloud Bus 结合 Config 实现配置动态刷新，触发全部服务刷新的 Actuator 端 （）",
+    "options": [
+      "A、/actuator/refresh",
+      "B、/actuator/busrefresh",
+      "C、/actuator/health",
+      "D、/actuator/info"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "Spring Boot Actuator 中，用于检查应用健康状态的默认端点路径是(        ) （）",
+    "options": [
+      "A、/actuator/health",
+      "B、/actuator/status",
+      "C、/actuator/check",
+      "D、/actuator/alive"
+    ],
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "text": "在 OpenFeign 客户端中，配置连接超时和读取超时的推荐方式是(        ) （）",
+    "options": [
+      "A、通过 @FeignClient 注解属性直接配置",
+      "B、在 application.yml 中配置 spring.cloud.openfeign.client.config",
+      "C、通过 @Bean 注入 OkHttpClient",
+      "D、在启动类中调用 System.setProperty 设置"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "微服务架构中，保证跨服务数据最终一致性的常用方案是(        ) （）",
+    "options": [
+      "A、两阶段提交(2PC)",
+      "B、基于消息队列的可靠消息最终一致性方案",
+      "C、所有服务共享同一数据库",
+      "D、分布式锁加同步调用"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "single",
+    "text": "Nacos 作为配置中心时，DataId 的默认命名规则是(        ) （）",
+    "options": [
+      "A、{服务名}-{环境}.{扩展名}",
+      "B、{服务名}.{扩展名}",
+      "C、{环境}-{服务名}.{扩展名}",
+      "D、{分组}-{服务名}.{扩展名}"
+    ],
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "text": "以下哪项  不  属于微服务架构中合理的服务拆分原则(        ) （）",
+    "options": [
+      "A、按业务领域拆分",
+      "B、单一职责，每个服务完成一个明确的业务功能",
+      "C、服务之间尽量共享数据库以减少数据冗余",
+      "D、服务边界清晰，避免循环依赖"
+    ],
+    "answer": "C"
+  },
+  {
+    "type": "single",
+    "text": "Spring Cloud Sleuth 中，控制链路采样率的配置项是(        ) （）",
+    "options": [
+      "A、spring.sleuth.sampler.probability",
+      "B、spring.sleuth.trace.rate",
+      "C、spring.sleuth.sampling.percent",
+      "D、spring.cloud.sleuth.rate"
+    ],
+    "answer": "A"
+  },
+  {
+    "type": "single",
+    "text": "在微服务架构中，API 网关统一处理跨域(CORS)的优势是(        ) （）",
+    "options": [
+      "A、每个微服务需要单独处理跨域",
+      "B、在网关层集中处理跨域，避免各服务重复配置",
+      "C、跨域只能在前端页面处理",
+      "D、微服务架构不存在跨域问题"
+    ],
+    "answer": "B"
+  },
+  {
+    "type": "multi",
+    "text": "Spring Cloud OpenFeign 中，@FeignClient 注解的 fallback 属性的作用是(        ) （）",
+    "options": [
+      "A、指定服务注册中心地址",
+      "B、指定负载均衡策略",
+      "C、指定服务调用失败时的降级处理类",
+      "D、指定请求超时时间"
+    ],
+    "answer": "C"
+  },
+  {
+    "type": "multi",
+    "text": "关于微服务异步通信，以下说法的有 （）",
+    "options": [
+      "A、异步通信的核心是解决服务调用时等待对方响应的问题",
+      "B、RabbitMQ 是基于Erlang 语言开发的消息中间件",
+      "C、Spring Cloud Stream 可屏蔽底层消息中间件差异",
+      "D、异步通信只能使用RabbitMQ 一种消息中间件"
+    ],
+    "answer": "ABC"
+  },
+  {
+    "type": "multi",
+    "text": "Eureka 自我保护机制触发后的表现包含(        ) （）",
+    "options": [
+      "A、不会剔除已注册服务实例",
+      "B、容忍大量心跳丢失，避免网络波动误删服务",
+      "C、直接断开所有客户端连接",
+      "D、页面提示进入保护模式"
+    ],
+    "answer": "ABD"
+  },
+  {
+    "type": "multi",
+    "text": "Spring Cloud Gateway 相比 Zuul1.x 的优势有(        ) （）",
+    "options": [
+      "A、基于 Netty 异步非阻塞，性能更高",
+      "B、支持响应式编程，高并发承载更强",
+      "C、内置丰富路由过滤器，功能完善",
+      "D、同步阻塞 IO，部署简单"
+    ],
+    "answer": "ABC"
+  },
+  {
+    "type": "multi",
+    "text": "常用的负载均衡算法包括（     ）? （）",
+    "options": [
+      "A、轮询(Round Robin)",
+      "B、随机(Random)",
+      "C、加权轮询(Weighted Round Robin)",
+      "D、最小活跃数(Least Active)"
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "type": "multi",
+    "text": "关于 Spring Cloud Gateway，以下说法的有（     ）? （）",
+    "options": [
+      "A、底层基于 Netty 实现，性能优异",
+      "B、支持动态路由和断言匹配",
+      "C、在新版本中可替代 Zuul 作为网关",
+      "D、支持过滤器(Filters)对请求/响应进行处理"
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "type": "multi",
+    "text": "Spring Cloud Gateway 内置过滤器可实现功能(        ) （）",
+    "options": [
+      "A、StripPrefix 路径裁剪",
+      "B、RewritePath 路径重写",
+      "C、添加 / 删除请求头、参数",
+      "D、服务注册管理"
+    ],
+    "answer": "ABC"
+  },
+  {
+    "type": "multi",
+    "text": "Ribbon + RestTemplate 实现负载均衡的必要步骤包括（     ）? （）",
+    "options": [
+      "A、添加 Eureka Client 依赖",
+      "B、RestTemplate 的 Bean 添加 @LoadBalanced 注解",
+      "C、通过服务名(spring.application.name)调用服务",
+      "D、必须使用 Feign 替代 RestTemplate"
+    ],
+    "answer": "ABC"
+  },
+  {
+    "type": "multi",
+    "text": "关于Zipkin 的说法，错误的是(        ) （）",
+    "options": [
+      "A、仅支持Spring Cloud 旧版本",
+      "B、是开源的分布式服务追踪系统",
+      "C、核心作用是服务注册与发现",
+      "D、无需依赖Java 环境运行"
+    ],
+    "answer": "ACD"
+  },
+  {
+    "type": "multi",
+    "text": "关于Spring Cloud Config 配置中心，以下说法的有 （）",
+    "options": [
+      "A、改配置只改一处，所有服务生效，支持动态刷新",
+      "B、配置文件支持本地存储、Git、Subversion 等多种存储方式",
+      "C、配置修改后必须重启所有微服务才能生效",
+      "D、可为每个服务的配置分环境标签，实现环境隔离"
+    ],
+    "answer": "ABD"
+  },
+  {
+    "type": "multi",
+    "text": "微服务防止雪崩效应的解决方案包含(        ) （）",
+    "options": [
+      "A、熔断机制",
+      "B、服务降级 Fallback",
+      "C、接口限流",
+      "D、线程池舱壁隔离"
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "type": "multi",
+    "text": "Zipkin 的核心功能包括 （）",
+    "options": [
+      "A、跟踪服务调用链路",
+      "B、展示调用耗时",
+      "C、定位服务调用故障点",
+      "D、实现服务注册与发现"
+    ],
+    "answer": "ABC"
+  },
+  {
+    "type": "multi",
+    "text": "Spring Cloud Stream 支持的主流消息中间件有(        ) （）",
+    "options": [
+      "A、RabbitMQ",
+      "B、Kafka",
+      "C、RocketMQ",
+      "D、MySQL"
+    ],
+    "answer": "ABC"
+  },
+  {
+    "type": "multi",
+    "text": "关于Ribbon 负载均衡器，以下说法的有 （）",
+    "options": [
+      "A、Ribbon 是由Netflix 开源的客户端负载均衡组件",
+      "B、Ribbon 默认采用轮询算法进行负载均衡",
+      "C、Ribbon 工作在服务消费者一侧",
+      "D、Ribbon 是由Spring 官方开发的负载均衡器"
+    ],
+    "answer": "ABC"
+  },
+  {
+    "type": "multi",
+    "text": "关于Eureka 架构，以下说法的有 （）",
+    "options": [
+      "A、Eureka 分为注册中心、服务提供者、服务消费者三部分",
+      "B、Eureka Server 集群模式下服务器之间会相互注册",
+      "C、Eureka Client 包括服务提供者和服务消费者",
+      "D、Eureka Server 由Spring 官方开发维护"
+    ],
+    "answer": "ABC"
+  },
+  {
+    "type": "multi",
+    "text": "分布式链路追踪系统解决的问题有(        ) （）",
+    "options": [
+      "A、多服务调用链路故障定位",
+      "B、统计各接口、各服务调用耗时",
+      "C、可视化完整请求流转路径",
+      "D、动态修改服务配置"
+    ],
+    "answer": "ABC"
+  },
+  {
+    "type": "multi",
+    "text": "Ribbon 提供的负载均衡策略包含(        ) （）",
+    "options": [
+      "A、轮询 Rule",
+      "B、随机 Rule",
+      "C、重试 Rule",
+      "D、最小并发 Rule"
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "type": "multi",
+    "text": "Spring Cloud Config 支持的配置文件存储方式包括（     ）? （）",
+    "options": [
+      "A、Git 仓库",
+      "B、本地文件系统",
+      "C、Subversion(SVN)",
+      "D、Redis 缓存"
+    ],
+    "answer": "ABC"
+  },
+  {
+    "type": "multi",
+    "text": "以下关于微服务\"雪崩效应\"的说法，的有 （）",
+    "options": [
+      "A、一个服务故障，高并发下线程资源耗尽，导致整个调用链路不可用",
+      "B、可通过熔断、降级、限流等机制来防止雪崩效应",
+      "C、雪崩效应指的是服务注册中心故障导致所有服务无法注册",
+      "D、不及时处理会导致整个微服务系统大面积瘫痪"
+    ],
+    "answer": "ABD"
+  },
+  {
+    "type": "multi",
+    "text": "关于Spring Cloud Config 架构，以下说法的有 （）",
+    "options": [
+      "A、Config 架构分为Config Server 和Config Client 两部分",
+      "B、Config Server 负责从远程或本地存储中拉取配置文件",
+      "C、Config Client 启动时从Config Server 拉取对应配置",
+      "D、Config Client 之间可以直接共享配置文件"
+    ],
+    "answer": "ABC"
+  },
+  {
+    "type": "multi",
+    "text": "Spring Cloud Config 优势包含(        ) （）",
+    "options": [
+      "A、统一集中管理所有微服务配置",
+      "B、支持多环境配置隔离(dev/test/prod)",
+      "C、配置版本回滚，操作留痕",
+      "D、修改配置自动全服务生效，无需重启"
+    ],
+    "answer": "ABD"
+  },
+  {
+    "type": "multi",
+    "text": "关于微服务链路追踪，以下说法的有 （）",
+    "options": [
+      "A、服务追踪的核心是跟踪请求从发起到响应的完整调用链路",
+      "B、Zipkin 可以展示调用耗时和定位服务调用故障点",
+      "C、Spring Cloud Sleuth 可与Zipkin 整合实现服务追踪",
+      "D、服务追踪的主要功能是实现负载均衡"
+    ],
+    "answer": "ABC"
+  },
+  {
+    "type": "multi",
+    "text": "Spring Boot 中以下哪些属于@Component 的别名注解 （     ）? （）",
+    "options": [
+      "A、@Service(业务逻辑层)",
+      "B、@Controller(接口控制器)",
+      "C、@Configuration(配置类)",
+      "D、@Autowired(自动装配)"
+    ],
+    "answer": "ABC"
+  },
+  {
+    "type": "multi",
+    "text": "关于Spring Cloud Gateway 路由规则，以下说法的有 （）",
+    "options": [
+      "A、predicates.Path 中**表示匹配任意层级的任意路径(含/)",
+      "B、filters.StripPrefix=1 表示转发时去掉路径的第一层",
+      "C、Gateway 可以替代Zuul 作为微服务网关",
+      "D、Gateway 的主要功能是服务注册与发现"
+    ],
+    "answer": "ABC"
+  },
+  {
+    "type": "multi",
+    "text": "以下属于 Spring Cloud 核心组件的包括（     ）? （）",
+    "options": [
+      "A、Eureka(服务注册与发现)",
+      "B、Spring Cloud Gateway(服务网关)",
+      "C、MyBatis(数据持久层)",
+      "D、Spring Cloud Config(配置中心)"
+    ],
+    "answer": "ABD"
+  },
+  {
+    "type": "multi",
+    "text": "微服务架构具备的特点有(        ) （）",
+    "options": [
+      "A、服务独立开发、打包、部署",
+      "B、每个服务拥有独立数据库，禁止共享库",
+      "C、轻量级跨服务通信(HTTP / 消息队列)",
+      "D、所有服务共用一个代码仓库"
+    ],
+    "answer": "ABC"
+  },
+  {
+    "type": "multi",
+    "text": "Spring Cloud Sleuth 为每次服务调用添加的追踪信息包括（     ）? （）",
+    "options": [
+      "A、Trace ID(全局链路标识)",
+      "B、Span ID(基本工作单元标识)",
+      "C、数据库连接信息",
+      "D、服务端口信息"
+    ],
+    "answer": "AB"
+  },
+  {
+    "type": "multi",
+    "text": "微服务架构相比单体架构的优势包括（     ）? （）",
+    "options": [
+      "A、独立部署",
+      "B、技术栈灵活",
+      "C、故障隔离",
+      "D、扩展性好"
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "type": "multi",
+    "text": "Resilience4j 提供的核心容错模块有(        ) （）",
+    "options": [
+      "A、CircuitBreaker 熔断",
+      "B、RateLimiter 限流",
+      "C、Bulkhead 舱壁隔离",
+      "D、TimeLimiter 超时限制"
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "type": "multi",
+    "text": "Eureka Client 的核心功能包括（     ）? （）",
+    "options": [
+      "A、服务注册(启动时向 Eureka Server 注册)",
+      "B、心跳续约(定时向 Eureka Server 发送心跳)",
+      "C、服务注销(向 Eureka Server 取消注册)",
+      "D、配置管理(管理各服务配置文件)"
+    ],
+    "answer": "ABC"
+  },
+  {
+    "type": "multi",
+    "text": "以下属于 Eureka 自我保护机制特点的有（     ）? （）",
+    "options": [
+      "A、核心目的是防止误杀正常服务",
+      "B、默认阈值是 0.85(85%)",
+      "C、通过心跳续约比例判断是否触发",
+      "D、由 Eureka Server 触发并执行"
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "type": "multi",
+    "text": "Spring Cloud Gateway 的核心组件包括(        ) （）",
+    "options": [
+      "A、Route（路由）",
+      "B、Predicate（断言）",
+      "C、Filter（过滤器）",
+      "D、Ribbon（负载均衡器）"
+    ],
+    "answer": "ABC"
+  },
+  {
+    "type": "multi",
+    "text": "Nacos 作为微服务基础设施提供的核心功能包括(        ) （）",
+    "options": [
+      "A、服务注册与发现",
+      "B、动态配置管理",
+      "C、动态 DNS 服务",
+      "D、分布式事务管理"
+    ],
+    "answer": "ABC"
+  },
+  {
+    "type": "multi",
+    "text": "Resilience4j 提供的容错模块包括(        ) （）",
+    "options": [
+      "A、CircuitBreaker（熔断器）",
+      "B、RateLimiter（限流器）",
+      "C、Bulkhead（舱壁隔离）",
+      "D、TimeLimiter（超时控制）"
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "type": "multi",
+    "text": "以下属于微服务架构合理拆分原则的有(        ) （）",
+    "options": [
+      "A、按业务领域拆分",
+      "B、单一职责，每个服务完成明确的业务功能",
+      "C、服务边界清晰，避免循环依赖",
+      "D、所有服务共享同一数据库以减少冗余"
+    ],
+    "answer": "ABC"
+  },
+  {
+    "type": "multi",
+    "text": "Docker 在微服务架构中的优势包括(        ) （）",
+    "options": [
+      "A、保证开发、测试、生产环境一致性",
+      "B、容器启动速度快，支持快速弹性伸缩",
+      "C、资源隔离，服务互不干扰",
+      "D、自动实现服务注册与发现"
+    ],
+    "answer": "ABC"
+  },
+  {
+    "type": "multi",
+    "text": "以下属于 Kubernetes 核心概念的有(        ) （）",
+    "options": [
+      "A、Pod",
+      "B、Service",
+      "C、Deployment",
+      "D、ConfigMap"
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "type": "multi",
+    "text": "微服务架构中常见的分布式事务解决方案包括(        ) （）",
+    "options": [
+      "A、两阶段提交（2PC）",
+      "B、TCC（Try-Confirm-Cancel）",
+      "C、Saga 模式",
+      "D、基于消息队列的最终一致性方案"
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "type": "multi",
+    "text": "以下属于防止服务雪崩有效措施的有(        ) （）",
+    "options": [
+      "A、熔断机制（CircuitBreaker）",
+      "B、服务降级（Fallback）",
+      "C、限流（RateLimiter）",
+      "D、舱壁隔离（Bulkhead）"
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "type": "multi",
+    "text": "关于 Eureka 的核心特性，以下说法的有(        ) （）",
+    "options": [
+      "A、采用 AP 一致性模型，优先保证可用性",
+      "B、支持自我保护机制，防止网络波动误删服务",
+      "C、服务提供者通过心跳续约维持注册状态",
+      "D、支持集群部署，节点间互相注册实现高可用"
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "type": "multi",
+    "text": "OpenFeign 的特性包括(        ) （）",
+    "options": [
+      "A、声明式 HTTP 客户端，通过接口注解完成远程调用",
+      "B、自动整合负载均衡",
+      "C、支持 fallback 降级处理",
+      "D、自动生成服务注册中心"
+    ],
+    "answer": "ABC"
+  },
+  {
+    "type": "multi",
+    "text": "Spring Cloud Config 的优势包括(        ) （）",
+    "options": [
+      "A、集中管理所有微服务配置",
+      "B、支持多环境隔离（dev/test/prod）",
+      "C、支持版本控制，配置可追溯可回滚",
+      "D、结合 Spring Cloud Bus 可实现配置动态刷新"
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "type": "multi",
+    "text": "分布式链路追踪的核心概念包括(        ) （）",
+    "options": [
+      "A、Trace（一次完整请求的调用链路）",
+      "B、Span（链路中的单个工作单元）",
+      "C、TraceId（全局唯一链路标识）",
+      "D、ParentId（父级 Span 标识，形成树状调用关系）"
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "type": "multi",
+    "text": "消息队列在微服务架构中的作用包括(        ) （）",
+    "options": [
+      "A、服务间异步解耦",
+      "B、削峰填谷，缓解突发流量压力",
+      "C、实现最终一致性方案",
+      "D、替代服务注册中心"
+    ],
+    "answer": "ABC"
+  },
+  {
+    "type": "multi",
+    "text": "微服务架构的优点包括(        ) （）",
+    "options": [
+      "A、服务独立部署，迭代效率高",
+      "B、技术栈灵活，各服务可选择最适技术",
+      "C、故障隔离，单服务故障不影响整体系统",
+      "D、可针对高负载服务单独扩容"
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "type": "judge",
+    "text": "API 网关在微服务架构中的常见功能包括(        ) （）",
+    "options": [
+      "A、统一路由转发",
+      "B、统一鉴权认证",
+      "C、限流与熔断",
+      "D、统一跨域（CORS）处理"
+    ],
+    "answer": "ABCD"
+  },
+  {
+    "type": "judge",
+    "text": "Config 的 “环境隔离” 功能是通过为每个服务的配置分 “环境标签”，启动时指定 （spring.profiles.active）",
+    "options": [],
+    "answer": "spring.profiles.active"
+  },
+  {
+    "type": "judge",
+    "text": "Resilience4j 舱壁 Bulkhead 用来隔离不同接口调用线程池，避免互相抢占资源。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud Gateway 只能配置一组路由规则，不支持多路由。 （）",
+    "options": [],
+    "answer": "错误"
+  },
+  {
+    "type": "judge",
+    "text": "Config Client 本地配置文件的优先级一定高于 Config Server 的远程配置。 （）",
+    "options": [],
+    "answer": "错误"
+  },
+  {
+    "type": "judge",
+    "text": "Config Client 微服务启动时主动从 Config Server 拉取对应环境配置。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "Feign 底层默认整合 Ribbon，自带客户端负载均衡能力。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "Gateway 的 StripPrefix 过滤器用于在转发请求前剥去指定层数的路径前缀。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "Eureka Server 单机版需要将 register-with-eureka 和 fetch-registry 均设为 true。 （）",
+    "options": [],
+    "answer": "错误"
+  },
+  {
+    "type": "judge",
+    "text": "硬件负载均衡 (F5) 部署在服务前端，属于服务端负载均衡。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud 中替代 Zuul 的首选服务网关是 Eureka。 （）",
+    "options": [],
+    "answer": "错误"
+  },
+  {
+    "type": "judge",
+    "text": "@EnableFeignClients 注解用于启用 Feign 声明式服务调用功能。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "Eureka Server 集群之间互相同步注册信息，实现高可用。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "服务降级 Fallback 只会在熔断打开时执行，超时不会触发。 （）",
+    "options": [],
+    "answer": "错误"
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud Stream 中，消息生产者的核心类型是 Provider。 （）",
+    "options": [],
+    "answer": "错误"
+  },
+  {
+    "type": "judge",
+    "text": "Netflix 官方对 Hystrix 的维护状态是持续更新开发。 （）",
+    "options": [],
+    "answer": "错误"
+  },
+  {
+    "type": "judge",
+    "text": "网关 StripPrefix=2 代表转发时删除 URL 前两层路径。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "Zipkin 是 Spring Cloud 中实现服务追踪的一种常用工具。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud Sleuth 的作用是与 Zipkin 整合，实现服务追踪。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud 强依赖 Spring Boot，版本不匹配会导致项目启动失败。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "Eureka Client 核心依赖中内置了负载均衡功能，通过 @LoadBalanced 注解启用。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud 中，分布式配置中心的核心组件是 Sleuth。 （）",
+    "options": [],
+    "answer": "错误"
+  },
+  {
+    "type": "judge",
+    "text": "@Component 是 Spring 通用组件注解，@Service、@Controller、@Configuration 都是 （@Component 的派生注解）",
+    "options": [],
+    "answer": "@Component 的派生注解"
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud Stream Binder 屏蔽 RabbitMQ/Kafka 底层 API，业务代码无需修改即可 （切换消息中间件）",
+    "options": [],
+    "answer": "切换消息中间件"
+  },
+  {
+    "type": "judge",
+    "text": "SpanId 代表一次完整请求全链路唯一编号。 （）",
+    "options": [],
+    "answer": "错误"
+  },
+  {
+    "type": "judge",
+    "text": "微服务架构中，每个服务可以拥有自己独立的数据库，数据库之间没有直接联系。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud 中实现客户端负载均衡的核心组件是 Ribbon。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "关于 Resilience4j 的说法，完美支持 Spring Cloud 4.0+，是官方推荐方案。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "Resilience4j 是 Netflix 公司开发的熔断组件。 （）",
+    "options": [],
+    "answer": "错误"
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud Stream 仅支持 RabbitMQ 一种消息中间件。 （）",
+    "options": [],
+    "answer": "错误"
+  },
+  {
+    "type": "judge",
+    "text": "搭建 Config 架构时，服务的启动顺序是 Config Server→Eureka Server→Provider→ （Consumer / 消费者服务）",
+    "options": [],
+    "answer": "Consumer / 消费者服务"
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud Gateway 是基于 Spring WebFlux 构建的异步非阻塞响应式网关。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "Eureka Server 采用的是 CP 一致性模型，在网络分区时优先保证数据强一致性。 （）",
+    "options": [],
+    "answer": "错误"
+  },
+  {
+    "type": "judge",
+    "text": "Nacos 既支持 AP 模式也支持 CP 模式，可根据业务场景灵活切换。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "在微服务架构中，所有微服务必须使用相同的编程语言和开发框架。 （）",
+    "options": [],
+    "answer": "错误"
+  },
+  {
+    "type": "judge",
+    "text": "OpenFeign 是一种声明式的 HTTP 客户端工具，通过接口注解即可完成远程调用。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "Ribbon 属于服务端负载均衡器，由注册中心统一分配请求。 （）",
+    "options": [],
+    "answer": "错误"
+  },
+  {
+    "type": "judge",
+    "text": "Resilience4j 的熔断器在打开状态下会直接拒绝请求，不再调用下游服务。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud Config Server 只能使用 Git 作为配置存储后端，不支持其他方式。 （）",
+    "options": [],
+    "answer": "错误"
+  },
+  {
+    "type": "judge",
+    "text": "微服务架构中服务间通信只能通过 HTTP/REST 进行，不支持其他协议。 （）",
+    "options": [],
+    "answer": "错误"
+  },
+  {
+    "type": "judge",
+    "text": "Docker 容器的启动速度通常比传统虚拟机快得多，一般在秒级甚至毫秒级。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "Kubernetes 中的 Pod 是 Kubernetes 最小的可部署和调度单元。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud Bus 默认使用 RabbitMQ 或 Kafka 作为消息代理来广播配置变更。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "Nacos 中注册的临时实例在客户端断开连接后会被自动删除。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "在分布式链路追踪中，同一个请求在整个调用链路中保持相同的 TraceId。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "微服务架构中，所有服务共享同一个数据库是推荐的最佳实践。 （）",
+    "options": [],
+    "answer": "错误"
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud Gateway 的 Filter 既可以在请求转发前执行，也可以在响应返回后执行。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "Eureka 的自我保护机制会在短时间内大量服务实例丢失时停止剔除服务，防止误删。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "Saga 模式能够保证分布式事务的强一致性，不存在中间不一致状态。 （）",
+    "options": [],
+    "answer": "错误"
+  },
+  {
+    "type": "judge",
+    "text": "Resilience4j RateLimiter 模块默认采用漏桶算法进行限流。 （）",
+    "options": [],
+    "answer": "错误"
+  },
+  {
+    "type": "judge",
+    "text": "在 Spring Cloud Alibaba 体系中，Sentinel 可以同时实现熔断降级和流量控制功能。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "微服务拆分粒度越细越好，每个服务只负责一个接口是最佳实践。 （）",
+    "options": [],
+    "answer": "错误"
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud Sleuth 通过在 HTTP 请求头中传递 TraceId 和 SpanId 实现跨服务链路 （追踪）",
+    "options": [],
+    "answer": "追踪"
+  },
+  {
+    "type": "judge",
+    "text": "在微服务架构中，每个微服务应该拥有自己独立的数据库，避免数据耦合。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "API 网关可以统一处理跨域 (CORS) 问题，避免每个微服务单独配置跨域策略。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "Seata 的 AT 模式需要开发人员在业务代码中手动编写补偿逻辑。 （）",
+    "options": [],
+    "answer": "错误"
+  },
+  {
+    "type": "judge",
+    "text": "Kubernetes 的 HPA 可以根据 CPU 使用率等指标自动调整 Pod 副本数量。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "消息队列可以实现微服务之间的异步解耦，提高系统整体吞吐量。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "在微服务架构中，服务注册中心是可选组件，服务间可以通过硬编码 IP 直接调用。 （）",
+    "options": [],
+    "answer": "错误"
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud Stream 通过 Binder 抽象层屏蔽了底层消息中间件的差异。 （正确）",
+    "options": [],
+    "answer": "正确"
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud 2020+ 版本中，Ribbon 仍然是官方推荐的默认负载均衡组件。 （）",
+    "options": [],
+    "answer": "错误"
+  },
+  {
+    "type": "judge",
+    "text": "阅读以下配置，回答问题：",
+    "options": [],
+    "answer": ""
+  },
+  {
+    "type": "judge",
+    "text": "在配置文件 application.yml 中，有以下配置（15.0）",
+    "options": [],
+    "answer": "发送普通文本"
+  },
+  {
+    "type": "judge",
+    "text": "微服务架构和单体架构的主要区别是什么？",
+    "options": [],
+    "answer": "代码结构:单体所有业务代码同一项目;微服务按业务拆分为多个独立小项目。部署方式: 单体整体打包部署;微服务独立打包、独立部署、独立扩容。数据库:单体共用一套库;微服务独立数据库，不共享数据。迭代更新:单体改动需全量发布;微服务仅更新对应服务，"
+  },
+  {
+    "type": "judge",
+    "text": "Spring Cloud Gateway 网关在微服务架构中的核心功能及其作用是什么？",
+    "options": [],
+    "answer": "Spring Cloud Gateway 是微服务统一流量入口，核心功能包含路由转发，按规则将请求分发至对应服务；集成注册中心实现负载均衡。通过全局与路由过滤器统一处理跨域、日志、请求参数修改、身份鉴权；支持限流、熔断降级，保障后端服务稳定。它将认证、限流等通用逻辑集中处理，避免各微服务重复开发，隔离客户端与后端业务服务，简化运维并统一管控所有外部请求流量。"
+  },
+  {
+    "type": "judge",
+    "text": "Resilience4j 熔断器(Circuit Breaker)的三种状态(CLOSED、OPEN、HALFOPEN)及其状",
+    "options": [],
+    "answer": "Resilience4j 熔断器包含 CLOSED、OPEN、HALF_OPEN 三种状态。CLOSED 状态正常转发请求，持续统计失败率，失败占比触发阈值后转为 OPEN。OPEN 状态拦截全部请求，等待冷却时间结束后进入 HALF_OPEN。HALF_OPEN 会放行少量测试请求校验服务状态，若请求全部成功则切换回 CLOSED；一旦出现失败，立刻退回 OPEN 状态。通过三种状态切换， 避免故障服务被大量请求压垮，实现服务容错保护。"
+  },
+  {
+    "type": "judge",
+    "text": "熔断机制有什么用？（15 分）",
+    "options": [],
+    "answer": "熔断机制，是应对雪崩效应的一种微服务链路保护机制。当一条链路的某个微服务不可用或者响应时间太长时，会进行服务的降级，进而熔断该节点微服务的调用，快速返回错误的响应信息，释放线程。当检测到该节点微服务调用响应正常后，恢复调用链路。"
+  },
+  {
+    "type": "judge",
+    "text": "什么是负载均衡？（15 分）",
+    "options": [],
+    "answer": "将大量网络访问请求（负载），按照预设策略，分摊到后端多台业务服务器集群处理，以此提升系统吞吐量、响应速度，同时避免单点故障。"
+  },
+  {
+    "type": "judge",
+    "text": "简述客户端负载均衡与服务端负载均衡的区别。",
+    "options": [],
+    "answer": "客户端负载均衡(Ribbon):集成在调用方代码内，本地读取服务列表，本地算法分发请求， 无需独立设备;服务端负载均衡(Nginx/F5):独立部署在服务集群前端，所有请求先经过均衡设备，由设备分发流量;适用场景:客户端 LB 适合微服务内部调用;服务端 LB 适合对外统一入口网关层。"
+  },
+  {
+    "type": "judge",
+    "text": "简述 Spring Cloud Config 配置中心的核心作用及其优势。",
+    "options": [],
+    "answer": "Spring Cloud Config 为微服务架构提供集中化的配置管理方案。核心作用：将所有微服务的配置文件集中存储在 Config Server 统一管理，Config Client 启动时从 Server 拉取对应环境的配置。优势包括：集中管理，改配置只改一处即可全服务生效；支持多环境隔离（dev/test/prod），通过环境标签区分；支持版本控制（基于 Git/SVN），配置修改可追溯、可回滚；结合 Spring Cloud Bus 可实现配置动态刷新，无需重启服务即可生效。"
+  },
+  {
+    "type": "judge",
+    "text": "简述 Eureka 服务注册与发现的基本工作流程。（15 分）",
+    "options": [],
+    "answer": "Eureka 采用 C-S 架构，包含 Eureka Server（注册中心）和 Eureka Client（服务提供者/消费者）。工作流程：服务提供者启动时向 Eureka Server 注册自己的服务信息（服务名、IP、端口等）；Eureka Server 维护一份服务注册表，存储所有已注册服务实例信息；服务消费者调用服务时，先从 Eureka Server 拉取服务注册列表，在本地缓存；消"
+  },
+  {
+    "type": "judge",
+    "text": "简述微服务架构中服务雪崩效应及其预防措施。",
+    "options": [],
+    "answer": "服务雪崩效应是指在微服务调用链路中，某个下游服务出现故障或响应过慢，导致调用方线程资源被持续占用并耗尽，进而使调用方服务也不可用，故障沿调用链路向上蔓延，最终导致整个微服务系统大面积瘫痪。预防措施包括：①熔断机制（CircuitBreaker）：检测到服务调用失败率达到阈值后自动断开调用，快速返回失败响应，避免线程持续阻塞； ②服务降级（Fallback）：调用失败或超时时执行备选逻辑，返回兜底数据，保证核心功能可用；③限流（RateLimiter）：控制单位时间内的请求量，防止突发流量压垮下游服"
+  },
+  {
+    "type": "judge",
+    "text": "请阐述单体架构、面向服务架构（SOA）与微服务架构的区别。",
+    "options": [],
+    "answer": "单体架构将所有业务功能模块打包在同一个应用中，共享同一套代码库和数据库，部署时 整体打包，优点是开发简单、部署方便，但随着系统规模增大，代码耦合严重、迭代困难、 扩展性差。SOA（面向服务架构）将系统拆分为多个粗粒度的服务，服务之间通过 ESB （企业服务总线）进行通信和编排，服务可独立部署但通常共享数据库，ESB 承担了大量 中介逻辑，容易成为性能瓶颈和单点故障。微服务架构在 SOA 基础上进一步细粒度拆分， 每个微服务独立开发、独立部署、独立数据库，服务之间通过轻量级协议（HTTP/REST、 消息队列）直接通信，无需 ESB 中间层。微服务强调去中心化治理、技术栈自由、按业 务能力拆分、独立扩缩容。三者演进体现了系统从集中式到分布式的解耦过程，微服务架 构在独立性、灵活性和可扩展性方面最优，但也带来了分布式事务、服务治理、运维复杂 度等新挑战。"
+  },
+  {
+    "type": "judge",
+    "text": "请论述 Spring Cloud 生态体系中各核心组件的职责及其在微服务架构中的协作关系。",
+    "options": [],
+    "answer": "Spring Cloud 生态围绕微服务架构的全生命周期提供了一套完整的解决方案。各核心组 件职责如下：服务注册与发现（Eureka/Nacos）负责服务实例的注册、心跳续约和发现， 是微服务通信的基础；配置中心（Spring Cloud Config/Nacos Config）集中管理所有微 服务的配置文件，支持多环境隔离和动态刷新；服务网关（Spring Cloud Gateway）作为 统一流量入口，提供路由转发、鉴权、限流、跨域处理等功能；负载均衡 （Ribbon/Spring Cloud LoadBalancer）在服务消费者侧本地完成请求分发，配合服务发 现实现客户端负载均衡；声明式调用（OpenFeign）以接口声明方式简化 HTTP 远程调用， 整合负载均衡；熔断降级（Resilience4j）通过熔断器、限流器、舱壁隔离等机制防止服 务雪崩；链路追踪（Sleuth + Zipkin）追踪请求在多个微服务间的完整调用链路，定位 性能瓶颈和故障点；消息驱动（Spring Cloud Stream）屏蔽底层消息中间件差异，简化 异步通信开发。各组件协作关系：服务启动时向注册中心注册并拉取服务列表，消费者通 过 Feign 声明式调用并经 LoadBalancer 选择实例，调用链路经 Gateway 统一入口进入， Resilience4j 在调用失败时提供容错保护，Sleuth 全程埋点生成链路数据上报 Zipkin， Config 统一管理配置并通过 Bus 实现动态刷新，各组件协同构成了完整的微服务治理体 系。"
+  },
+  {
+    "type": "judge",
+    "text": "请论述微服务架构中服务雪崩效应的产生原因、危害及完整的预防策略体系。",
+    "options": [],
+    "answer": "雪崩效应产生原因：在微服务调用链路中，服务之间存在依赖关系，当某个下游服务出现 故障（如响应超时、异常抛出、资源耗尽）时，调用方为等待响应会持续占用线程资源。 在高并发场景下，大量请求线程被阻塞，导致调用方的线程池迅速耗尽，调用方自身也变 得不可用。故障随后沿调用链路逐级向上蔓延，最终导致整个微服务系统大面积瘫痪。危 害：系统整体不可用，用户体验严重受损；故障扩散速度快，难以快速定位和隔离；恢复 时间长，可能引发连锁业务损失。完整的预防策略体系包括五个层面：熔断机制 （CircuitBreaker）持续统计服务调用失败率，达到阈值后自动打开熔断器，快速拒绝请 求并直接返回降级响应，避免线程持续阻塞，经过冷却时间后进入半开状态试探性放行请 求，成功则恢复正常调用；服务降级（Fallback）为关键接口预设备选逻辑，当调用失败、 超时或熔断打开时执行兜底方法，返回默认数据或友好提示，保障核心业务链路可用；限 流（RateLimiter）基于令牌桶等算法控制单位时间内的请求量，防止突发流量超过下游 服务承载能力；舱壁隔离（Bulkhead）为不同服务或接口分配独立的线程池/信号量，一 个服务故障不会耗尽全部线程资源，实现故障隔离；超时控制（TimeLimiter）为每次远 程调用设置合理的超时时间，超时即触发降级，避免无限等待。此外，还应配合容量规划、 压力测试、监控告警等运维手段，构建从预防到恢复的完整稳定性保障体系。"
+  },
+  {
+    "type": "judge",
+    "text": "请论述 Eureka 与 Nacos 作为服务注册中心的异同，并分析各自适用的场景。",
+    "options": [],
+    "answer": "相同点：Eureka 和 Nacos 都提供服务注册与发现功能，支持微服务实例的注册、心跳续 约和健康检查，都能与 Spring Cloud 生态集成，支持集群部署实现高可用。不同点：开 发方方面，Eureka 由 Netflix 开源，属于 Spring Cloud Netflix 体系；Nacos 由阿里 巴巴开源，属于 Spring Cloud Alibaba 体系。功能范围方面，Eureka 仅提供服务注册 发现功能；Nacos 同时提供服务注册发现和分布式配置中心两大功能，一个组件可替代 Eureka + Config。一致性模型方面，Eureka 采用 AP 模型（高可用优先），在网络分区 时优先保证可用性，可能出现数据不一致；Nacos 默认支持 AP 模式，也支持切换为 CP 模式（一致性优先），灵活性更高。健康检查方面，Eureka 依赖客户端心跳（默认30 秒），有自我保护机制防止误删；Nacos 支持心跳和主动健康检查两种方式，对临时实例 和永久实例分别处理。配置管理方面，Eureka 不具备配置管理能力；Nacos 内置配置中 心，支持动态配置推送和命名空间隔离。维护状态方面，Eureka 2.x 开发计划取消，进 入维护模式；Nacos 持续活跃更新。适用场景：Eureka 适合已有的 Spring Cloud Netflix 技术栈项目，功能简单需求单一；Nacos 适合新项目或希望使用国产化技术栈的 团队，尤其适合需要同时解决注册发现和配置管理的场景，减少组件数量降低运维成本。"
+  },
+  {
+    "type": "judge",
+    "text": "请论述 Spring Cloud Gateway 作为微服务网关的核心设计理念、关键组件及工作流程。",
+    "options": [],
+    "answer": "核心设计理念：Spring Cloud Gateway 旨在为微服务架构提供统一流量入口，基于 Spring WebFlux 和 Project Reactor 构建异步非阻塞的响应式网关，相比传统的 Zuul 1.x（同步阻塞模型）在高并发场景下性能更优。它将通用横切关注点（路由、鉴权、限 流、日志、跨域等）从各微服务中抽离到网关层集中处理，避免重复开发，同时隔离外部 客户端与内部微服务集群。关键组件：Route（路由）是网关的基本构建块，由 ID、目标 URI、断言和过滤器组成；Predicate（断言）是匹配 HTTP 请求的条件判断器，支持 Path、Header、Method、Host、Query 等多种匹配方式，满足条件则路由到对应服务； Filter（过滤器）对请求和响应进行修改处理，分为 Gateway Filter（路由级）和 Global Filter（全局级），内置 StripPrefix（路径裁剪）、RewritePath（路径重写）、 AddHeader（添加请求头）等丰富过滤器，也支持自定义。工作流程：客户端请求到达 Gateway，Gateway Handler Mapping 根据断言匹配路由，匹配成功后请求进入 Filter Chain，过滤器链依次执行前置处理（鉴权、日志、参数修改等），然后转发请求到目标 微服务（通过 lb:// 协议实现负载均衡），目标服务返回响应，过滤器链执行后置处理， 最终返回响应给客户端。整个流程基于 Reactor 响应式编程，全程异步非阻塞，充分利 用系统资源。"
+  },
+  {
+    "type": "judge",
+    "text": "请论述分布式链路追踪的必要性、核心概念及 Spring Cloud Sleuth + Zipkin 的实现",
+    "options": [],
+    "answer": "必要性：在微服务架构中，一次用户请求可能经过多个微服务的链式调用，当出现性能瓶 颈或故障时，传统日志方式难以快速定位问题发生在哪个服务、哪次调用。分布式链路追 踪通过为每次请求生成唯一标识并贯穿整个调用链，实现请求全链路可视化，是微服务可 观测性的关键组成部分。核心概念：Trace 是一次完整的客户端请求所经过的所有服务调 用链路，由全局唯一的 TraceId 标识；Span 是链路中的单个工作单元，代表一次服务调 用或操作，由 SpanId 标识，每个 Span 包含开始时间、结束时间、服务名、标签等信息； Parent Span 是当前 Span 的父级 Span，通过 ParentId 关联，形成树状调用关系。实 现原理：Sleuth 作为客户端探针集成在每个微服务中，自动在 HTTP 请求头中注入 TraceId 和 SpanId（通过 X-B3-TraceId、X-B3-SpanId 等请求头传递），服务间调用时 自动透传这些标识，确保同一请求在不同服务中的 TraceId 一致。Sleuth 同时记录每个 Span 的耗时和服务信息，通过采样策略（spring.sleuth.sampler.probability）控制上 报比例，将链路数据异步上报到 Zipkin Server。Zipkin Server 负责接收、存储和聚合 链路数据，提供 Web UI 可视化展示调用链路拓扑、各服务调用耗时、依赖关系图等，帮 助开发者快速定位性能瓶颈和故障节点。"
+  },
+  {
+    "type": "judge",
+    "text": "请论述微服务架构中数据一致性问题的成因，并比较分布式事务的常见解决方案。",
+    "options": [],
+    "answer": "成因：微服务架构中每个服务拥有独立数据库，跨服务的数据操作无法依赖本地数据库事 务保证 ACID 特性。当一次业务操作需要更新多个服务的数据时，若部分服务更新成功、 部分失败，就会出现数据不一致问题。此外，网络不可靠、服务临时故障、消息重复投递 等因素也会导致数据状态不一致。常见解决方案比较：两阶段提交（2PC）由协调者统一 调度参与者的提交和回滚，强一致性但同步阻塞、性能差、存在单点故障，不适合微服务 高并发场景。TCC（Try-Confirm-Cancel）是业务层面的两阶段提交，Try 阶段预留资源， Confirm 阶段确认提交，Cancel 阶段回滚释放，一致性较好但业务侵入性强，每个接口 需实现三个方法，开发成本高。Saga 模式将长事务拆分为多个本地事务序列，每个子事 务有对应的补偿操作，任一子事务失败时执行反向补偿，最终一致性好但补偿逻辑复杂， 存在中间状态可见问题。基于消息队列的最终一致性方案中，服务完成本地事务后发送消 息到 MQ，消费者异步处理并保证幂等性，通过消息重试和死信队列保证可靠性，是微服 务中最常用的轻量级方案，实现简单、性能好，但一致性为最终一致而非强一致。Seata 是阿里巴巴开源的分布式事务框架，支持 AT、TCC、Saga、XA 四种模式，AT 模式对业务 侵入小，通过全局锁和 undo_log 实现自动补偿，适合中小规模微服务。实际选型应根据 业务对一致性的要求程度、性能需求、开发成本综合权衡。"
+  },
+  {
+    "type": "judge",
+    "text": "请论述容器化技术（Docker）在微服务架构中的价值，以及容器编排（Kubernetes）带",
+    "options": [],
+    "answer": "Docker 的价值：环境一致性方面，将微服务及其运行环境（JDK、依赖库、配置文件等） 打包为标准化镜像，确保开发、测试、生产环境完全一致，彻底解决环境差异问题；快速 部署与弹性伸缩方面，镜像启动秒级完成，可根据流量压力快速水平扩展服务实例数量； 资源隔离方面，每个容器独立运行，互不干扰，避免服务间资源争抢；版本管理方面，镜 像支持标签和版本管理，支持快速回滚到历史版本；持续交付方面，与 CI/CD 流水线无 缝集成，实现自动化构建、测试和部署。Kubernetes 的进一步提升：自动调度方面，根 据资源需求和节点状态自动将容器调度到合适的物理节点，优化集群资源利用率；自愈能 力方面，自动监控容器健康状态，容器崩溃时自动重启或重新调度，保证服务高可用；服 务发现与负载均衡方面，内置 Service 和 Ingress 机制，提供稳定的虚拟 IP 和 DNS 名称，自动在多个 Pod 副本间做负载均衡，可替代 Eureka 等注册中心的部分功能；弹 性伸缩方面，支持 HPA（水平 Pod 自动伸缩）根据 CPU/内存等指标自动调整副本数量， 实现按需扩缩容；滚动更新与回滚方面，支持无停机滚动更新和一键回滚，降低发布风险； 配置与密钥管理方面，ConfigMap 和 Secret 统一管理配置和敏感信息，与容器解耦；声 明式运维方面，通过 YAML 声明期望状态，K8s 自动趋近目标状态，简化运维复杂度。 Docker + K8s 已成为微服务容器化部署的事实标准。"
+  },
+  {
+    "type": "judge",
+    "text": "请结合实际项目经验，论述微服务架构的优缺点，并分析在实际落地中应如何权衡决策。",
+    "options": [],
+    "answer": "优点：独立部署与迭代方面，每个微服务可独立开发、测试、部署，团队并行开发效率高， 单个服务更新不影响整体系统；技术栈灵活方面，不同服务可根据业务特点选择最适合的 技术栈（语言、框架、数据库），不被统一技术栈束缚；故障隔离方面，单个服务故障不 会直接导致整个系统瘫痪，配合熔断降级机制可进一步控制故障影响范围；弹性伸缩方面， 可针对高负载服务单独扩容，避免为整体应用扩容造成资源浪费，降低成本；团队自治方 面，按业务领域拆分团队，各团队负责自己的服务全生命周期，沟通成本低。缺点：系统 复杂度大幅增加，分布式系统引入了网络通信、服务发现、负载均衡、分布式事务、配置 管理等大量基础设施问题；运维成本高，需要管理数十甚至上百个服务的部署、监控、日 志收集、链路追踪，对 DevOps 能力要求高；分布式事务难题，跨服务的数据一致性难以 保证，需要引入 Saga、消息最终一致性等复杂方案；网络开销与延迟，服务间远程调用 相比本地方法调用增加了网络延迟和序列化开销；接口契约管理，服务间 API 变更需要 协调上下游，版本兼容性管理复杂；测试难度增加，端到端测试需要搭建完整的微服务环 境，集成测试链路长。落地权衡决策：服务拆分粒度方面，应按业务领域和能力边界拆分， 避免过细（管理成本激增）或过粗（失去微服务优势），初期可适当粗粒度后逐步细化； 团队规模方面，微服务适合有一定规模的团队，小团队可先用模块化单体架构，后续按需 拆分；基础设施成熟度方面，需先建立 CI/CD、监控告警、链路追踪等基础能力，再推进 微服务化；渐进式迁移方面，从单体到微服务应逐步拆分，优先拆分高变更频率、高负载 的业务模块，保证迁移过程中系统稳定。总之，微服务不是银弹，应根据团队规模、业务 复杂度、技术能力综合评估，避免为了微服务而微服务。"
+  }
+]

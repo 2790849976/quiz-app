@@ -1,0 +1,16 @@
+*.py
+*.zip
+*.xls
+*.pdf
+*.doc
+*.docx
+*.pptx
+*.csv
+Python/
+web/
+期末考核要求/
+.omo/
+.codegraph/
+screenshot_welcome.png
+手机浏览_启动服务器.cmd
+node_modules/

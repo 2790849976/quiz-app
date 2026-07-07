@@ -244,11 +244,105 @@ body {
   font-weight: 600; color: #6366f1;
 }
 
-/* ===== Responsive ===== */
+/* ===== Responsive Mobile ===== */
 @media (max-width: 480px) {
-  .mode-grid { grid-template-columns: 1fr; }
-  .result-stats { grid-template-columns: 1fr; }
-  .welcome h1 { font-size: 1.4rem; }
+  /* Welcome */
+  .welcome { padding: 1rem .75rem; justify-content: flex-start; }
+  .welcome h1 { font-size: 1.25rem; }
+  .welcome p { font-size: .82rem; margin-bottom: 1rem; }
+  .welcome-icon { width: 56px; height: 56px; margin-bottom: 1rem; }
+  .welcome-icon svg { width: 30px; height: 30px; }
+  .stats-row { gap: .5rem; margin-bottom: 1rem; flex-wrap: wrap; justify-content: center; }
+  .stat-item { padding: .5rem .75rem; min-width: 70px; flex: 1; }
+  .stat-item .num { font-size: 1.1rem; }
+  .stat-item .label { font-size: .65rem; }
+
+  /* Filters */
+  .filter-row { gap: .35rem; margin-bottom: .75rem; }
+  .filter-btn { padding: .35rem .5rem; font-size: .7rem; }
+  .section-label { font-size: .78rem; margin-bottom: .35rem; }
+
+  /* Settings */
+  .settings-panel { padding: .75rem 1rem; margin-bottom: 1rem; }
+  .setting-row { padding: .4rem 0; }
+  .setting-label { font-size: .8rem; }
+  .setting-control input[type="range"] { width: 80px; }
+
+  /* Mode grid */
+  .mode-grid { gap: .6rem; margin-bottom: 1rem; }
+  .mode-card { padding: .75rem; }
+  .mode-card .mode-icon { font-size: 1.2rem; margin-bottom: .3rem; }
+  .mode-card .mode-title { font-size: .85rem; }
+  .mode-card .mode-desc { font-size: .72rem; }
+
+  /* Buttons */
+  .btn { padding: .6rem 1.25rem; font-size: .9rem; min-height: 44px; }
+  .btn-sm { padding: .35rem .75rem; font-size: .78rem; min-height: 36px; }
+
+  /* Quiz header */
+  .quiz-header { padding: .5rem .75rem; }
+  .progress-bar-container { gap: .4rem; }
+  .progress-text { font-size: .72rem; }
+  .score-badge { font-size: .72rem; padding: .15rem .45rem; }
+
+  /* Question */
+  .question-area { padding: .75rem; }
+  .question-card { padding: .85rem; border-radius: 12px; }
+  .question-text { font-size: .92rem; line-height: 1.6; margin-bottom: .75rem; }
+  .question-number { font-size: .68rem; padding: .15rem .5rem; }
+  .badge { font-size: .62rem; padding: .12rem .4rem; }
+
+  /* Options - bigger touch targets */
+  .option-btn { padding: .7rem .75rem; font-size: .85rem; gap: .6rem; min-height: 44px; }
+  .option-judge { padding: .9rem .75rem; font-size: 1rem; min-height: 52px; }
+  .option-letter, .option-letter-multi { width: 24px; height: 24px; font-size: .78rem; }
+  .judge-icon { width: 30px; height: 30px; font-size: 1rem; }
+
+  /* Navigation */
+  .nav-bar { padding: .6rem .75rem; gap: .4rem; flex-wrap: wrap; }
+
+  /* Explanation */
+  .explanation { padding: .75rem; font-size: .82rem; }
+
+  /* Fill inputs */
+  .fill-container { font-size: .92rem; line-height: 2; }
+  .fill-input { width: 100px; padding: .3rem .5rem; font-size: .85rem; min-height: 36px; }
+
+  /* Result screen */
+  .result-screen { padding: 1.25rem .75rem; }
+  .result-circle-wrap { width: 130px; height: 130px; margin-bottom: 1rem; }
+  .result-circle-wrap svg { width: 130px; height: 130px; }
+  .result-score-text .big { font-size: 1.6rem; }
+  .result-stats { gap: .5rem; margin-bottom: 1rem; }
+  .result-stat { padding: .6rem; }
+  .result-stat .val { font-size: 1.1rem; }
+  .result-actions { gap: .6rem; }
+  .result-actions .btn { min-height: 40px; padding: .5rem .85rem; font-size: .82rem; }
+
+  /* Type stats */
+  .type-stats { padding: .75rem 1rem; }
+
+  /* Review */
+  .review-screen { padding: .75rem; }
+  .review-item { padding: .85rem; }
+  .review-header h2 { font-size: 1rem; }
+  .review-filter-bar { gap: .3rem; }
+  .rf-btn { padding: .25rem .5rem; font-size: .7rem; }
+
+  /* Wrong question page */
+  .wrong-screen { padding: .75rem; }
+  .wrong-header h2 { font-size: 1rem; }
+  .wrong-item { padding: .75rem; }
+
+  /* Type Stats rows */
+  .ts-label { font-size: .7rem; width: 40px; }
+  .ts-val { font-size: .7rem; min-width: 60px; }
+}
+@media (max-width: 360px) {
+  .stats-row { flex-direction: column; align-items: center; }
+  .stat-item { width: 100%; max-width: 200px; }
+  .filter-row { justify-content: center; }
+  .fill-input { width: 80px; font-size: .8rem; }
 }
 
 /* ===== Badges ===== */
