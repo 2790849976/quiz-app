@@ -356,19 +356,19 @@ function renderWelcome() {
     if (range) {
       const val = document.getElementById('qCountVal');
       const effectiveMax = Math.max(totalCount, 5);
-      const newStep = effectiveMax <= 50 ? '1' : '5';
+      // "全部"题型用步长1（可精确选到每位数的题量），具体题型用步长1或5
+      const newStep = (typeF === 'all') ? '1' : (effectiveMax <= 50 ? '1' : '5');
       range.step = newStep;
       range.max = effectiveMax;
-      // 当选择"全部"题型时，自动设置为最大值（全部题目）
       let newVal;
       if (typeF === 'all') {
         newVal = effectiveMax;
       } else {
         newVal = parseInt(range.value);
         if (newVal > effectiveMax) newVal = effectiveMax;
+        const stepNum = parseInt(newStep);
+        newVal = Math.max(5, Math.min(effectiveMax, Math.round(newVal / stepNum) * stepNum));
       }
-      const stepNum = parseInt(newStep);
-      newVal = Math.max(5, Math.min(effectiveMax, Math.round(newVal / stepNum) * stepNum));
       range.value = String(newVal);
       state.totalQ = newVal;
       val.textContent = String(newVal);
