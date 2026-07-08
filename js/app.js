@@ -498,10 +498,13 @@ function startQuiz() {
     }
   }
 
-  // Shuffle for shuffle AND typeOnly modes
+  // Determine question order
   if (state.mode === 'shuffle' || state.mode === 'typeOnly') {
     state.questions = shuffle(pool).slice(0, state.totalQ);
   } else {
+    // Sequential mode: sort by type (单选→多选→判断→填空) within each subject
+    const typeOrder = { single: 0, multi: 1, judge: 2, fill: 3 };
+    pool.sort((a, b) => (typeOrder[a.type] || 99) - (typeOrder[b.type] || 99));
     state.questions = pool.slice(0, state.totalQ);
   }
 
