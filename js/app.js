@@ -221,6 +221,7 @@ function renderWelcome() {
   state.currentIdx = 0;
   state.answers = [];
   state.multiSelected = {};
+  state.fillAnswers = {};
   clearShuffledCache();
   cleanupKeyboard();
   clearInterval(state.timerInterval);
@@ -447,6 +448,7 @@ function resumeQuiz() {
   state.currentIdx = saved.currentIdx;
   state.answers = saved.answers || [];
   state.multiSelected = {};
+  state.fillAnswers = {};
 
   // Rebuild shuffled cache so options appear same as before
   clearShuffledCache();
@@ -466,6 +468,7 @@ function startQuiz() {
   state.currentIdx = 0;
   state.answers = [];
   state.multiSelected = {};
+  state.fillAnswers = {};
   clearShuffledCache();
   clearQuizProgress();
   state.startTime = Date.now();
