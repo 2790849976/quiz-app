@@ -1,0 +1,35 @@
+{
+  "name": "JavaScript基础",
+  "questions": [
+    {
+      "type": "single",
+      "text": "typeof null 的返回值是？",
+      "options": ["null", "undefined", "object", "boolean"],
+      "answer": "C"
+    },
+    {
+      "type": "single",
+      "text": "=== 和 == 的区别是什么？",
+      "options": ["没有区别", "=== 比较值和类型", "== 比较值和类型", "=== 只比较值"],
+      "answer": "B"
+    },
+    {
+      "type": "multi",
+      "text": "以下哪些是 JavaScript 的基本数据类型？",
+      "options": ["String", "Object", "Number", "Boolean"],
+      "answer": "ACD"
+    },
+    {
+      "type": "judge",
+      "text": "JavaScript 中 undefined == null 返回 true。",
+      "options": [],
+      "answer": "正确"
+    },
+    {
+      "type": "fill",
+      "text": "声明一个常量的关键字是______。",
+      "options": [],
+      "answer": "const"
+    }
+  ]
+}
