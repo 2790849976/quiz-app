@@ -49,34 +49,144 @@ function applyCustomQuestions() {
   localStorage.setItem('ms_custom_count', String(added));
 }
 
+// ===== DOCX Parser (browser-side) =====
+async function parseDocxQuestions(file) {
+  const arrayBuffer = await file.arrayBuffer();
+  const zip = await JSZip.loadAsync(arrayBuffer);
+  const docFile = zip.file(/word\/document\.xml/);
+  if (!docFile) throw new Error('无法解析 docx 文件：找不到 document.xml');
+  const xmlStr = await docFile.async('text');
+  const parser = new DOMParser();
+  const xmlDoc = parser.parseFromString(xmlStr, 'text/xml');
+
+  // Extract paragraph texts from <w:p> → <w:t> elements
+  const lines = [];
+  const paragraphs = xmlDoc.getElementsByTagNameNS('*', 'p');
+  for (const p of paragraphs) {
+    const textRuns = p.getElementsByTagNameNS('*', 't');
+    let text = '';
+    for (const t of textRuns) { text += t.textContent; }
+    text = text.trim();
+    if (text) lines.push(text);
+  }
+
+  if (lines.length < 5) throw new Error('文档内容过少，请确认格式正确');
+
+  // Detect sections
+  const sections = {};
+  for (let i = 0; i < lines.length; i++) {
+    const m = lines[i].match(/^[一二三四五六七八九十]+[、.．]\s*(\S+?)\s*（/);
+    if (!m) continue;
+    const name = m[1];
+    if (name.includes('单')) sections.single = i;
+    else if (name.includes('多')) sections.multi = i;
+    else if (name.includes('判')) sections.judge = i;
+    else if (name.includes('填')) sections.fill = i;
+  }
+
+  // Build ranges
+  const order = ['single', 'multi', 'judge', 'fill'];
+  const sorted = order.filter(k => k in sections).map(k => [k, sections[k]]).sort((a, b) => a[1] - b[1]);
+  const ranges = {};
+  for (let i = 0; i < sorted.length; i++) {
+    const [k, start] = sorted[i];
+    const end = i + 1 < sorted.length ? sorted[i + 1][1] : lines.length;
+    ranges[k] = { start, end };
+  }
+
+  // Parsing helpers
+  const optLineRe = /^\s*[A-E][、.．]/;
+  const ansLineRe = /^正确答案[：:]/;
+  const qStartRe = /^\d+\s*[.、．]?\s*\S/;
+
+  function extractOpts(text) {
+    const parts = text.split(/\s*([A-E])[、.．]\s*/);
+    const opts = [];
+    for (let i = 1; i < parts.length; i += 2) {
+      if (i + 1 < parts.length) opts.push(parts[i + 1].trim());
+    }
+    return opts;
+  }
+
+  function cleanQ(text) {
+    const m = text.match(/^\d+\s*[.、．]?\s*(.*)/);
+    return m ? m[1].trim() : text;
+  }
+
+  // Parse each section
+  const allQuestions = [];
+  for (const [qtype, range] of Object.entries(ranges)) {
+    let qText = null, qOpts = [], qAns = null;
+    for (let i = range.start + 1; i < range.end; i++) {
+      const line = lines[i];
+      if (!line) continue;
+
+      if (ansLineRe.test(line)) {
+        let ans = line.replace(/^正确答案[：:]\s*/, '').trim();
+        if (qtype === 'judge') {
+          if (['正确','对','T','true','√'].includes(ans)) ans = '正确';
+          else if (['错误','错','F','false','×','✗'].includes(ans)) ans = '错误';
+        } else if (qtype === 'multi') {
+          ans = ans.toUpperCase().split('').sort().join('');
+        } else {
+          ans = ans.toUpperCase();
+        }
+        qAns = ans;
+        if (qText) {
+          allQuestions.push({ type: qtype, text: qText, options: qOpts, answer: qAns });
+        }
+        qText = null; qOpts = []; qAns = null;
+        continue;
+      }
+
+      if (qtype !== 'judge' && optLineRe.test(line)) {
+        const parsed = extractOpts(line);
+        if (parsed.length > 0) { qOpts = qOpts.concat(parsed); }
+        continue;
+      }
+
+      if (qText === null) {
+        qText = cleanQ(line);
+      } else if (qStartRe.test(line)) {
+        if (qText && qOpts.length > 0 && qAns) {
+          allQuestions.push({ type: qtype, text: qText, options: qOpts, answer: qAns });
+        }
+        qText = cleanQ(line); qOpts = []; qAns = null;
+      } else {
+        qText += ' ' + line;
+      }
+    }
+    if (qText && qOpts.length > 0 && qAns) {
+      allQuestions.push({ type: qtype, text: qText, options: qOpts, answer: qAns });
+    }
+  }
+
+  if (allQuestions.length === 0) throw new Error('未能从文档中解析出任何题目，请确认文档格式');
+
+  return allQuestions;
+}
+
 // ===== File Import Dialog =====
 function triggerImport() {
-  // Create a modal overlay for import
   const overlay = document.createElement('div');
   overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:1000;display:flex;align-items:center;justify-content:center;padding:1rem;';
   overlay.innerHTML = `
-    <div style="background:#fff;border-radius:16px;padding:1.5rem;max-width:500px;width:100%;box-shadow:0 20px 60px rgba(0,0,0,.2);">
-      <h3 style="margin-bottom:1rem;">📥 导入题库</h3>
-      <p style="font-size:.85rem;color:#666;margin-bottom:1rem;line-height:1.6;">
-        请选择 JSON 格式的题库文件。<br>
-        文件格式说明：<br>
-        <code style="display:block;background:#f5f5f5;padding:.75rem;border-radius:8px;font-size:.78rem;margin:.5rem 0;line-height:1.5;white-space:pre-wrap;">
-{
-  "name": "题库名称",
-  "questions": [
-    {
-      "type": "single",
-      "text": "题干",
-      "options": ["选项A","选项B","选项C","选项D"],
-      "answer": "A"
-    }
-  ]
-}
-        </code>
-        type 支持: single(单选) multi(多选) judge(判断) fill(填空)
+    <div style="background:#fff;border-radius:16px;padding:1.5rem;max-width:520px;width:100%;box-shadow:0 20px 60px rgba(0,0,0,.2);max-height:90vh;overflow-y:auto;">
+      <h3 style="margin-bottom:.5rem;">📥 导入题库</h3>
+      <p style="font-size:.82rem;color:#888;margin-bottom:1rem;line-height:1.5;">
+        支持 <b>.docx</b>（Word 文档）和 <b>.json</b> 格式。<br>
+        docx 会自动识别单选题/多选题/判断题/填空题章节。
       </p>
-      <input type="file" id="importFileInput" accept=".json" style="margin-bottom:1rem;display:block;">
-      <div style="display:flex;gap:.5rem;">
+      <div style="background:#f5f5ff;border-radius:10px;padding:.75rem;margin-bottom:1rem;font-size:.8rem;color:#555;line-height:1.6;">
+        <b style="color:#6366f1;">📌 docx 格式要求：</b><br>
+        • 用「一、单选题（共N题）」等标题分隔题型<br>
+        • 每道题以「1、题干」数字开头<br>
+        • 选项格式「A、选项内容  B、选项内容」或每行一个<br>
+        • 答案行「正确答案：A」
+      </div>
+      <input type="file" id="importFileInput" accept=".json,.docx" style="margin-bottom:.75rem;display:block;">
+      <div id="importPreview" style="margin-bottom:.75rem;max-height:300px;overflow-y:auto;"></div>
+      <div style="display:flex;gap:.5rem;flex-wrap:wrap;">
         <button class="btn btn-primary btn-sm" id="importConfirmBtn" disabled>导入</button>
         <button class="btn btn-ghost btn-sm" id="importCancelBtn">取消</button>
       </div>
@@ -87,47 +197,78 @@ function triggerImport() {
 
   const fileInput = document.getElementById('importFileInput');
   const confirmBtn = document.getElementById('importConfirmBtn');
-  const cancelBtn = document.getElementById('importCancelBtn');
+  const preview = document.getElementById('importPreview');
   const status = document.getElementById('importStatus');
-  let parsedData = null;
+  let parsedBank = null; // { name, questions }
 
-  fileInput.addEventListener('change', () => {
+  fileInput.addEventListener('change', async () => {
     const file = fileInput.files[0];
     if (!file) return;
-    const reader = new FileReader();
-    reader.onload = (e) => {
-      try {
-        parsedData = JSON.parse(e.target.result);
-        // Validate
-        if (!parsedData.name || !Array.isArray(parsedData.questions) || parsedData.questions.length === 0) {
-          status.textContent = '❌ 格式无效：需要包含 name 和 questions 数组';
-          confirmBtn.disabled = true;
-          return;
-        }
-        // Check for duplicate bank name
-        const banks = loadCustomBanks();
-        if (banks.some(b => b.name === parsedData.name)) {
-          status.textContent = '⚠️ 题库名称已存在，导入将覆盖';
-        } else {
-          status.textContent = `✅ 已解析：${parsedData.questions.length} 道题`;
-        }
+    confirmBtn.disabled = true;
+    preview.innerHTML = '<div style="text-align:center;color:#888;padding:1rem;">⏳ 解析中...</div>';
+    status.textContent = '';
+
+    try {
+      if (file.name.endsWith('.docx')) {
+        // DOCX parsing
+        const questions = await parseDocxQuestions(file);
+        const name = file.name.replace(/\.docx$/i, '');
+        parsedBank = { name, questions };
+        
+        // Show preview
+        const types = {};
+        questions.forEach(q => { types[q.type] = (types[q.type] || 0) + 1; });
+        const typeStr = Object.entries(types).map(([t, c]) => {
+          const label = { single: '单选', multi: '多选', judge: '判断', fill: '填空' }[t] || t;
+          return `${label}${c}题`;
+        }).join('、');
+        preview.innerHTML = `
+          <div style="background:#f0fdf4;border-radius:8px;padding:.6rem .75rem;font-size:.82rem;color:#065f46;">
+            ✅ 解析成功：共 <b>${questions.length}</b> 道题（${typeStr}）
+          </div>
+          <div style="margin-top:.5rem;font-size:.78rem;color:#666;max-height:200px;overflow-y:auto;">
+            ${questions.slice(0, 5).map((q, i) =>
+              `<div style="padding:.25rem 0;border-bottom:1px solid #eee;">${i+1}. [${q.type}] ${q.text.substring(0, 40)}${q.text.length>40?'...':''}</div>`
+            ).join('')}
+            ${questions.length > 5 ? `<div style="color:#999;padding:.25rem 0;">...还有 ${questions.length - 5} 题</div>` : ''}
+          </div>`;
         confirmBtn.disabled = false;
-      } catch(err) {
-        status.textContent = '❌ JSON 解析失败：' + err.message;
+        status.textContent = questions.length > 0 ? '✅ 可导入' : '❌ 未解析到题目';
+      } else {
+        // JSON parsing (existing)
+        const text = await file.text();
+        const data = JSON.parse(text);
+        if (!data.name || !Array.isArray(data.questions) || data.questions.length === 0) {
+          throw new Error('格式无效：JSON 需要包含 name 和 questions 数组');
+        }
+        parsedBank = data;
+        preview.innerHTML = `
+          <div style="background:#f0fdf4;border-radius:8px;padding:.6rem .75rem;font-size:.82rem;color:#065f46;">
+            ✅ 解析成功：共 <b>${data.questions.length}</b> 道题
+          </div>`;
+        confirmBtn.disabled = false;
+        status.textContent = '✅ 可导入';
       }
-    };
-    reader.readAsText(file);
+
+      // Check duplicate
+      const banks = loadCustomBanks();
+      if (banks.some(b => b.name === parsedBank.name)) {
+        status.textContent = '⚠️ 题库名称已存在，导入将覆盖';
+      }
+    } catch(err) {
+      preview.innerHTML = `<div style="background:#fef2f2;border-radius:8px;padding:.6rem .75rem;font-size:.82rem;color:#dc2626;">❌ ${err.message}</div>`;
+      status.textContent = '';
+    }
   });
 
   confirmBtn.addEventListener('click', () => {
-    if (!parsedData) return;
+    if (!parsedBank) return;
     const banks = loadCustomBanks();
-    // Remove existing bank with same name (replace)
-    const filtered = banks.filter(b => b.name !== parsedData.name);
-    filtered.push(parsedData);
+    const filtered = banks.filter(b => b.name !== parsedBank.name);
+    filtered.push(parsedBank);
     saveCustomBanks(filtered);
     applyCustomQuestions();
-    status.textContent = '✅ 导入成功！共 ' + parsedData.questions.length + ' 题';
+    status.textContent = '✅ 导入成功！共 ' + parsedBank.questions.length + ' 题';
     setTimeout(() => { overlay.remove(); renderWelcome(); }, 800);
   });
 
