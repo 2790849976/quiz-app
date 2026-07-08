@@ -358,8 +358,14 @@ function renderWelcome() {
       const newStep = effectiveMax <= 50 ? '1' : '5';
       range.step = newStep;
       range.max = effectiveMax;
-      let newVal = parseInt(range.value);
-      if (newVal > effectiveMax) newVal = effectiveMax;
+      // 当选择"全部"题型时，自动设置为最大值（全部题目）
+      let newVal;
+      if (typeF === 'all') {
+        newVal = effectiveMax;
+      } else {
+        newVal = parseInt(range.value);
+        if (newVal > effectiveMax) newVal = effectiveMax;
+      }
       const stepNum = parseInt(newStep);
       newVal = Math.max(5, Math.min(effectiveMax, Math.round(newVal / stepNum) * stepNum));
       range.value = String(newVal);
