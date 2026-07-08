@@ -474,10 +474,21 @@ function startQuiz() {
   }
   // Wrong mode: use wrong questions
   if (state.mode === 'wrong') {
+    // Auto-clean stale entries (questions that no longer exist)
+    const allIds = new Set(ALL_QUESTIONS.map(q => String(q.id)));
     const wrongMap = loadWrongQuestions();
+    let changed = false;
+    Object.keys(wrongMap).forEach(k => {
+      if (!allIds.has(k)) { delete wrongMap[k]; changed = true; }
+    });
+    if (changed) saveWrongQuestions(wrongMap);
+    
     const wrongIds = new Set(Object.keys(wrongMap));
     pool = pool.filter(q => wrongIds.has(String(q.id)));
-    if (pool.length === 0) { renderWelcome(); return; }
+    if (pool.length === 0) {
+      renderWelcome();
+      return;
+    }
   }
 
   // Shuffle for shuffle AND typeOnly modes
