@@ -372,24 +372,23 @@ body {
 .filter-btn:hover { border-color: #c4b5fd; }
 .filter-btn.active { border-color: #6366f1; background: #f0edff; color: #6366f1; font-weight: 600; }
 
-/* ===== Multi-choice Options ===== */
-.option-multi { border-color: #d1fae5; }
-.option-multi:hover:not(.disabled) { border-color: #6ee7b7; background: #f0fdf4; }
-.option-multi.selected { border-color: #10b981; background: #ecfdf5; }
-.option-multi.correct { border-color: #10b981; background: #d1fae5; }
+/* ===== Multi-choice Options (same style as single, but toggle) ===== */
+.option-multi { border-color: #e8e8e8; }
+.option-multi:hover:not(.disabled) { border-color: #c4b5fd; background: #fafafe; }
+.option-multi.selected { border-color: #6366f1; background: #f0edff; }
+.option-multi.correct { border-color: #22c55e; background: #f0fdf4; }
 .option-multi.wrong { border-color: #ef4444; background: #fef2f2; }
 .option-multi.missed { border-color: #f59e0b; background: #fffbeb; opacity: .8; }
 .option-multi.correct.disabled, .option-multi.wrong.disabled, .option-multi.missed.disabled { opacity: 1; }
 .option-letter-multi {
-  width: 28px; height: 28px; border-radius: 4px;
+  width: 28px; height: 28px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  font-weight: 700; font-size: .9rem; flex-shrink: 0;
+  font-weight: 700; font-size: .85rem; flex-shrink: 0;
 }
-.checkbox-checked { background: #10b981; color: #fff; }
-.checkbox-unchecked { background: #f0f0f0; color: #999; }
-.option-multi.selected .option-letter-multi { background: #10b981; color: #fff; }
-.option-multi.correct .option-letter-multi { background: #059669; color: #fff; }
-.option-multi.wrong .option-letter-multi { background: #dc2626; color: #fff; }
+.option-multi .option-letter-multi { background: #f0f0f0; color: #666; }
+.option-multi.selected .option-letter-multi { background: #6366f1; color: #fff; }
+.option-multi.correct .option-letter-multi { background: #22c55e; color: #fff; }
+.option-multi.wrong .option-letter-multi { background: #ef4444; color: #fff; }
 .option-multi.missed .option-letter-multi { background: #d97706; color: #fff; }
 
 /* ===== Judge Options ===== */

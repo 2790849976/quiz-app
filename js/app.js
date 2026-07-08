@@ -625,38 +625,45 @@ function renderQuiz() {
       </div>`;
   }
 
-  app.innerHTML = `
-    <div class="fade-in">
-      <div class="quiz-header">
-        <div class="progress-bar-container">
-          <div class="progress-track">
-            <div class="progress-fill" style="width:${pct}%"></div>
-          </div>
-          <span class="progress-text">${idx+1} / ${total}</span>
-          <span class="score-badge">✓ ${correctCount}</span>
-          <span class="timer" id="timerDisplay">${formatTime(Math.floor((Date.now()-state.startTime)/1000))}</span>
+  // Use persistent container to avoid full DOM rebuild (prevents flash)
+  var qc = document.getElementById('quizContainer');
+  if (!qc) {
+    qc = document.createElement('div');
+    qc.id = 'quizContainer';
+    qc.className = 'fade-in';
+    app.innerHTML = '';
+    app.appendChild(qc);
+  }
+  qc.innerHTML = `
+    <div class="quiz-header">
+      <div class="progress-bar-container">
+        <div class="progress-track">
+          <div class="progress-fill" style="width:${pct}%"></div>
         </div>
+        <span class="progress-text">${idx+1} / ${total}</span>
+        <span class="score-badge">✓ ${correctCount}</span>
+        <span class="timer" id="timerDisplay">${formatTime(Math.floor((Date.now()-state.startTime)/1000))}</span>
       </div>
-      <div class="question-area">
-        <div class="question-card">
-          <div style="display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem;">
-            <span class="question-number">第 ${idx+1} 题</span>
-            ${TYPE_BADGE[q.type]}
-            <span style="font-size:.75rem;color:#999;">${sourceLabel}</span>
-          ${q.image ? `<span style="font-size:.7rem;color:#aaa;margin-left:auto;">含配图</span>` : ''}
-          </div>
-          ${imgHtml}
-          <div class="question-text">${escapeHtml(q.text)}</div>
-          <div class="options-list" id="optionsList">
-            ${optionsHtml}
-          </div>
-          ${fillInputHtml}
-          ${multiSubmitHtml}
-          ${explanationHtml}
-        </div>
-      </div>
-      ${navHtml}
     </div>
+    <div class="question-area">
+      <div class="question-card">
+        <div style="display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem;">
+          <span class="question-number">第 ${idx+1} 题</span>
+          ${TYPE_BADGE[q.type]}
+          <span style="font-size:.75rem;color:#999;">${sourceLabel}</span>
+        ${q.image ? `<span style="font-size:.7rem;color:#aaa;margin-left:auto;">含配图</span>` : ''}
+        </div>
+        ${imgHtml}
+        <div class="question-text">${escapeHtml(q.text)}</div>
+        <div class="options-list" id="optionsList">
+          ${optionsHtml}
+        </div>
+        ${fillInputHtml}
+        ${multiSubmitHtml}
+        ${explanationHtml}
+      </div>
+    </div>
+    ${navHtml}
   `;
 
   // ===== Event binding =====
@@ -813,9 +820,8 @@ function renderMultiOptions(q, existingAnswer, isRevealed, idx) {
     } else if (isSelected) {
       cls += ' selected';
     }
-    const checkboxIcon = isSelected ? '☑' : '□';
     return `<button class="${cls}" data-opt="${letter}">
-      <span class="option-letter option-letter-multi checkbox-${isSelected?'checked':'unchecked'}">${checkboxIcon}</span>
+      <span class="option-letter option-letter-multi">${letter}</span>
       <span>${escapeHtml(opt.text)}</span>
     </button>`;
   }).join('');
