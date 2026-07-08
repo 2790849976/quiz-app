@@ -498,13 +498,25 @@ function startQuiz() {
     }
   }
 
-  // Determine question order
+  // 按题型排序：单选→多选→判断→填空（所有模式均适用）
+  const typeOrder = { single: 0, multi: 1, judge: 2, fill: 3 };
+  pool.sort((a, b) => (typeOrder[a.type] || 99) - (typeOrder[b.type] || 99));
+  
+  // 根据模式决定是否打乱
   if (state.mode === 'shuffle' || state.mode === 'typeOnly') {
-    state.questions = shuffle(pool).slice(0, state.totalQ);
+    // 同题型内打乱，但仍保持题型分组顺序
+    const grouped = [];
+    let start = 0;
+    while (start < pool.length) {
+      const curType = pool[start].type;
+      let end = start + 1;
+      while (end < pool.length && pool[end].type === curType) end++;
+      const chunk = shuffle(pool.slice(start, end));
+      grouped.push(...chunk);
+      start = end;
+    }
+    state.questions = grouped.slice(0, state.totalQ);
   } else {
-    // Sequential mode: sort by type (单选→多选→判断→填空) within each subject
-    const typeOrder = { single: 0, multi: 1, judge: 2, fill: 3 };
-    pool.sort((a, b) => (typeOrder[a.type] || 99) - (typeOrder[b.type] || 99));
     state.questions = pool.slice(0, state.totalQ);
   }
 
