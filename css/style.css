@@ -91,7 +91,26 @@ body {
 .setting-label { font-size: .9rem; color: #444; }
 .setting-control { display: flex; align-items: center; gap: .5rem; }
 .setting-control input[type="range"] {
-  width: 100px; accent-color: #6366f1;
+  width: 100px; height: 6px; accent-color: #6366f1;
+  cursor: pointer; -webkit-appearance: none; appearance: none;
+  background: transparent; outline: none;
+}
+.setting-control input[type="range"]::-webkit-slider-runnable-track {
+  height: 6px; border-radius: 3px; background: #ddd;
+}
+.setting-control input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none;
+  width: 18px; height: 18px; border-radius: 50%;
+  background: #6366f1; cursor: pointer;
+  margin-top: -6px; box-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+.setting-control input[type="range"]::-moz-range-track {
+  height: 6px; border-radius: 3px; background: #ddd; border: none;
+}
+.setting-control input[type="range"]::-moz-range-thumb {
+  width: 18px; height: 18px; border-radius: 50%;
+  background: #6366f1; cursor: pointer; border: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,.2);
 }
 .setting-control .range-val {
   font-weight: 700; color: #6366f1; min-width: 28px; text-align: center;
@@ -266,7 +285,7 @@ body {
   .settings-panel { padding: .75rem 1rem; margin-bottom: 1rem; }
   .setting-row { padding: .4rem 0; }
   .setting-label { font-size: .8rem; }
-  .setting-control input[type="range"] { width: 80px; }
+  .setting-control input[type="range"] { width: 80px; height: 20px; }
 
   /* Mode grid */
   .mode-grid { gap: .6rem; margin-bottom: 1rem; }
@@ -307,6 +326,9 @@ body {
   /* Fill inputs */
   .fill-container { font-size: .92rem; line-height: 2; }
   .fill-input { width: 100px; padding: .3rem .5rem; font-size: .85rem; min-height: 36px; }
+  /* Essay inputs */
+  .essay-input { min-height: 100px; font-size: .9rem; padding: .7rem .85rem; }
+  .essay-submitted, .essay-answer { padding: .65rem .85rem; }
 
   /* Result screen */
   .result-screen { padding: 1.25rem .75rem; }
@@ -354,6 +376,7 @@ body {
 .badge-multi  { background: #d1fae5; color: #059669; }
 .badge-judge  { background: #fef3c7; color: #d97706; }
 .badge-fill   { background: #fce7f3; color: #db2777; }
+.badge-essay  { background: #ede9fe; color: #7c3aed; }
 
 /* ===== Filter Row (Welcome) ===== */
 .section-label {
@@ -500,6 +523,23 @@ body {
   white-space: nowrap; z-index: 5;
 }
 .fill-wrong:hover .fill-answer-hint { display: block; }
+
+/* ===== Essay (翻译/简答) ===== */
+.essay-container { margin: 1rem 0; }
+.essay-input {
+  width: 100%; min-height: 120px; padding: .85rem 1rem;
+  border: 2px solid #e5e7eb; border-radius: 10px;
+  font-size: .95rem; font-family: inherit;
+  background: #fff; outline: none; resize: vertical;
+  transition: border-color .2s;
+}
+.essay-input:focus { border-color: #8b5cf6; box-shadow: 0 0 0 3px rgba(139,92,246,.15); }
+.essay-input::placeholder { color: #ccc; }
+.essay-submitted { background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 10px; padding: .85rem 1rem; margin-bottom: .75rem; }
+.essay-answer { background: #faf5ff; border: 1px solid #d8b4fe; border-radius: 10px; padding: .85rem 1rem; }
+.essay-label { font-size: .82rem; font-weight: 600; margin-bottom: .4rem; color: #555; }
+.essay-text { font-size: .92rem; line-height: 1.6; color: #333; white-space: pre-wrap; }
+.ri-status.submitted { background: #ede9fe; color: #7c3aed; }
 
 /* ===== Resume Button ===== */
 .btn-resume {

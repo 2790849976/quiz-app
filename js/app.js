@@ -6,6 +6,16 @@
 const WRONG_KEY = 'ms_wrong_questions';
 const PROGRESS_KEY = 'ms_quiz_progress';
 const CUSTOM_KEY = 'ms_custom_questions';
+const TYPE_LABELS = { single: '单选题', multi: '多选题', judge: '判断题', fill: '填空题', essay: '翻译/简答' };
+const TYPE_COLORS = { single: '#6366f1', multi: '#10b981', judge: '#f59e0b', fill: '#ec4899', essay: '#8b5cf6' };
+const TYPE_BADGE = {
+  single: '<span class="badge badge-single">单选题</span>',
+  multi:  '<span class="badge badge-multi">多选题</span>',
+  judge:  '<span class="badge badge-judge">判断题</span>',
+  fill:   '<span class="badge badge-fill">填空题</span>',
+  essay:  '<span class="badge badge-essay">翻译/简答</span>',
+};
+const LABELS = ['A', 'B', 'C', 'D', 'E', 'F'];
 
 // ===== Custom Question Bank Management =====
 function loadCustomBanks() {
@@ -298,15 +308,7 @@ function triggerImport() {
   cancelBtn.addEventListener('click', () => overlay.remove());
   overlay.addEventListener('click', (e) => { if (e.target === overlay) overlay.remove(); });
 }
-const TYPE_LABELS = { single: '单选题', multi: '多选题', judge: '判断题', fill: '填空题' };
-const TYPE_COLORS = { single: '#6366f1', multi: '#10b981', judge: '#f59e0b', fill: '#ec4899' };
-const TYPE_BADGE = {
-  single: '<span class="badge badge-single">单选题</span>',
-  multi:  '<span class="badge badge-multi">多选题</span>',
-  judge:  '<span class="badge badge-judge">判断题</span>',
-  fill:   '<span class="badge badge-fill">填空题</span>',
-};
-const LABELS = ['A', 'B', 'C', 'D', 'E', 'F'];
+// Old duplicate removed — constants are at the top of the file
 
 // ===== State =====
 const state = {
@@ -322,7 +324,9 @@ const state = {
   // Multi selection buffer (not yet confirmed)
   multiSelected: {},
   // Fill answers buffer
-  fillAnswers: {},  // { [questionIdx]: { [blankIdx]: "user answer" } }
+  fillAnswers: {},
+  // Essay answers buffer
+  essayAnswers: {},  // { [questionIdx]: { [blankIdx]: "user answer" } }
 
   // Timer
   startTime: 0,
@@ -515,6 +519,7 @@ function renderWelcome() {
   state.answers = [];
   state.multiSelected = {};
   state.fillAnswers = {};
+  state.essayAnswers = {};
   clearShuffledCache();
   cleanupKeyboard();
   clearInterval(state.timerInterval);
@@ -576,6 +581,7 @@ function renderWelcome() {
         <button class="filter-btn" data-type="multi">多选题 (${ALL_QUESTIONS.filter(q=>q.type==='multi').length})</button>
         <button class="filter-btn" data-type="judge">判断题 (${ALL_QUESTIONS.filter(q=>q.type==='judge').length})</button>
         <button class="filter-btn" data-type="fill">填空题 (${ALL_QUESTIONS.filter(q=>q.type==='fill').length})</button>
+        <button class="filter-btn" data-type="essay">翻译/简答 (${ALL_QUESTIONS.filter(q=>q.type==='essay').length})</button>
       </div>
 
       <div class="settings-panel">
@@ -644,11 +650,13 @@ function renderWelcome() {
     const multiCount = filtered.filter(q => q.type === 'multi').length;
     const judgeCount = filtered.filter(q => q.type === 'judge').length;
     const fillCount = filtered.filter(q => q.type === 'fill').length;
+    const essayCount = filtered.filter(q => q.type === 'essay').length;
     document.querySelector('[data-type="all"]').textContent = `全部 (${filtered.length})`;
     document.querySelector('[data-type="single"]').textContent = `单选题 (${singleCount})`;
     document.querySelector('[data-type="multi"]').textContent = `多选题 (${multiCount})`;
     document.querySelector('[data-type="judge"]').textContent = `判断题 (${judgeCount})`;
     document.querySelector('[data-type="fill"]').textContent = `填空题 (${fillCount})`;
+    document.querySelector('[data-type="essay"]').textContent = `翻译/简答 (${essayCount})`;
     // Compute slider max: apply both subject AND type filter
     let pool = subj === 'all' ? ALL_QUESTIONS : ALL_QUESTIONS.filter(q => q.source === subj);
     if (typeF !== 'all') pool = pool.filter(q => q.type === typeF);
@@ -753,6 +761,7 @@ function resumeQuiz() {
   state.answers = saved.answers || [];
   state.multiSelected = {};
   state.fillAnswers = {};
+  state.essayAnswers = {};
 
   // Rebuild shuffled cache so options appear same as before
   clearShuffledCache();
@@ -773,6 +782,7 @@ function startQuiz() {
   state.answers = [];
   state.multiSelected = {};
   state.fillAnswers = {};
+  state.essayAnswers = {};
   clearShuffledCache();
   clearQuizProgress();
   state.startTime = Date.now();
@@ -806,7 +816,7 @@ function startQuiz() {
   }
 
   // 按题型排序：单选→多选→判断→填空（所有模式均适用）
-  const typeOrder = { single: 0, multi: 1, judge: 2, fill: 3 };
+  const typeOrder = { single: 0, multi: 1, judge: 2, fill: 3, essay: 4 };
   pool.sort((a, b) => (typeOrder[a.type] ?? 99) - (typeOrder[b.type] ?? 99));
   
   // 根据模式决定是否打乱
@@ -874,6 +884,7 @@ function renderQuiz() {
   // Options rendering (pass shuffledQ which may differ from q)
   let optionsHtml = '';
   let fillInputHtml = '';
+  let essayHtml = '';
   if (q.type === 'single') {
     optionsHtml = renderSingleOptions(shuffledQ, existingAnswer, isRevealed);
   } else if (q.type === 'multi') {
@@ -882,11 +893,13 @@ function renderQuiz() {
     optionsHtml = renderJudgeOptions(q, existingAnswer, isRevealed);
   } else if (q.type === 'fill') {
     fillInputHtml = renderFillInputs(q, existingAnswer, isRevealed, idx);
+  } else if (q.type === 'essay') {
+    essayHtml = renderEssayOptions(q, existingAnswer, isRevealed, idx);
   }
 
-  // Explanation area
+  // Explanation area (essay 不需要，参考答案已在 essay UI 中展示)
   let explanationHtml = '';
-  if (isRevealed) {
+  if (isRevealed && q.type !== 'essay') {
     const isCorrect = existingAnswer.correct;
     let correctAnswerLabel;
     if (q.type === 'judge') {
@@ -963,6 +976,11 @@ function renderQuiz() {
       <div style="text-align:center;margin-top:.8rem;">
         <button class="btn btn-primary btn-sm" id="confirmFillBtn">✓ 确认提交</button>
       </div>`;
+  } else if (q.type === 'essay' && !isRevealed) {
+    multiSubmitHtml = `
+      <div style="text-align:center;margin-top:.8rem;">
+        <button class="btn btn-primary btn-sm" id="confirmEssayBtn">✓ 提交参考</button>
+      </div>`;
   }
 
   // Use persistent container to avoid full DOM rebuild (prevents flash)
@@ -999,6 +1017,7 @@ function renderQuiz() {
           ${optionsHtml}
         </div>
         ${fillInputHtml}
+        ${essayHtml}
         ${multiSubmitHtml}
         ${explanationHtml}
       </div>
@@ -1035,6 +1054,11 @@ function renderQuiz() {
         inputs[inputs.length - 1].addEventListener('keydown', (e) => {
           if (e.key === 'Enter') submitBtn?.click();
         });
+      }
+    } else if (q.type === 'essay') {
+      const essayBtn = document.getElementById('confirmEssayBtn');
+      if (essayBtn) {
+        essayBtn.addEventListener('click', () => submitEssay(q, idx));
       }
     }
   }
@@ -1311,6 +1335,44 @@ function submitFill(q, idx) {
   renderQuiz();
 }
 
+// ===== Essay Renderer =====
+function renderEssayOptions(q, existingAnswer, isRevealed, idx) {
+  if (isRevealed) {
+    const userAns = existingAnswer ? existingAnswer.selected : '';
+    return `
+      <div class="essay-container">
+        <div class="essay-submitted">
+          <div class="essay-label">📝 我的回答：</div>
+          <div class="essay-text">${escapeHtml(userAns || '(未作答)')}</div>
+        </div>
+        <div class="essay-answer">
+          <div class="essay-label" style="color:#6366f1;">📖 参考答案：</div>
+          <div class="essay-text" style="color:#374151;">${escapeHtml(q.answer)}</div>
+        </div>
+      </div>`;
+  }
+  const saved = (state.essayAnswers && state.essayAnswers[idx]) || '';
+  return `
+    <div class="essay-container">
+      <textarea class="essay-input" id="essayInput" rows="4" placeholder="请输入您的答案...">${escapeHtml(saved)}</textarea>
+    </div>`;
+}
+
+// ===== Essay Submit =====
+function submitEssay(q, idx) {
+  const textarea = document.getElementById('essayInput');
+  const userAns = textarea ? textarea.value.trim() : '';
+  if (!userAns) return;
+  if (!state.essayAnswers) state.essayAnswers = {};
+  state.essayAnswers[idx] = userAns;
+  state.answers[idx] = {
+    submitted: true, correct: null,
+    selected: userAns,
+    time: Math.floor((Date.now() - state.startTime) / 1000)
+  };
+  renderQuiz();
+}
+
 // ============================================================
 // SCREEN: Result
 // ============================================================
@@ -1329,7 +1391,7 @@ function renderResult() {
   const circumference = 2 * Math.PI * 65;
   const offset = circumference - (scorePct / 100) * circumference;
 
-  // Per-type stats
+  // Per-type stats (essay 不计分，只统计提交数)
   const typeStats = {};
   ['single', 'multi', 'judge', 'fill'].forEach(t => {
     const qs = state.questions.filter(q => q.type === t);
@@ -1341,6 +1403,16 @@ function renderResult() {
     }).filter(Boolean).length;
     typeStats[t] = { total: qs.length, correct: corr, rate: qs.length > 0 ? Math.round(corr/qs.length*100) : 0 };
   });
+  // Essay: count submitted only
+  const essayQs = state.questions.filter(q => q.type === 'essay');
+  if (essayQs.length > 0) {
+    const essaySubmitted = essayQs.filter(q => {
+      const realIdx = state.questions.indexOf(q);
+      const a = state.answers[realIdx];
+      return a && a.submitted;
+    }).length;
+    typeStats['essay'] = { total: essayQs.length, correct: essaySubmitted, rate: essayQs.length > 0 ? Math.round(essaySubmitted/essayQs.length*100) : 0, isEssay: true };
+  }
 
   let color = '#ef4444';
   if (scorePct >= 80) color = '#22c55e';
@@ -1350,11 +1422,12 @@ function renderResult() {
   Object.keys(typeStats).forEach(t => {
     const s = typeStats[t];
     const c = TYPE_COLORS[t];
+    const valText = s.isEssay ? `已提交${s.correct}/${s.total}` : `${s.correct}/${s.total} (${s.rate}%)`;
     typeStatsHtml += `
       <div class="ts-row">
         <span class="ts-label">${TYPE_LABELS[t]}</span>
         <div class="ts-track"><div class="ts-fill" style="width:${s.rate}%;background:${c};"></div></div>
-        <span class="ts-val">${s.correct}/${s.total} (${s.rate}%)</span>
+        <span class="ts-val">${valText}</span>
       </div>`;
   });
 
@@ -1440,7 +1513,8 @@ function renderReview() {
       let statusClass = 'unanswered';
       let statusText = '未答';
       if (isSubmitted) {
-        if (isCorrect) { statusClass = 'correct'; statusText = '正确'; }
+        if (q.type === 'essay') { statusClass = 'submitted'; statusText = '已提交'; }
+        else if (isCorrect) { statusClass = 'correct'; statusText = '正确'; }
         else if (isPartial) { statusClass = 'partial'; statusText = '部分正确'; }
         else { statusClass = 'wrong'; statusText = '错误'; }
       }
@@ -1454,6 +1528,7 @@ function renderReview() {
                 return l + (opt ? '. ' + opt.text : '');
               }).join('、')
             : q.type === 'fill' ? (ans.selected || '')
+            : q.type === 'essay' ? (ans.selected || '')
             : ans.selected + '. ' + (q.options.find(o => o.label === ans.selected)?.text || '');
         const correctAnswer = q.type === 'judge' ? q.answer
           : q.type === 'multi'
@@ -1462,11 +1537,13 @@ function renderReview() {
                 return l + (opt ? '. ' + opt.text : '');
               }).join('、')
             : q.type === 'fill' ? q.answer
+            : q.type === 'essay' ? q.answer
             : q.answer + '. ' + (q.options.find(o => o.label === q.answer)?.text || '');
+        const ansLabel = q.type === 'essay' ? '📖 参考答案' : '✓ 正确答案';
         answerDetail = `
           <div class="ri-detail">
-            <span style="color:#22c55e;">✓ 正确答案：${escapeHtml(correctAnswer)}</span>
-            ${!isCorrect ? `<br><span style="color:#ef4444;">✗ 你的答案：${escapeHtml(userAnswer)}</span>` : ''}
+            <span style="color:#6366f1;">${ansLabel}：${escapeHtml(correctAnswer)}</span>
+            ${q.type !== 'essay' && !isCorrect ? `<br><span style="color:#ef4444;">✗ 你的答案：${escapeHtml(userAnswer)}</span>` : ''}
           </div>`;
       }
 

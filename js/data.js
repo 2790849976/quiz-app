@@ -1,11 +1,11 @@
 // Auto-generated
-// Total: 378
+// Total: 409
 const ALL_QUESTIONS = [
   {
     "id": 1,
     "source": "english",
     "type": "single",
-    "text": "读图题，下图是？",
+    "text": "读图题，下图是？（）",
     "options": [
       {
         "label": "A",
@@ -57,7 +57,7 @@ const ALL_QUESTIONS = [
     "id": 3,
     "source": "english",
     "type": "single",
-    "text": "该图片显示的设备是",
+    "text": "该图片显示的设备是（）",
     "options": [
       {
         "label": "A",
@@ -208,7 +208,7 @@ const ALL_QUESTIONS = [
     "id": 9,
     "source": "english",
     "type": "single",
-    "text": "Artificial Intelligence 的中文含义是？",
+    "text": "Artificial Intelligence 的中文含义是？（）",
     "options": [
       {
         "label": "A",
@@ -508,7 +508,7 @@ const ALL_QUESTIONS = [
     "id": 21,
     "source": "english",
     "type": "single",
-    "text": "Which one is not a computer languages?",
+    "text": "Which one is not a computer languages? （）",
     "options": [
       {
         "label": "A",
@@ -784,7 +784,7 @@ const ALL_QUESTIONS = [
     "id": 32,
     "source": "english",
     "type": "single",
-    "text": "动态的英文翻译",
+    "text": "动态的英文翻译（）",
     "options": [
       {
         "label": "A",
@@ -1574,7 +1574,7 @@ const ALL_QUESTIONS = [
     "id": 78,
     "source": "oop",
     "type": "single",
-    "text": "以下不属于 Java 语言核心特点的是",
+    "text": "以下不属于 Java 语言核心特点的是（）",
     "options": [
       {
         "label": "A",
@@ -1599,7 +1599,7 @@ const ALL_QUESTIONS = [
     "id": 79,
     "source": "oop",
     "type": "single",
-    "text": "Java 程序的编译命令是",
+    "text": "Java 程序的编译命令是（）",
     "options": [
       {
         "label": "A",
@@ -1624,7 +1624,7 @@ const ALL_QUESTIONS = [
     "id": 80,
     "source": "oop",
     "type": "single",
-    "text": "以下合法的 Java 标识符是",
+    "text": "以下合法的 Java 标识符是（）",
     "options": [
       {
         "label": "A",
@@ -1649,7 +1649,7 @@ const ALL_QUESTIONS = [
     "id": 81,
     "source": "oop",
     "type": "single",
-    "text": "Java 中基本数据类型不包括",
+    "text": "Java 中基本数据类型不包括（）",
     "options": [
       {
         "label": "A",
@@ -1674,7 +1674,7 @@ const ALL_QUESTIONS = [
     "id": 82,
     "source": "oop",
     "type": "single",
-    "text": "三元运算符的语法格式正确的是",
+    "text": "三元运算符的语法格式正确的是（）",
     "options": [
       {
         "label": "A",
@@ -1699,7 +1699,7 @@ const ALL_QUESTIONS = [
     "id": 83,
     "source": "oop",
     "type": "single",
-    "text": "以下循环语句中，至少执行一次循环体的是",
+    "text": "以下循环语句中，至少执行一次循环体的是（）",
     "options": [
       {
         "label": "A",
@@ -1724,7 +1724,7 @@ const ALL_QUESTIONS = [
     "id": 84,
     "source": "oop",
     "type": "single",
-    "text": "Java 中类的封装特性的核心目的是",
+    "text": "Java 中类的封装特性的核心目的是（）",
     "options": [
       {
         "label": "A",
@@ -1749,7 +1749,7 @@ const ALL_QUESTIONS = [
     "id": 85,
     "source": "oop",
     "type": "single",
-    "text": "以下关键字中用于实现继承的是",
+    "text": "以下关键字中用于实现继承的是（）",
     "options": [
       {
         "label": "A",
@@ -1774,7 +1774,7 @@ const ALL_QUESTIONS = [
     "id": 86,
     "source": "oop",
     "type": "single",
-    "text": "抽象类的定义关键字是",
+    "text": "抽象类的定义关键字是（）",
     "options": [
       {
         "label": "A",
@@ -1799,7 +1799,7 @@ const ALL_QUESTIONS = [
     "id": 87,
     "source": "oop",
     "type": "single",
-    "text": "接口中默认的成员变量修饰符是",
+    "text": "接口中默认的成员变量修饰符是（）",
     "options": [
       {
         "label": "A",
@@ -1824,7 +1824,7 @@ const ALL_QUESTIONS = [
     "id": 88,
     "source": "oop",
     "type": "single",
-    "text": "一维数组 `int[] arr = new int[5]` 的默认元素值是",
+    "text": "一维数组 `int[] arr = new int[5]` 的默认元素值是（）",
     "options": [
       {
         "label": "A",
@@ -1849,7 +1849,7 @@ const ALL_QUESTIONS = [
     "id": 89,
     "source": "oop",
     "type": "single",
-    "text": "String 类的特点描述正确的是",
+    "text": "String 类的特点描述正确的是（）",
     "options": [
       {
         "label": "A",
@@ -1874,7 +1874,7 @@ const ALL_QUESTIONS = [
     "id": 90,
     "source": "oop",
     "type": "single",
-    "text": "以下属于 List 集合特点的是",
+    "text": "以下属于 List 集合特点的是（）",
     "options": [
       {
         "label": "A",
@@ -1899,7 +1899,7 @@ const ALL_QUESTIONS = [
     "id": 91,
     "source": "oop",
     "type": "single",
-    "text": "Java 中用于捕获异常的关键字是",
+    "text": "Java 中用于捕获异常的关键字是（）",
     "options": [
       {
         "label": "A",
@@ -1924,7 +1924,7 @@ const ALL_QUESTIONS = [
     "id": 92,
     "source": "oop",
     "type": "single",
-    "text": "以下属于字符流的类是",
+    "text": "以下属于字符流的类是（）",
     "options": [
       {
         "label": "A",
@@ -1949,7 +1949,7 @@ const ALL_QUESTIONS = [
     "id": 93,
     "source": "oop",
     "type": "single",
-    "text": "线程生命周期中，不包含的状态是",
+    "text": "线程生命周期中，不包含的状态是（）",
     "options": [
       {
         "label": "A",
@@ -1974,7 +1974,7 @@ const ALL_QUESTIONS = [
     "id": 94,
     "source": "oop",
     "type": "single",
-    "text": "TCP 协议对应的网络编程核心类是",
+    "text": "TCP 协议对应的网络编程核心类是（）",
     "options": [
       {
         "label": "A",
@@ -1999,7 +1999,7 @@ const ALL_QUESTIONS = [
     "id": 95,
     "source": "oop",
     "type": "single",
-    "text": "JDBC 中用于执行 SQL 查询语句的接口是",
+    "text": "JDBC 中用于执行 SQL 查询语句的接口是（）",
     "options": [
       {
         "label": "A",
@@ -2024,7 +2024,7 @@ const ALL_QUESTIONS = [
     "id": 96,
     "source": "oop",
     "type": "single",
-    "text": "static 关键字修饰的方法特点是",
+    "text": "static 关键字修饰的方法特点是（）",
     "options": [
       {
         "label": "A",
@@ -2049,7 +2049,7 @@ const ALL_QUESTIONS = [
     "id": 97,
     "source": "oop",
     "type": "single",
-    "text": "多态的实现基础不包括",
+    "text": "多态的实现基础不包括（）",
     "options": [
       {
         "label": "A",
@@ -2074,7 +2074,7 @@ const ALL_QUESTIONS = [
     "id": 98,
     "source": "oop",
     "type": "single",
-    "text": "Java 源代码文件的后缀名是",
+    "text": "Java 源代码文件的后缀名是（）",
     "options": [
       {
         "label": "A",
@@ -2099,7 +2099,7 @@ const ALL_QUESTIONS = [
     "id": 99,
     "source": "oop",
     "type": "single",
-    "text": "以下属于 Java 引用数据类型的是",
+    "text": "以下属于 Java 引用数据类型的是（）",
     "options": [
       {
         "label": "A",
@@ -2124,7 +2124,7 @@ const ALL_QUESTIONS = [
     "id": 100,
     "source": "oop",
     "type": "single",
-    "text": "赋值运算符的优先级关系正确的是",
+    "text": "赋值运算符的优先级关系正确的是（）",
     "options": [
       {
         "label": "A",
@@ -2149,7 +2149,7 @@ const ALL_QUESTIONS = [
     "id": 101,
     "source": "oop",
     "type": "single",
-    "text": "以下语句中可以终止本次循环，进入下一次循环的是",
+    "text": "以下语句中可以终止本次循环，进入下一次循环的是（）",
     "options": [
       {
         "label": "A",
@@ -2174,7 +2174,7 @@ const ALL_QUESTIONS = [
     "id": 102,
     "source": "oop",
     "type": "single",
-    "text": "类中成员变量的默认修饰符是",
+    "text": "类中成员变量的默认修饰符是（）",
     "options": [
       {
         "label": "A",
@@ -2199,7 +2199,7 @@ const ALL_QUESTIONS = [
     "id": 103,
     "source": "oop",
     "type": "single",
-    "text": "super 关键字不能实现的功能是",
+    "text": "super 关键字不能实现的功能是（）",
     "options": [
       {
         "label": "A",
@@ -2224,7 +2224,7 @@ const ALL_QUESTIONS = [
     "id": 104,
     "source": "oop",
     "type": "single",
-    "text": "含有抽象方法的类必须是",
+    "text": "含有抽象方法的类必须是（）",
     "options": [
       {
         "label": "A",
@@ -2249,7 +2249,7 @@ const ALL_QUESTIONS = [
     "id": 105,
     "source": "oop",
     "type": "single",
-    "text": "接口的实现关键字是",
+    "text": "接口的实现关键字是（）",
     "options": [
       {
         "label": "A",
@@ -2274,7 +2274,7 @@ const ALL_QUESTIONS = [
     "id": 106,
     "source": "oop",
     "type": "single",
-    "text": "数组下标的起始值是",
+    "text": "数组下标的起始值是（）",
     "options": [
       {
         "label": "A",
@@ -2299,7 +2299,7 @@ const ALL_QUESTIONS = [
     "id": 107,
     "source": "oop",
     "type": "single",
-    "text": "适合频繁修改字符串的类是",
+    "text": "适合频繁修改字符串的类是（）",
     "options": [
       {
         "label": "A",
@@ -2324,7 +2324,7 @@ const ALL_QUESTIONS = [
     "id": 108,
     "source": "oop",
     "type": "single",
-    "text": "HashMap 的特点是",
+    "text": "HashMap 的特点是（）",
     "options": [
       {
         "label": "A",
@@ -2349,7 +2349,7 @@ const ALL_QUESTIONS = [
     "id": 109,
     "source": "oop",
     "type": "single",
-    "text": "自定义异常需要继承的类是",
+    "text": "自定义异常需要继承的类是（）",
     "options": [
       {
         "label": "A",
@@ -2374,7 +2374,7 @@ const ALL_QUESTIONS = [
     "id": 110,
     "source": "oop",
     "type": "single",
-    "text": "用于读取文本文件的字符流类是",
+    "text": "用于读取文本文件的字符流类是（）",
     "options": [
       {
         "label": "A",
@@ -2399,7 +2399,7 @@ const ALL_QUESTIONS = [
     "id": 111,
     "source": "oop",
     "type": "single",
-    "text": "线程的就绪状态含义是",
+    "text": "线程的就绪状态含义是（）",
     "options": [
       {
         "label": "A",
@@ -2424,7 +2424,7 @@ const ALL_QUESTIONS = [
     "id": 112,
     "source": "oop",
     "type": "single",
-    "text": "UDP 编程的核心类是",
+    "text": "UDP 编程的核心类是（）",
     "options": [
       {
         "label": "A",
@@ -2449,7 +2449,7 @@ const ALL_QUESTIONS = [
     "id": 113,
     "source": "oop",
     "type": "single",
-    "text": "JDBC 中用于封装查询结果的接口是",
+    "text": "JDBC 中用于封装查询结果的接口是（）",
     "options": [
       {
         "label": "A",
@@ -2474,7 +2474,7 @@ const ALL_QUESTIONS = [
     "id": 114,
     "source": "oop",
     "type": "single",
-    "text": "静态变量的存储位置是",
+    "text": "静态变量的存储位置是（）",
     "options": [
       {
         "label": "A",
@@ -2499,7 +2499,7 @@ const ALL_QUESTIONS = [
     "id": 115,
     "source": "oop",
     "type": "single",
-    "text": "方法重写的要求不包括",
+    "text": "方法重写的要求不包括（）",
     "options": [
       {
         "label": "A",
@@ -2524,7 +2524,7 @@ const ALL_QUESTIONS = [
     "id": 116,
     "source": "oop",
     "type": "single",
-    "text": "final 修饰的变量特点是",
+    "text": "final 修饰的变量特点是（）",
     "options": [
       {
         "label": "A",
@@ -2549,7 +2549,7 @@ const ALL_QUESTIONS = [
     "id": 117,
     "source": "oop",
     "type": "single",
-    "text": "泛型的主要作用是",
+    "text": "泛型的主要作用是（）",
     "options": [
       {
         "label": "A",
@@ -2574,7 +2574,7 @@ const ALL_QUESTIONS = [
     "id": 118,
     "source": "oop",
     "type": "single",
-    "text": "以下不属于 Java 开发工具的是",
+    "text": "以下不属于 Java 开发工具的是（）",
     "options": [
       {
         "label": "A",
@@ -2599,7 +2599,7 @@ const ALL_QUESTIONS = [
     "id": 119,
     "source": "oop",
     "type": "single",
-    "text": "double 类型数据的字节数是",
+    "text": "double 类型数据的字节数是（）",
     "options": [
       {
         "label": "A",
@@ -2624,7 +2624,7 @@ const ALL_QUESTIONS = [
     "id": 120,
     "source": "oop",
     "type": "single",
-    "text": "比较两个数值是否相等的运算符是",
+    "text": "比较两个数值是否相等的运算符是（）",
     "options": [
       {
         "label": "A",
@@ -2649,7 +2649,7 @@ const ALL_QUESTIONS = [
     "id": 121,
     "source": "oop",
     "type": "single",
-    "text": "switch 语句的判断条件不能使用的类型是",
+    "text": "switch 语句的判断条件不能使用的类型是（）",
     "options": [
       {
         "label": "A",
@@ -2674,7 +2674,7 @@ const ALL_QUESTIONS = [
     "id": 122,
     "source": "oop",
     "type": "single",
-    "text": "以下关于对象的说法正确的是",
+    "text": "以下关于对象的说法正确的是（）",
     "options": [
       {
         "label": "A",
@@ -2699,7 +2699,7 @@ const ALL_QUESTIONS = [
     "id": 123,
     "source": "oop",
     "type": "single",
-    "text": "接口中不能定义的内容是",
+    "text": "接口中不能定义的内容是（）",
     "options": [
       {
         "label": "A",
@@ -2724,7 +2724,7 @@ const ALL_QUESTIONS = [
     "id": 124,
     "source": "oop",
     "type": "single",
-    "text": "启动线程的方法是",
+    "text": "启动线程的方法是（）",
     "options": [
       {
         "label": "A",
@@ -2749,7 +2749,7 @@ const ALL_QUESTIONS = [
     "id": 125,
     "source": "oop",
     "type": "single",
-    "text": "泛型的语法符号是",
+    "text": "泛型的语法符号是（）",
     "options": [
       {
         "label": "A",
@@ -2774,7 +2774,7 @@ const ALL_QUESTIONS = [
     "id": 126,
     "source": "oop",
     "type": "multi",
-    "text": "Java 环境搭建需要配置的环境变量有",
+    "text": "Java 环境搭建需要配置的环境变量有（）",
     "options": [
       {
         "label": "A",
@@ -2799,7 +2799,7 @@ const ALL_QUESTIONS = [
     "id": 127,
     "source": "oop",
     "type": "multi",
-    "text": "Java 中有效的循环跳转语句有",
+    "text": "Java 中有效的循环跳转语句有（）",
     "options": [
       {
         "label": "A",
@@ -2824,7 +2824,7 @@ const ALL_QUESTIONS = [
     "id": 128,
     "source": "oop",
     "type": "multi",
-    "text": "Java 中访问修饰符包含",
+    "text": "Java 中访问修饰符包含（）",
     "options": [
       {
         "label": "A",
@@ -2849,7 +2849,7 @@ const ALL_QUESTIONS = [
     "id": 129,
     "source": "oop",
     "type": "multi",
-    "text": "面向对象的三大核心特性是",
+    "text": "面向对象的三大核心特性是（）",
     "options": [
       {
         "label": "A",
@@ -2874,7 +2874,7 @@ const ALL_QUESTIONS = [
     "id": 130,
     "source": "oop",
     "type": "multi",
-    "text": "以下属于 Java 常用集合类的有",
+    "text": "以下属于 Java 常用集合类的有（）",
     "options": [
       {
         "label": "A",
@@ -2899,7 +2899,7 @@ const ALL_QUESTIONS = [
     "id": 131,
     "source": "oop",
     "type": "multi",
-    "text": "Java 中异常处理的核心关键字有",
+    "text": "Java 中异常处理的核心关键字有（）",
     "options": [
       {
         "label": "A",
@@ -2924,7 +2924,7 @@ const ALL_QUESTIONS = [
     "id": 132,
     "source": "oop",
     "type": "multi",
-    "text": "以下属于字节流的特点的有",
+    "text": "以下属于字节流的特点的有（）",
     "options": [
       {
         "label": "A",
@@ -2949,7 +2949,7 @@ const ALL_QUESTIONS = [
     "id": 133,
     "source": "oop",
     "type": "multi",
-    "text": "Java 中线程的实现方式有",
+    "text": "Java 中线程的实现方式有（）",
     "options": [
       {
         "label": "A",
@@ -2974,7 +2974,7 @@ const ALL_QUESTIONS = [
     "id": 134,
     "source": "oop",
     "type": "multi",
-    "text": "JDBC 可以实现的数据库操作有",
+    "text": "JDBC 可以实现的数据库操作有（）",
     "options": [
       {
         "label": "A",
@@ -2999,7 +2999,7 @@ const ALL_QUESTIONS = [
     "id": 135,
     "source": "oop",
     "type": "multi",
-    "text": "以下关于 StringBuilder 和 StringBuffer 说法正确的有",
+    "text": "以下关于 StringBuilder 和 StringBuffer 说法正确的有（）",
     "options": [
       {
         "label": "A",
@@ -3024,7 +3024,7 @@ const ALL_QUESTIONS = [
     "id": 136,
     "source": "oop",
     "type": "multi",
-    "text": "Java 中算术运算符包含",
+    "text": "Java 中算术运算符包含（）",
     "options": [
       {
         "label": "A",
@@ -3049,7 +3049,7 @@ const ALL_QUESTIONS = [
     "id": 137,
     "source": "oop",
     "type": "multi",
-    "text": "以下属于选择结构语句的有",
+    "text": "以下属于选择结构语句的有（）",
     "options": [
       {
         "label": "A",
@@ -3074,7 +3074,7 @@ const ALL_QUESTIONS = [
     "id": 138,
     "source": "oop",
     "type": "multi",
-    "text": "构造方法的特点包括",
+    "text": "构造方法的特点包括（）",
     "options": [
       {
         "label": "A",
@@ -3099,7 +3099,7 @@ const ALL_QUESTIONS = [
     "id": 139,
     "source": "oop",
     "type": "multi",
-    "text": "多态的实现形式有",
+    "text": "多态的实现形式有（）",
     "options": [
       {
         "label": "A",
@@ -3124,7 +3124,7 @@ const ALL_QUESTIONS = [
     "id": 140,
     "source": "oop",
     "type": "multi",
-    "text": "以下属于 Set 集合实现类的有",
+    "text": "以下属于 Set 集合实现类的有（）",
     "options": [
       {
         "label": "A",
@@ -3149,7 +3149,7 @@ const ALL_QUESTIONS = [
     "id": 141,
     "source": "oop",
     "type": "multi",
-    "text": "运行时异常的特点有",
+    "text": "运行时异常的特点有（）",
     "options": [
       {
         "label": "A",
@@ -3174,7 +3174,7 @@ const ALL_QUESTIONS = [
     "id": 142,
     "source": "oop",
     "type": "multi",
-    "text": "以下属于 IO 流分类方式的有",
+    "text": "以下属于 IO 流分类方式的有（）",
     "options": [
       {
         "label": "A",
@@ -3199,7 +3199,7 @@ const ALL_QUESTIONS = [
     "id": 143,
     "source": "oop",
     "type": "multi",
-    "text": "导致线程阻塞的场景有",
+    "text": "导致线程阻塞的场景有（）",
     "options": [
       {
         "label": "A",
@@ -3224,7 +3224,7 @@ const ALL_QUESTIONS = [
     "id": 144,
     "source": "oop",
     "type": "multi",
-    "text": "以下属于 JDBC 核心接口的有",
+    "text": "以下属于 JDBC 核心接口的有（）",
     "options": [
       {
         "label": "A",
@@ -3249,7 +3249,7 @@ const ALL_QUESTIONS = [
     "id": 145,
     "source": "oop",
     "type": "multi",
-    "text": "内部类的类型包含",
+    "text": "内部类的类型包含（）",
     "options": [
       {
         "label": "A",
@@ -3274,7 +3274,7 @@ const ALL_QUESTIONS = [
     "id": 146,
     "source": "oop",
     "type": "multi",
-    "text": "Java 中基本数据类型包含",
+    "text": "Java 中基本数据类型包含（）",
     "options": [
       {
         "label": "A",
@@ -3299,7 +3299,7 @@ const ALL_QUESTIONS = [
     "id": 147,
     "source": "oop",
     "type": "multi",
-    "text": "以下属于循环结构的语句有",
+    "text": "以下属于循环结构的语句有（）",
     "options": [
       {
         "label": "A",
@@ -3324,7 +3324,7 @@ const ALL_QUESTIONS = [
     "id": 148,
     "source": "oop",
     "type": "multi",
-    "text": "类的组成部分有",
+    "text": "类的组成部分有（）",
     "options": [
       {
         "label": "A",
@@ -3349,7 +3349,7 @@ const ALL_QUESTIONS = [
     "id": 149,
     "source": "oop",
     "type": "multi",
-    "text": "实现多态的必要条件有",
+    "text": "实现多态的必要条件有（）",
     "options": [
       {
         "label": "A",
@@ -3374,7 +3374,7 @@ const ALL_QUESTIONS = [
     "id": 150,
     "source": "oop",
     "type": "multi",
-    "text": "以下属于 List 集合特点的有",
+    "text": "以下属于 List 集合特点的有（）",
     "options": [
       {
         "label": "A",
@@ -3399,7 +3399,7 @@ const ALL_QUESTIONS = [
     "id": 151,
     "source": "oop",
     "type": "multi",
-    "text": "异常处理的作用包括",
+    "text": "异常处理的作用包括（）",
     "options": [
       {
         "label": "A",
@@ -3424,7 +3424,7 @@ const ALL_QUESTIONS = [
     "id": 152,
     "source": "oop",
     "type": "multi",
-    "text": "处理流的优势有",
+    "text": "处理流的优势有（）",
     "options": [
       {
         "label": "A",
@@ -3449,7 +3449,7 @@ const ALL_QUESTIONS = [
     "id": 153,
     "source": "oop",
     "type": "multi",
-    "text": "面向对象编程的优势有",
+    "text": "面向对象编程的优势有（）",
     "options": [
       {
         "label": "A",
@@ -3676,7 +3676,7 @@ const ALL_QUESTIONS = [
     "type": "fill",
     "text": "二维数组的遍历需要______层循环。",
     "options": [],
-    "answer": "两/2/二"
+    "answer": "两"
   },
   {
     "id": 180,
@@ -8104,5 +8104,253 @@ const ALL_QUESTIONS = [
       }
     ],
     "answer": "错误"
+  },
+  {
+    "id": 379,
+    "source": "english",
+    "type": "essay",
+    "text": "TCP/IP is a communication protocol, it provides many different networking services.",
+    "options": [],
+    "answer": "TCP/IP 是一种通信协议，它提供了许多不同的网络服务。"
+  },
+  {
+    "id": 380,
+    "source": "english",
+    "type": "essay",
+    "text": "A computer virus is a computer program that is created to make and spread copies of itself.",
+    "options": [],
+    "answer": "计算机病毒是一种计算机程序，其被创建的目的是为了自我复制和传播。"
+  },
+  {
+    "id": 381,
+    "source": "english",
+    "type": "essay",
+    "text": "The program may however also be designed to have other effects on the systems it infects, ranging from the annoying to the disastrous.",
+    "options": [],
+    "answer": "然而，该程序也可能被设计成对其感染的系统产生其他影响，这些影响小至令人烦恼，大至灾难性后果。"
+  },
+  {
+    "id": 382,
+    "source": "english",
+    "type": "essay",
+    "text": "In order to solve a computational problem, its solution must be specified in terms of a sequence of computational steps, each of which may be performed by a human or a digital computer .",
+    "options": [],
+    "answer": "为了解决一个计算问题，其解决方案必须以一系列计算步骤的形式来明确，其中每一步都可以由人或数字计算机来执行。"
+  },
+  {
+    "id": 383,
+    "source": "english",
+    "type": "essay",
+    "text": "If you want to solve the computational problem with a computer, you should learn how to program.",
+    "options": [],
+    "answer": "如果你想用计算机解决计算问题，你应该学习如何编程。"
+  },
+  {
+    "id": 384,
+    "source": "english",
+    "type": "essay",
+    "text": "Computer programming is the process of planning and creating a sequence of steps for a computer to follow.",
+    "options": [],
+    "answer": "计算机编程是规划和创建一系列步骤供计算机执行的过程。"
+  },
+  {
+    "id": 385,
+    "source": "english",
+    "type": "essay",
+    "text": "Deep learning techniques enable this automatic learning through the absorption of huge amounts of unstructured data such as text, images, or video.",
+    "options": [],
+    "answer": "深度学习技术通过吸收大量非结构化数据（如文本、图像或视频）来实现这种自动学习。"
+  },
+  {
+    "id": 386,
+    "source": "english",
+    "type": "essay",
+    "text": "The goals of artificial intelligence include learning, reasoning, and perception.",
+    "options": [],
+    "answer": "人工智能的目标包括学习、推理和感知。"
+  },
+  {
+    "id": 387,
+    "source": "english",
+    "type": "essay",
+    "text": "When most people hear the term artificial intelligence, the first thing they usually think of is robots.",
+    "options": [],
+    "answer": "当大多数人听到人工智能这个词时，他们通常首先想到的是机器人。"
+  },
+  {
+    "id": 388,
+    "source": "english",
+    "type": "essay",
+    "text": "Specific applications of AI include expert systems, natural language processing, speech recognition and machine vision.",
+    "options": [],
+    "answer": "人工智能的具体应用包括专家系统、自然语言处理、语音识别和机器视觉。"
+  },
+  {
+    "id": 389,
+    "source": "english",
+    "type": "essay",
+    "text": "The computer chip is primarily responsible for executing instructions.",
+    "options": [],
+    "answer": "计算机芯片主要负责执行指令。"
+  },
+  {
+    "id": 390,
+    "source": "english",
+    "type": "essay",
+    "text": "Bus is an electrical connection between the components of a computer system along which the signals or power is transmitted.",
+    "options": [],
+    "answer": "总线是计算机系统组件之间的电气连接，信号或电源通过总线传输。"
+  },
+  {
+    "id": 391,
+    "source": "english",
+    "type": "essay",
+    "text": "Hypertext transfer protocol is a standard used by World Wide Web servers to provide rules for moving text,Images, sound, video and other multimedia files across the Internet.",
+    "options": [],
+    "answer": "超文本传输协议是万维网服务器使用的一种标准，为在互联网上移动文本、图像、声音、视频和其他多媒体文件提供规则。"
+  },
+  {
+    "id": 392,
+    "source": "english",
+    "type": "essay",
+    "text": "Computer networks make possible collaborations between people who are thousands of miles apart.",
+    "options": [],
+    "answer": "计算机网络使相隔数千英里的人之间的合作成为可能。"
+  },
+  {
+    "id": 393,
+    "source": "english",
+    "type": "essay",
+    "text": "Star topologies are normally implemented using twisted pair cable, specifically unshielded twisted pair (UTP).",
+    "options": [],
+    "answer": "星形拓扑通常使用双绞线实现，特别是非屏蔽双绞线（UTP）。"
+  },
+  {
+    "id": 394,
+    "source": "english",
+    "type": "essay",
+    "text": "A video card is the part of your computer that transforms video data into the visual display you see on your monitor.",
+    "options": [],
+    "answer": "视频卡是计算机的一部分，它将视频数据转换为您在显示器上看到的视觉显示。"
+  },
+  {
+    "id": 395,
+    "source": "english",
+    "type": "essay",
+    "text": "Address is the unique location of an information site on the Internet, a specific file (for example, a Web page), or an E-mail user.",
+    "options": [],
+    "answer": "地址是互联网上信息站点、特定文件（例如网页）或电子邮件用户的唯一位置。"
+  },
+  {
+    "id": 396,
+    "source": "english",
+    "type": "essay",
+    "text": "You can E-mail your document without ever leaving word.",
+    "options": [],
+    "answer": "你可以用电子邮件发送你的文档，而无需留下任何文字。"
+  },
+  {
+    "id": 397,
+    "source": "oop",
+    "type": "essay",
+    "text": "简述 JDK、JRE、JVM 的区别与联系。（4 分）",
+    "options": [],
+    "answer": "1. JVM：Java 虚拟机，是 Java 程序运行的核心环境，仅负责运行程序（1 分）\n2. JRE：Java 运行环境，包含 JVM + 核心类库，满足程序运行需求（1 分）\n3. JDK：Java 开发工具包，包含 JRE + 开发工具（javac、java 等），用于程序开发（1 分）\n4. 包含关系：JDK ⊃ JRE ⊃ JVM（1 分）"
+  },
+  {
+    "id": 398,
+    "source": "oop",
+    "type": "essay",
+    "text": "简述 for、while、do-while 三种循环的区别。（4 分）",
+    "options": [],
+    "answer": "1. for 循环：适合已知循环次数的场景，变量作用域局限（1 分）\n2. while 循环：先判断条件，后执行循环体，条件不成立则一次不执行（1 分）\n3. do-while 循环：先执行循环体，后判断条件，至少执行一次（1 分）\n4. 适用场景差异：未知次数用 while/do-while，已知次数用 for（1 分）"
+  },
+  {
+    "id": 399,
+    "source": "oop",
+    "type": "essay",
+    "text": "简述封装的概念、作用及实现方式。（4 分）",
+    "options": [],
+    "answer": "1. 概念：将类的属性私有化，通过公共方法访问属性（1 分）\n2. 作用：隐藏内部细节、保护数据安全、提高代码复用性（1 分）\n3. 实现方式：使用 private 修饰成员变量（1 分）\n4. 配套操作：提供 public 的 getter/setter 方法访问变量（1 分）"
+  },
+  {
+    "id": 400,
+    "source": "oop",
+    "type": "essay",
+    "text": "简述 ArrayList 和 HashSet 的区别。（4 分）",
+    "options": [],
+    "answer": "1. 存储特点：ArrayList 有序可重复，HashSet 无序不可重复（1 分）\n2. 底层结构：ArrayList 基于数组，HashSet 基于哈希表（1 分）\n3. 访问效率：ArrayList 支持索引快速访问，HashSet 无索引（1 分）\n4. 适用场景：有序数据用 ArrayList，去重数据用 HashSet（1 分）"
+  },
+  {
+    "id": 401,
+    "source": "oop",
+    "type": "essay",
+    "text": "简述 JDBC 操作数据库的核心步骤。（4 分）",
+    "options": [],
+    "answer": "1. 加载数据库驱动（1 分）\n2. 通过 DriverManager 获取数据库连接（1 分）\n3. 创建 Statement 对象，执行 SQL 语句（1 分）\n4. 处理结果集、关闭资源（1 分）"
+  },
+  {
+    "id": 402,
+    "source": "oop",
+    "type": "essay",
+    "text": "简述 Java 跨平台原理。（4 分）",
+    "options": [],
+    "answer": "1. Java 编译生成统一的 .class 字节码文件（1 分）\n2. 不同操作系统配备对应的 JVM 虚拟机（1 分）\n3. JVM 可解析运行字节码文件（1 分）\n4. 实现\"一次编译，到处运行\"的跨平台特性（1 分）"
+  },
+  {
+    "id": 403,
+    "source": "oop",
+    "type": "essay",
+    "text": "简述 break 和 continue 关键字的区别。（4 分）",
+    "options": [],
+    "answer": "1. break：终止当前循环或 switch 语句，直接跳出结构（2 分）\n2. continue：终止本次循环，跳过剩余语句，直接进入下一次循环（2 分）"
+  },
+  {
+    "id": 404,
+    "source": "oop",
+    "type": "essay",
+    "text": "简述继承的概念和作用。（4 分）",
+    "options": [],
+    "answer": "1. 概念：子类继承父类的非私有成员，实现类与类之间的关联（1 分）\n2. 作用 1：实现代码复用，减少冗余代码（1 分）\n3. 作用 2：为多态的实现提供基础（1 分）\n4. 作用 3：便于代码扩展和维护（1 分）"
+  },
+  {
+    "id": 405,
+    "source": "oop",
+    "type": "essay",
+    "text": "简述 String、StringBuilder、StringBuffer 的区别。（4 分）",
+    "options": [],
+    "answer": "1. String：字符串不可变，适合少量字符串操作（1 分）\n2. StringBuilder：字符串可变，线程不安全，效率高（1 分）\n3. StringBuffer：字符串可变，线程安全，效率低（1 分）\n4. 适用场景：频繁拼接用后两者，固定字符串用 String（1 分）"
+  },
+  {
+    "id": 406,
+    "source": "oop",
+    "type": "essay",
+    "text": "简述多线程的优缺点。（4 分）",
+    "options": [],
+    "answer": "1. 优点：提高程序并发效率、充分利用 CPU 资源、提升用户体验（2 分）\n2. 缺点：线程安全问题、线程调度开销、代码复杂度提升（2 分）"
+  },
+  {
+    "id": 407,
+    "source": "oop",
+    "type": "essay",
+    "text": "简述 Java 主方法的修饰符含义。（4 分）",
+    "options": [],
+    "answer": "1. public：公共访问权限，保证虚拟机可调用（1 分）\n2. static：静态方法，无需创建对象即可执行（1 分）\n3. void：无返回值（1 分）\n4. main：程序入口方法名，固定标识（1 分）"
+  },
+  {
+    "id": 408,
+    "source": "oop",
+    "type": "essay",
+    "text": "简述数组的特点和适用场景。（4 分）",
+    "options": [],
+    "answer": "1. 特点：长度固定、存储同类型数据、通过索引快速访问（2 分）\n2. 场景：数据量固定、需快速索引访问、批量存储同类型数据（2 分）"
+  },
+  {
+    "id": 409,
+    "source": "oop",
+    "type": "essay",
+    "text": "简述接口和抽象类的区别。（4 分）",
+    "options": [],
+    "answer": "1. 关键字不同：抽象类使用 abstract 定义，接口使用 interface 定义（1 分）\n2. 成员限制：抽象类可包含普通变量、常量、普通方法、抽象方法；接口只能有常量和抽象方法（JDK 8+ 新增默认/静态方法）（1 分）\n3. 继承/实现限制：类只能单继承抽象类，可以多实现接口（1 分）\n4. 构造方法：抽象类有构造方法，接口无构造方法（1 分）"
   }
 ];
