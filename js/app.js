@@ -53,7 +53,7 @@ function applyCustomQuestions() {
 async function parseDocxQuestions(file) {
   const arrayBuffer = await file.arrayBuffer();
   const zip = await JSZip.loadAsync(arrayBuffer);
-  const docFile = zip.file(/word\/document\.xml/);
+  const docFile = zip.file('word/document.xml');
   if (!docFile) throw new Error('无法解析 docx 文件：找不到 document.xml');
   const xmlStr = await docFile.async('text');
   const parser = new DOMParser();
