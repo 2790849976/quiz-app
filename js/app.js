@@ -171,18 +171,40 @@ function triggerImport() {
   const overlay = document.createElement('div');
   overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:1000;display:flex;align-items:center;justify-content:center;padding:1rem;';
   overlay.innerHTML = `
-    <div style="background:#fff;border-radius:16px;padding:1.5rem;max-width:520px;width:100%;box-shadow:0 20px 60px rgba(0,0,0,.2);max-height:90vh;overflow-y:auto;">
+    <div style="background:#fff;border-radius:16px;padding:1.5rem;max-width:540px;width:100%;box-shadow:0 20px 60px rgba(0,0,0,.2);max-height:90vh;overflow-y:auto;">
       <h3 style="margin-bottom:.5rem;">📥 导入题库</h3>
       <p style="font-size:.82rem;color:#888;margin-bottom:1rem;line-height:1.5;">
-        支持 <b>.docx</b>（Word 文档）和 <b>.json</b> 格式。<br>
-        docx 会自动识别单选题/多选题/判断题/填空题章节。
+        支持 <b>.docx</b>（Word 文档）和 <b>.json</b> 格式。可先下载模板再编辑。
       </p>
-      <div style="background:#f5f5ff;border-radius:10px;padding:.75rem;margin-bottom:1rem;font-size:.8rem;color:#555;line-height:1.6;">
+      <div style="display:flex;gap:.5rem;margin-bottom:1rem;flex-wrap:wrap;">
+        <a href="https://raw.githubusercontent.com/2790849976/quiz-app/main/sample_import.docx"
+           download style="padding:.35rem .75rem;border-radius:8px;border:1.5px solid #d1d5db;background:#fff;color:#333;font-size:.8rem;text-decoration:none;cursor:pointer;white-space:nowrap;">
+          📄 下载 docx 模板
+        </a>
+        <a href="https://raw.githubusercontent.com/2790849976/quiz-app/main/sample_import.json"
+           download style="padding:.35rem .75rem;border-radius:8px;border:1.5px solid #d1d5db;background:#fff;color:#333;font-size:.8rem;text-decoration:none;cursor:pointer;white-space:nowrap;">
+          📄 下载 json 模板
+        </a>
+      </div>
+      <div style="background:#f5f5ff;border-radius:10px;padding:.75rem;margin-bottom:.8rem;font-size:.78rem;color:#555;line-height:1.6;">
         <b style="color:#6366f1;">📌 docx 格式要求：</b><br>
         • 用「一、单选题（共N题）」等标题分隔题型<br>
         • 每道题以「1、题干」数字开头<br>
         • 选项格式「A、选项内容  B、选项内容」或每行一个<br>
         • 答案行「正确答案：A」
+      </div>
+      <div style="background:#fff7ed;border-radius:10px;padding:.75rem;margin-bottom:.8rem;font-size:.78rem;color:#555;line-height:1.6;">
+        <b style="color:#d97706;">📌 json 格式示例：</b>
+<pre style="background:#fff;padding:.5rem;border-radius:6px;margin:.35rem 0;font-size:.72rem;line-height:1.4;overflow-x:auto;white-space:pre;">{
+  "name": "题库名称",
+  "questions": [{
+    "type": "single",
+    "text": "题干内容",
+    "options": ["选项A","选项B","选项C","选项D"],
+    "answer": "A"
+  }]
+}</pre>
+        <span style="font-size:.72rem;color:#999;">type: single(单选) multi(多选) judge(判断) fill(填空)</span>
       </div>
       <input type="file" id="importFileInput" accept=".json,.docx" style="margin-bottom:.75rem;display:block;">
       <div id="importPreview" style="margin-bottom:.75rem;max-height:300px;overflow-y:auto;"></div>
