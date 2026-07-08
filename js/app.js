@@ -970,8 +970,10 @@ function submitFill(q, idx) {
   for (let i = 0; i < blankCount; i++) {
     const userAns = (userFill[i] || '').trim();
     const correctAns = (answers[i] || '').trim();
-    // Case-insensitive comparison for text
-    const isCorrect = userAns.toLowerCase() === correctAns.toLowerCase();
+    // 支持 "/" 分隔的可选答案（如"实例化/创建"，填其中任意一个即正确）
+    // 支持大小写不敏感比较
+    const alternatives = correctAns.split('/').map(s => s.trim().toLowerCase());
+    const isCorrect = alternatives.some(alt => userAns.toLowerCase() === alt);
     perBlank.push({ answer: userAns, correct: isCorrect });
     if (!isCorrect) allCorrect = false;
     if (userAns) anyFilled = true;

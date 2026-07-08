@@ -3676,7 +3676,7 @@ const ALL_QUESTIONS = [
     "type": "fill",
     "text": "二维数组的遍历需要______层循环。",
     "options": [],
-    "answer": "两"
+    "answer": "两/2/二"
   },
   {
     "id": 180,
