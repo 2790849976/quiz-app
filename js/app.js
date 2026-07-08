@@ -500,7 +500,7 @@ function startQuiz() {
 
   // 按题型排序：单选→多选→判断→填空（所有模式均适用）
   const typeOrder = { single: 0, multi: 1, judge: 2, fill: 3 };
-  pool.sort((a, b) => (typeOrder[a.type] || 99) - (typeOrder[b.type] || 99));
+  pool.sort((a, b) => (typeOrder[a.type] ?? 99) - (typeOrder[b.type] ?? 99));
   
   // 根据模式决定是否打乱
   if (state.mode === 'shuffle' || state.mode === 'typeOnly') {
