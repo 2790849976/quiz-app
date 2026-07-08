@@ -1173,18 +1173,29 @@ function renderWrongPage() {
   const wrongMap = loadWrongQuestions();
   const ids = Object.keys(wrongMap);
   const wrongList = ids.map(k => wrongMap[k]).sort((a, b) => b.lastTime - a.lastTime);
+  const empty = ids.length === 0;
 
-  app.innerHTML = `
-    <div class="wrong-screen fade-in">
+  // Persistent container to avoid flash
+  var wc = document.getElementById('wrongContainer');
+  if (!wc) {
+    wc = document.createElement('div');
+    wc.id = 'wrongContainer';
+    wc.className = 'fade-in';
+    app.innerHTML = '';
+    app.appendChild(wc);
+  }
+
+  wc.innerHTML = `
+    <div class="wrong-screen">
       <div class="wrong-header">
         <h2>📕 错题本</h2>
         <div style="display:flex;gap:.5rem;">
-          <button class="btn btn-ghost btn-sm" id="wrongPracticeBtn" ${ids.length===0?'disabled':''}>练习错题</button>
-          <button class="btn btn-ghost btn-sm" id="wrongClearBtn" ${ids.length===0?'disabled':''}>清空</button>
+          <button class="btn btn-ghost btn-sm" id="wrongPracticeBtn" ${empty?'disabled':''}>练习错题</button>
+          <button class="btn btn-ghost btn-sm" id="wrongClearBtn" ${empty?'disabled':''}>清空</button>
           <button class="btn btn-ghost btn-sm" id="backFromWrongBtn">返回</button>
         </div>
       </div>
-      ${ids.length === 0
+      ${empty
         ? '<div style="text-align:center;padding:3rem;color:#888;"><div style="font-size:3rem;margin-bottom:1rem;">🎉</div><p>暂无错题，继续保持！</p></div>'
         : `<div style="margin-bottom:1rem;">
             <p style="font-size:.85rem;color:#888;">共 ${ids.length} 道错题 · 点击 ✕ 可移出</p>
@@ -1194,33 +1205,36 @@ function renderWrongPage() {
     </div>
   `;
 
-  const list = document.getElementById('wrongList');
-  if (list) {
-    let html = '';
-    wrongList.forEach(w => {
-      const time = new Date(w.lastTime).toLocaleString('zh-CN');
-      html += `<div class="wrong-item">
-        <div class="wi-header">
-          <span class="ri-q">第 ${w.id} 题</span>
-          ${TYPE_BADGE[w.type] || ''}
-          <span class="wi-count">错误 ${w.count} 次</span>
-        </div>
-        <div class="question-text" style="font-size:.9rem;margin-bottom:.3rem;">${escapeHtml(w.text)}</div>
-        <div class="ri-detail">
-          正确答案：<span style="color:#22c55e;font-weight:600;">${escapeHtml(w.answer)}</span>
-          <span style="color:#888;margin-left:1rem;">${time}</span>
-        </div>
-        <button class="wi-remove" data-qid="${w.id}">✕ 移出</button>
-      </div>`;
-    });
-    list.innerHTML = html;
-
-    list.querySelectorAll('.wi-remove').forEach(btn => {
-      btn.addEventListener('click', () => {
-        removeWrongQuestion(parseInt(btn.dataset.qid));
-        renderWrongPage();
+  if (!empty) {
+    const list = document.getElementById('wrongList');
+    if (list) {
+      let html = '';
+      wrongList.forEach(w => {
+        const time = new Date(w.lastTime).toLocaleString('zh-CN');
+        html += `<div class="wrong-item">
+          <div class="wi-header">
+            <span class="ri-q">第 ${w.id} 题</span>
+            ${TYPE_BADGE[w.type] || ''}
+            <span class="wi-count">错误 ${w.count} 次</span>
+          </div>
+          <div class="question-text" style="font-size:.9rem;margin-bottom:.3rem;">${escapeHtml(w.text)}</div>
+          <div class="ri-detail">
+            正确答案：<span style="color:#22c55e;font-weight:600;">${escapeHtml(w.answer)}</span>
+            <span style="color:#888;margin-left:1rem;">${time}</span>
+          </div>
+          <button class="wi-remove" data-qid="${w.id}">✕ 移出</button>
+        </div>`;
       });
-    });
+      list.innerHTML = html;
+
+      list.querySelectorAll('.wi-remove').forEach(btn => {
+        btn.addEventListener('click', () => {
+          removeWrongQuestion(parseInt(btn.dataset.qid));
+          // Update the wrong list only, not the whole page
+          renderWrongPage();
+        });
+      });
+    }
   }
 
   document.getElementById('wrongPracticeBtn')?.addEventListener('click', () => {
