@@ -5,6 +5,135 @@
 // ===== Constants =====
 const WRONG_KEY = 'ms_wrong_questions';
 const PROGRESS_KEY = 'ms_quiz_progress';
+const CUSTOM_KEY = 'ms_custom_questions';
+
+// ===== Custom Question Bank Management =====
+function loadCustomBanks() {
+  try {
+    const raw = localStorage.getItem(CUSTOM_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch { return []; }
+}
+
+function saveCustomBanks(banks) {
+  localStorage.setItem(CUSTOM_KEY, JSON.stringify(banks));
+}
+
+function applyCustomQuestions() {
+  // Merge custom questions into ALL_QUESTIONS at runtime
+  // Each custom bank is a { name, questions: [...] } object
+  const banks = loadCustomBanks();
+  if (banks.length === 0) return;
+  
+  // Remove previously added custom questions (if re-importing)
+  const lastCustomCount = parseInt(localStorage.getItem('ms_custom_count') || '0');
+  if (lastCustomCount > 0) {
+    ALL_QUESTIONS.splice(-lastCustomCount, lastCustomCount);
+  }
+  
+  // Build new custom questions with source=source_custom_xxx
+  let added = 0;
+  banks.forEach(bank => {
+    const sourceName = 'custom_' + bank.name.replace(/[^a-zA-Z0-9\u4e00-\u9fff]/g, '_');
+    bank.questions.forEach((q, i) => {
+      ALL_QUESTIONS.push({
+        source: sourceName,
+        type: q.type || 'single',
+        text: q.text || '',
+        options: q.options || [],
+        answer: q.answer || '',
+      });
+      added++;
+    });
+  });
+  localStorage.setItem('ms_custom_count', String(added));
+}
+
+// ===== File Import Dialog =====
+function triggerImport() {
+  // Create a modal overlay for import
+  const overlay = document.createElement('div');
+  overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:1000;display:flex;align-items:center;justify-content:center;padding:1rem;';
+  overlay.innerHTML = `
+    <div style="background:#fff;border-radius:16px;padding:1.5rem;max-width:500px;width:100%;box-shadow:0 20px 60px rgba(0,0,0,.2);">
+      <h3 style="margin-bottom:1rem;">📥 导入题库</h3>
+      <p style="font-size:.85rem;color:#666;margin-bottom:1rem;line-height:1.6;">
+        请选择 JSON 格式的题库文件。<br>
+        文件格式说明：<br>
+        <code style="display:block;background:#f5f5f5;padding:.75rem;border-radius:8px;font-size:.78rem;margin:.5rem 0;line-height:1.5;white-space:pre-wrap;">
+{
+  "name": "题库名称",
+  "questions": [
+    {
+      "type": "single",
+      "text": "题干",
+      "options": ["选项A","选项B","选项C","选项D"],
+      "answer": "A"
+    }
+  ]
+}
+        </code>
+        type 支持: single(单选) multi(多选) judge(判断) fill(填空)
+      </p>
+      <input type="file" id="importFileInput" accept=".json" style="margin-bottom:1rem;display:block;">
+      <div style="display:flex;gap:.5rem;">
+        <button class="btn btn-primary btn-sm" id="importConfirmBtn" disabled>导入</button>
+        <button class="btn btn-ghost btn-sm" id="importCancelBtn">取消</button>
+      </div>
+      <div id="importStatus" style="margin-top:.75rem;font-size:.85rem;color:#888;"></div>
+    </div>
+  `;
+  document.body.appendChild(overlay);
+
+  const fileInput = document.getElementById('importFileInput');
+  const confirmBtn = document.getElementById('importConfirmBtn');
+  const cancelBtn = document.getElementById('importCancelBtn');
+  const status = document.getElementById('importStatus');
+  let parsedData = null;
+
+  fileInput.addEventListener('change', () => {
+    const file = fileInput.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      try {
+        parsedData = JSON.parse(e.target.result);
+        // Validate
+        if (!parsedData.name || !Array.isArray(parsedData.questions) || parsedData.questions.length === 0) {
+          status.textContent = '❌ 格式无效：需要包含 name 和 questions 数组';
+          confirmBtn.disabled = true;
+          return;
+        }
+        // Check for duplicate bank name
+        const banks = loadCustomBanks();
+        if (banks.some(b => b.name === parsedData.name)) {
+          status.textContent = '⚠️ 题库名称已存在，导入将覆盖';
+        } else {
+          status.textContent = `✅ 已解析：${parsedData.questions.length} 道题`;
+        }
+        confirmBtn.disabled = false;
+      } catch(err) {
+        status.textContent = '❌ JSON 解析失败：' + err.message;
+      }
+    };
+    reader.readAsText(file);
+  });
+
+  confirmBtn.addEventListener('click', () => {
+    if (!parsedData) return;
+    const banks = loadCustomBanks();
+    // Remove existing bank with same name (replace)
+    const filtered = banks.filter(b => b.name !== parsedData.name);
+    filtered.push(parsedData);
+    saveCustomBanks(filtered);
+    applyCustomQuestions();
+    status.textContent = '✅ 导入成功！共 ' + parsedData.questions.length + ' 题';
+    setTimeout(() => { overlay.remove(); renderWelcome(); }, 800);
+  });
+
+  cancelBtn.addEventListener('click', () => overlay.remove());
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) overlay.remove(); });
+}
 const TYPE_LABELS = { single: '单选题', multi: '多选题', judge: '判断题', fill: '填空题' };
 const TYPE_COLORS = { single: '#6366f1', multi: '#10b981', judge: '#f59e0b', fill: '#ec4899' };
 const TYPE_BADGE = {
@@ -253,22 +382,27 @@ function renderWelcome() {
         <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
       </div>
       <h1>自主检测刷题</h1>
-      <p>支持单选题 · 多选题 · 判断题三种题型<br>涵盖英语、微服务应用开发技术与面向对象程序设计</p>
+      <p>支持单选题 · 多选题 · 判断题 · 填空题<br>支持导入自定义题库</p>
       <div class="stats-row">
         <div class="stat-item"><div class="num">${total}</div><div class="label">总题数</div></div>
         <div class="stat-item"><div class="num">${sourceCounts.english||0}</div><div class="label">英语</div></div>
         <div class="stat-item"><div class="num">${sourceCounts.microservice||0}</div><div class="label">微服务</div></div>
         <div class="stat-item"><div class="num">${sourceCounts.oop||0}</div><div class="label">面向对象</div></div>
+        ${Object.keys(sourceCounts).filter(s => s.startsWith('custom_')).map(s => {
+          const label = s.replace('custom_','');
+          return `<div class="stat-item"><div class="num">${sourceCounts[s]}</div><div class="label">${label}</div></div>`;
+        }).join('')}
       </div>
 
       ${resumeHtml}
 
       <div class="section-label">选择题库</div>
-      <div class="filter-row">
+      <div class="filter-row" id="subjectFilter">
         <button class="filter-btn active" data-subject="all">全部 (${total})</button>
-        <button class="filter-btn" data-subject="english">英语 (${sourceCounts.english||0})</button>
-        <button class="filter-btn" data-subject="microservice">微服务 (${sourceCounts.microservice||0})</button>
-        <button class="filter-btn" data-subject="oop">面向对象 (${sourceCounts.oop||0})</button>
+        ${Object.keys(sourceCounts).filter(s => s !== 'all').map(s => {
+          const label = s === 'english' ? '英语' : s === 'microservice' ? '微服务' : s === 'oop' ? '面向对象' : s.startsWith('custom_') ? s.replace('custom_','') : s;
+          return `<button class="filter-btn" data-subject="${s}">${label} (${sourceCounts[s]})</button>`;
+        }).join('')}
       </div>
 
       <div class="section-label">题型筛选</div>
@@ -299,6 +433,9 @@ function renderWelcome() {
           <div class="setting-control">
             <input type="checkbox" id="toggleShuffle" checked style="width:18px;height:18px;accent-color:#6366f1;">
           </div>
+        </div>
+        <div class="setting-row" style="border:none;justify-content:center;padding-top:.75rem;">
+          <button class="btn btn-secondary btn-sm" id="importBtn">📥 导入题库</button>
         </div>
       </div>
 
@@ -424,6 +561,9 @@ function renderWelcome() {
   if (browseBtn) {
     browseBtn.addEventListener('click', renderWrongPage);
   }
+
+  // Import question bank
+  document.getElementById('importBtn').addEventListener('click', triggerImport);
 }
 
 // ============================================================
@@ -624,7 +764,7 @@ function renderQuiz() {
       </div>`;
   }
 
-  const sourceLabel = q.source === 'english' ? '英语' : q.source === 'microservice' ? '微服务' : q.source === 'oop' ? '面向对象' : q.source;
+  const sourceLabel = q.source === 'english' ? '英语' : q.source === 'microservice' ? '微服务' : q.source === 'oop' ? '面向对象' : q.source.startsWith('custom_') ? q.source.replace('custom_','') : q.source;
 
   // Navigation - always show prev + save-exit, and next/skip
   let navHtml;
@@ -1283,6 +1423,7 @@ function renderWrongPage() {
 }
 
 // ============================================================
-// Init
+// Init: merge custom question banks, then render
 // ============================================================
+applyCustomQuestions();
 renderWelcome();
