@@ -1796,10 +1796,10 @@
     "id": 153
   },
   {
-    "type": "judge",
+    "type": "fill",
     "text": "布尔类型的取值只有 true 和______。",
     "options": [],
-    "answer": "错误",
+    "answer": "false",
     "source": "oop",
     "id": 154
   },

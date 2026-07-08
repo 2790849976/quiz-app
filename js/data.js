@@ -3473,19 +3473,10 @@ const ALL_QUESTIONS = [
   {
     "id": 154,
     "source": "oop",
-    "type": "judge",
+    "type": "fill",
     "text": "布尔类型的取值只有 true 和______。",
-    "options": [
-      {
-        "label": "正确",
-        "text": "正确"
-      },
-      {
-        "label": "错误",
-        "text": "错误"
-      }
-    ],
-    "answer": "错误"
+    "options": [],
+    "answer": "false"
   },
   {
     "id": 155,
