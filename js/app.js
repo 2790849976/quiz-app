@@ -219,6 +219,7 @@ function triggerImport() {
 
   const fileInput = document.getElementById('importFileInput');
   const confirmBtn = document.getElementById('importConfirmBtn');
+  const cancelBtn = document.getElementById('importCancelBtn');
   const preview = document.getElementById('importPreview');
   const status = document.getElementById('importStatus');
   let parsedBank = null; // { name, questions }
