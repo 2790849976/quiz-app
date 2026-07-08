@@ -342,6 +342,7 @@ function renderWelcome() {
     const multiCount = filtered.filter(q => q.type === 'multi').length;
     const judgeCount = filtered.filter(q => q.type === 'judge').length;
     const fillCount = filtered.filter(q => q.type === 'fill').length;
+    document.querySelector('[data-type="all"]').textContent = `全部 (${filtered.length})`;
     document.querySelector('[data-type="single"]').textContent = `单选题 (${singleCount})`;
     document.querySelector('[data-type="multi"]').textContent = `多选题 (${multiCount})`;
     document.querySelector('[data-type="judge"]').textContent = `判断题 (${judgeCount})`;
